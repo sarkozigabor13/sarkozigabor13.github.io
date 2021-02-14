@@ -2828,7 +2828,6 @@ textarea.form-control {
 .navbar .nav__item .nav__item-link {
   font-size: 15px;
   font-weight: 700;
-  text-transform: capitalize;
   display: block;
   position: relative;
   color: #1b1a1a;
@@ -2905,7 +2904,6 @@ textarea.form-control {
 
 .navbar .dropdown-menu .nav__item .nav__item-link {
   color: #9b9b9b;
-  text-transform: capitalize;
   font-weight: 400;
   line-height: 33px !important;
   white-space: nowrap;
