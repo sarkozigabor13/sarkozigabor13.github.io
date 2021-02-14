@@ -4454,10 +4454,11 @@ textarea.form-control {
 }
 
 .slider .slide__title {
-  font-size: 85px;
+ /* font-size: 85px; */
   line-height: 1.2;
   color: #ffffff;
   margin-bottom: 30px;
+  text-transform: inherit;
 }
 
 .slider .slide__desc {
