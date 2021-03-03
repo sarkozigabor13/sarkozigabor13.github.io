@@ -1236,6 +1236,10 @@ h6 {
   font-size: 40px;
 }
 
+.heading-layout2 .heading__title-2 {
+  font-size: 37px;
+}
+
 .heading-layout3 .heading__title:after {
   content: "";
   position: absolute;
@@ -1396,9 +1400,9 @@ h6 {
 }
 
 .page-title .btn:not(.btn__link) {
-  height: 55px;
-  line-height: 55px;
-  min-width: 200px;
+  height: 53px;
+  line-height: 56px;
+  min-width: 198px;
 }
 
 .page-title .breadcrumb-item+.breadcrumb-item::before {
@@ -1663,16 +1667,36 @@ h6 {
 
 .btn__white.btn__bordered {
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 0.2rem solid #ffffff;
   color: #ffffff;
+  height: 53px;
+  line-height: 56px;
+  min-width: 198px;
+}
+
+.btn__white.btn__bordered.btn__white_bg{
+  background-color: transparent;
+  border: 0.2rem solid #1089ff;
+  color: #1089ff;
+  height: 53px;
+  line-height: 56px;
+  min-width: 198px;
 }
 
 .btn__white.btn__bordered:hover {
   color: #1089ff;
 }
 
+.btn__white.btn__bordered.btn__white_bg:hover {
+  color: #ffffff;
+}
+
 .btn__white.btn__bordered:before {
   background-color: #ffffff;
+}
+
+.btn__white.btn__bordered.btn__white_bg:before {
+  background-color: #1089ff;
 }
 
 .btn__bordered {
@@ -2080,6 +2104,14 @@ textarea.form-control {
 
 .icon-arrow-right {
   font-size: 65%;
+}
+
+.icon-arrow-down {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /*-------------------------
@@ -4471,7 +4503,7 @@ textarea.form-control {
 }
 
 .slider .btn__white:before {
-  background-color: #1089ff;
+  background-color: #ffffff;
 }
 
 .slider .slick-dots {
