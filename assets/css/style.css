@@ -7079,13 +7079,30 @@ textarea.form-control {
   margin-bottom: 17px;
 }
 
+.bg-zold{
+  background-color: rgb(38, 146, 38) !important;
+}
+
+.pricing-item-grey {
+  background-color: #e5e5e5;
+}
+
 .pricing-item .pricing__desc {
-  margin-bottom: 45px;
+  margin-bottom: 0px;
+}
+
+#button-kek-szoveg {
+  color: #1089ff;
+}
+
+#button-kek-szoveg:hover {
+  color: #ffffff;
 }
 
 .pricing-item .pricing__price {
   font-family: "Barlow", sans-serif;
-  font-size: 40px;
+  font-size: 37px;
+  text-align: center;
   font-weight: 500;
   line-height: 1;
   color: #1b1a1a;
