@@ -1207,7 +1207,8 @@ h6 {
 .heading__title {
   position: relative;
   font-size: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  color: #1089ff;
 }
 
 .heading__desc {
@@ -3077,7 +3078,7 @@ textarea.form-control {
 /* navbar transparent */
 .header-transparent .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: transparent;
+  background-color: #1089ff;
 }
 
 .header-transparent .navbar .navbar-toggler .menu-lines:before,
@@ -8091,6 +8092,7 @@ textarea.form-control {
 
 .service-item .service__icon {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .service-item .service__icon i {
@@ -8123,7 +8125,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #eaeaea;
+  background-color: #1089ff;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -8226,7 +8228,7 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .services-layout2 {
-    padding-bottom: 160px;
+    padding-bottom: 240px;
   }
 }
 
@@ -8284,3 +8286,6 @@ img.logo-dark {
 }
 
 
+p.service__desc {
+  color: black;
+}
