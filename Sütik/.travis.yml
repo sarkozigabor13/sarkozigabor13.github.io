@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "12"
+cache: npm
+branches:
+  only:
+  - master
+before_script: 
+  - npm install
+  - npm audit
+script: gulp prod
+after_success:
+  - git reset -hard

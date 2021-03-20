@@ -1,0 +1,32 @@
+{
+    "name": "cookie-warn",
+    "version": "3.1.18",
+    "description": "EU cookie warn",
+    "homepage": "https://schalk.hu/projects/cookie-warn/demo/index.html",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/schalkt/cookie-warn.git"
+    },
+    "keywords": [
+        "cookie",
+        "warning",
+        "europe",
+        "law",
+        "gdpr"
+    ],
+    "author": "Tamas Schalk (https://github.com/schalkt)",
+    "license": "MIT",
+    "main": "index.js",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-bump": "^3.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-gzip": "^1.4.2",
+        "gulp-header": "^2.0.9",
+        "gulp-if": "^3.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-uglify": "^3.0.2"
+    },
+    "dependencies": {}
+}

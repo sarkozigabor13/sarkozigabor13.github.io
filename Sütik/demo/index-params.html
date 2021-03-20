@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>EU Cookie Law warning message demo page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+
+    <script id="cookieWarn" type="text/javascript" src="./../dist/cookie-warn.js" 
+        data-lang-en="{
+             'text':'Our website uses cookies.',
+             'accept_text': 'I accept',
+             'more_text': 'Click here for more information',
+             'more_link': 'https://ec.europa.eu/info/law/law-topic/data-protection_en',
+             'reject_text': 'I reject',
+             'reject_info': 'You can disable unwanted cookies by using this program',
+             'reject_link': 'https://www.ghostery.com/',
+             'close_text': 'Close'
+            }" 
+        data-debug="true" 
+        data-expire="90" 
+        data-path="/projects/cookie-warn/demo" 
+        data-delay="220"
+        data-class="myCookieWarningClass"
+        data-style="#cookieWarnBox a { color: lightblue } #cookieWarnBox .btn { border-radius: 5px }"
+        data-callback="cookieWarnCallback">
+        </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>EU cookie warning example</h1>
+        <ul>
+            <li>with parameters (cookie expire and path, debug, animation delay, custom style)</li>
+            <li>with reject info box and close button</li>
+        </ul>
+        <br>
+        <h2>More examples</h2>
+        <ul>
+            <li><a href="./index.html">Basic example</a></li>
+            <li><a href="./index-params.html">Different style and all parameters with reject info</a></li>
+            <li><a href="./index-bootstrap.html">Bootstrap example</a></li>
+        </ul>
+        <div id="output"></div>
+    </div>   
+
+</body>
+
+</html>

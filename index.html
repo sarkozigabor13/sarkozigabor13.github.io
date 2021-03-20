@@ -12,6 +12,12 @@
     href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700%7cRoboto:400,500,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Sütik -->
+  <script src="Sütik/demo/index.js"></script>
+  <script id="cookieWarn" type="text/javascript" src="Sütik/dist/cookie-warn.js" data-debug="true"></script>
+
+
 </head>
 
 <body>
@@ -24,11 +30,11 @@
         Header
     =========================== -->
     <header class="header header-transparent header-layout1">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+      <nav class="navbar navbar-expand-lg sticky-navbar shadow">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/bence_fake_logo_white.svg" class="logo-light" alt="logo">
-            <img src="assets/images/logo/bence_fake_logo.svg" class="logo-dark" alt="logo">
+            <img src="assets/images/logo/sárközi_klíma_feher.svg" class="logo-light" alt="logo">
+            <img src="assets/images/logo/sárközi_klíma_kek.svg" class="logo-dark" alt="logo">
           </a>
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
@@ -40,7 +46,7 @@
                 <i class="fa fa-angle-down" data-toggle="dropdown"></i>
               </li><!-- /.nav-item -->
               <li class="nav__item with-dropdown">
-                <a href="about-us.html" class="dropdown-toggle nav__item-link">Cégünk</a>
+                <a href="about-us.html" class="dropdown-toggle nav__item-link">Magunkról</a>
                 <i class="fa fa-angle-down" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu">
                   <li class="nav__item"><a href="about-us.html" class="nav__item-link">Rólunk</a></li>
@@ -80,35 +86,35 @@
                   <!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
+              <!--  <li class="nav__item with-dropdown">
                 <a href="projects-grid.html" class="dropdown-toggle nav__item-link">Munkáink</a>
                 <i class="fa fa-angle-down" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu">
                   <li class="nav__item"><a href="projects-grid.html" class="nav__item-link">projects grid</a></li>
-                  <!-- /.nav-item -->
                   <li class="nav__item"><a href="projects-standard.html" class="nav__item-link">projects standard</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item"><a href="projects-carousel.html" class="nav__item-link">projects carousel</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item"><a href="projects-single-project.html" class="nav__item-link">projects
-                      single</a></li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
+                      single</a></li>
+                </ul>
+              </li> -->
+              <!--  <li class="nav__item with-dropdown">
                 <a href="blog.html" class="dropdown-toggle nav__item-link">Szakvélemény</a>
                 <i class="fa fa-angle-down" data-toggle="dropdown"></i>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="blog.html" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav__item">
                 <a href="contacs.html" class="nav__item-link">Elérhetőségek</a>
-              </li><!-- /.nav-item -->
+              </li> -->
+              <!-- /.nav-item -->
               <li class="nav__item nav__item-btn d-none d-md-block">
                 <a href="request-quote.html" class="btn btn__primary action__btn-request">
                   <span>Kérjen ajánlatot!</span><i class="icon-arrow-right"></i>
@@ -117,8 +123,12 @@
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="contact__number d-flex align-items-center">
+            <i class="icon-envelope pulsing-btn"></i>
+            <a href="mailto:info@sarkoziklima.hu">info@sarkoziklima.hu</a>
+          </div>
+          <div class="contact__number d-flex align-items-center">
             <i class="icon-phone pulsing-btn"></i>
-            <a href="tel:06306561253">06306561253</a>
+            <a href="tel:06306561253">06 30 473 95 79</a>
           </div><!-- /.contact__numbr -->
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
@@ -130,7 +140,7 @@
 
     <section class="services-layout2 bg-gray">
       <div class="services-bg">
-        <div class="bg-img"><img src="assets/images/backgrounds/map.png" alt="background"></div>
+        <div class="bg-img"><img src="assets/images/banners/szolgaltatasok.png" alt="background"></div>
       </div>
       <div class="container">
         <div class="row">
@@ -143,7 +153,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4">
             <a href="services-single-service.html">
-              <div class="service-item">
+              <div class="service-item shadow">
                 <div class="service__content">
                   <div class="service__icon">
                     <img src="assets/images/logo/legkodni_white.svg" class="service-icon-svg" alt="">
@@ -165,7 +175,7 @@
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-4 col-lg-4">
             <a href="services-single-service.html">
-              <div class="service-item">
+              <div class="service-item shadow">
                 <div class="service__content">
                   <div class="service__icon">
                     <img src="assets/images/logo/legkondi_kek.svg" class="service-icon-svg" alt="">
@@ -188,23 +198,23 @@
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-4 col-lg-4">
             <a href="services-single-service.html">
-            <div class="service-item">
-              <div class="service__content">
-                <div class="service__icon">
-                  <img src="assets/images/logo/ingyenesfelmeres_svg_blue.svg" class="service-icon-svg" alt="">
-                </div><!-- /.service__icon -->
-                <h4 class="service__title">Ingyenes felmérés</h4>
-                <p class="service__desc">Budapesten és környékén a felmérés teljesen díjmentes, semmilyen kötöttséggel
-                  nem jár.</p>
-                <a href="services-single-service.html" class="btn btn__secondary btn__link">
-                  <span>Tovább tájékozódom!</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service-content -->
-              <div class="service__overlay bg-overlay bg-overlay-theme">
-                <div class="bg-img"><img src="assets/images/banners/ingyenes_felmeres.jpg" alt="background"></div>
-              </div><!-- /.service__overlay -->
-            </div><!-- /.service-item -->
+              <div class="service-item shadow">
+                <div class="service__content">
+                  <div class="service__icon">
+                    <img src="assets/images/logo/ingyenesfelmeres_svg_blue.svg" class="service-icon-svg" alt="">
+                  </div><!-- /.service__icon -->
+                  <h4 class="service__title">Ingyenes felmérés</h4>
+                  <p class="service__desc">Budapesten és környékén a felmérés teljesen díjmentes, semmilyen kötöttséggel
+                    nem jár.</p>
+                  <a href="services-single-service.html" class="btn btn__secondary btn__link">
+                    <span>Tovább tájékozódom!</span>
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+                <div class="service__overlay bg-overlay bg-overlay-theme">
+                  <div class="bg-img"><img src="assets/images/banners/ingyenes_felmeres.jpg" alt="background"></div>
+                </div><!-- /.service__overlay -->
+              </div><!-- /.service-item -->
             </a>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -215,10 +225,9 @@
     <!-- ==========================
        Contact Info
     ============================ -->
-    <section class="contact-info-layout2 pt-60 pb-30">
+    <!-- <section class="contact-info-layout2 pt-60 pb-30">
       <div class="container">
         <div class="row align-items-end">
-          <!-- Contact panel #1 -->
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="contact-info-box d-flex align-items-center">
               <div class="contact__info-box-icon">
@@ -229,11 +238,10 @@
                 <ul class="contact__info-list list-unstyled">
                   <li>Email: <a href="mailto:info@aklima.hu">info@aklima.hu</a></li>
                   <li>Phone: <a href="tel:5565454117">55 654 541 17</a></li>
-                </ul><!-- /.contact__info-list -->
-              </div><!-- /.contact__info-box-content -->
-            </div><!-- /.contact-info-box -->
-          </div><!-- /.col-lg-3 -->
-          <!-- Contact panel #2 -->
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="contact-info-box d-flex align-items-center">
               <div class="contact__info-box-icon">
@@ -243,11 +251,10 @@
                 <h4 class="contact__info-box-title">Cégünk címe</h4>
                 <ul class="contact__info-list list-unstyled">
                   <li>2307 Beverley Rd Brooklyn, New York 11226 US.</li>
-                </ul><!-- /.contact__info-list -->
-              </div><!-- /.contact__info-box-content -->
-            </div><!-- /.contact-info-box -->
-          </div><!-- /.col-lg-3 -->
-          <!-- Contact panel #3 -->
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="cta__banner">
               <h5 class="cta__title color-white">Klíma telepítés</h5>
@@ -256,16 +263,16 @@
               <a href="services.html" class="btn btn__primary btn__link color-white">
                 <span>Mit kell még tudnom?</span> <i class="icon-arrow-right"></i>
               </a>
-            </div><!-- /.cta__banner -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Contact Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- =========================
        Banner layout 4
       =========================== -->
-    <section class="banner-layout4 pb-0">
+    <!--   <section class="banner-layout4 pb-0">
       <div class="container-fluid col-padding-0">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
@@ -276,37 +283,35 @@
                 <p class="heading__desc">The world is changing faster than ever before, business is no exception, yet
                   those that embrace change are thriving, building bigger, better, faster & stronger products than ever
                   before. We can help you build on your past and prepare for future.</p>
-              </div><!-- /.heading -->
+              </div>
               <div class="row fancybox-light">
-                <!-- fancybox item #1 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="fancybox-item">
                     <div class="fancybox__icon">
                       <i class="icon-welding"></i>
-                    </div><!-- /.fancybox-icon -->
+                    </div>
                     <div class="fancybox__content">
                       <h4 class="fancybox__title">Powerfull Product<br> Strategy</h4>
                       <p class="fancybox__desc">Our facilities meet high security requirements and are certified to the
                         highest local standards.</p>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-lg-6 -->
-                <!-- fancybox item #2 -->
+                    </div>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="fancybox-item">
                     <div class="fancybox__icon">
                       <i class="icon-checklist"></i>
-                    </div><!-- /.fancybox-icon -->
+                    </div>
                     <div class="fancybox__content">
                       <h4 class="fancybox__title">Award Winning <br>Projects </h4>
                       <p class="fancybox__desc">Our facilities meet high security requirements and are certified to the
                         highest local standards.</p>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-lg-6 -->
-              </div><!-- /.row -->
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div><!-- /.col-xl-6 -->
+          </div>
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 background-banner">
             <div class="bg-img">
               <img src="assets/images/banners/2.jpg" alt="banner">
@@ -322,162 +327,130 @@
               <div class="video__box-text">
                 <span class="color-white">Watch Our Video!</span>
               </div>
-            </div><!-- /.video__box -->
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Banner layout 4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- =========================== 
       portfolio standard carousel
     ============================= -->
-    <section class="portfolio-standard portfolio-standard-carousel pt-120 pb-60">
+    <!-- <section class="portfolio-standard portfolio-standard-carousel pt-120 pb-60">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
             <div class="heading text-center mb-50">
               <span class="heading__subtitle">Featured Projects</span>
               <h2 class="heading__title">Our Recent Works</h2>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="slick-carousel"
               data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <!-- portfolio item #1 -->
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">The Fallingwater House</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Building</a><a href="#">Interior</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">We understand that data is greatest asset when it comes to analyzing and
                     optimizing your supply chain performance.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-              <!-- portfolio item #2 -->
+                </div>
+              </div>
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">The Guggenheim Museum</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Construction</a><a href="#">Engineering</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">Cost savings is crucial, innovative technology minimizes your overall spend
                     by utilizing an extensive consolidation.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-              <!-- portfolio item #3 -->
+                </div>
+              </div>
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">Neue National Galerie</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Renovation</a><a href="#">Architecture</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">Our Group has been building relationships and projects last. Serving an
                     impressive list of long-term clients with experience.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-              <!-- portfolio item #4 -->
+                </div>
+              </div>
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/4.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">Sagrada Familia</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Construstion</a><a href="#">Cuilding</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">Cost savings is crucial, innovative technology minimizes your overall spend
                     by utilizing an extensive consolidation.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-              <!-- portfolio item #5 -->
+                </div>
+              </div>
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/5.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">Heydar Aliyev Center</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Engineering</a><a href="#">Renovation</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">Our Group has been building relationships and projects last. Serving an
                     impressive list of long-term clients with experience.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-              <!-- portfolio item #6 -->
+                </div>
+              </div>
               <div class="portfolio-item">
                 <div class="portfolio__img">
                   <img src="assets/images/portfolio/grid/6.jpg" alt="portfolio img">
-                </div><!-- /.portfolio-img -->
+                </div>
                 <div class="portfolio__content">
                   <h4 class="portfolio__title"><a href="#">Cathedral of Brasilia</a></h4>
                   <div class="portfolio__cat">
                     <a href="#">Building</a><a href="#">Modern</a>
-                  </div><!-- /.portfolio-cat -->
+                  </div>
                   <p class="portfolio__desc">We understand that data is greatest asset when it comes to analyzing and
                     optimizing your supply chain performance.</p>
                   <a href="projects-single-project.html" class="btn btn__loadMore"><span>Explore More</span><i
                       class="icon-arrow-right"></i></a>
-                </div><!-- /.portfolio-content -->
-              </div><!-- /.portfolio-item -->
-            </div><!-- /.slick-carousel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.portfolio standard carousel -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-    <!-- =====================
-         Clients
-      ======================== -->
-    <section class="clients border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-              <div class="client">
-                <a href="#"><img src="assets/images/logo/bosch_svg_logo.svg" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/logo/daikin_svg_logo.svg" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/logo/gree_svg_logo.svg" alt="client"></a>
-              </div><!-- /.client -->
-              <div class="client">
-                <a href="#"><img src="assets/images/logo/midea_svg_logo.svg" alt="client"></a>
-              </div><!-- /.client -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.clients -->
-
+   
     <!-- =========================
        Banner layout 2
       =========================== -->
-    <section class="banner-layout2 bg-overlay bg-parallax">
+  <!--   <section class="banner-layout2 bg-overlay bg-parallax">
       <div class="bg-img"><img src="assets/images/banners/3.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
@@ -486,13 +459,13 @@
               <span class="heading__subtitle">Leading The Way In Building And Civil Construction</span>
               <h2 class="heading__title">Ready to Bring Bigger, Better, Faster And Stronger Projects Than Ever Before!!
               </h2>
-            </div><!-- /.heading -->
+            </div>
             <ul class="list-items list-items-white list-unstyled mb-40">
               <li>Quality Control System, 100% Satisfaction Guarantee</li>
               <li>Highly Professional Staff, Accurate Testing Processes</li>
               <li>Unrivalled workmanship, Professional and Qualified</li>
             </ul>
-          </div><!-- /.col-lg-6 -->
+          </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="info-slider-wrapper d-flex justify-content-end">
               <div class="info__slider">
@@ -501,19 +474,19 @@
                     <div class="info__slider-icon"><i class="icon-wrench5"></i></div>
                     <h5 class="info__slider-title">Utilising latest processing solutions, and decades of work
                       experience.</h5>
-                  </div><!-- /.info__slider-item -->
+                  </div>
                   <div class="info__slider-item">
                     <div class="info__slider-icon"><i class="icon-wheelbarrow"></i></div>
                     <h5 class="info__slider-title">Designing, construction, planning & infrastructures management
                       such.</h5>
-                  </div><!-- /.info__slider-item -->
+                  </div>
                 </div>
-              </div><!-- /.info__slider -->
+              </div>
             </div>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Banner layout 2 -->
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <div>
       <div class="bg-img background-size-auto"><img src="assets/images/backgrounds/1.jpg" alt="background"></div>
@@ -521,7 +494,7 @@
       <!-- ==========================
         contact layout 1
       =========================== -->
-      <section class="contact-layout2 p-0">
+      <section class="contact-layout2 p-50">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -532,16 +505,16 @@
                       <h4 class="contact__info-box-title">Our Location</h4>
                       <ul class="contact__info-list list-unstyled">
                         <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
-                      </ul><!-- /.contact__info-list -->
-                    </div><!-- /.contact-info-box -->
+                      </ul>
+                    </div>
                     <div class="contact-info-box">
                       <h4 class="contact__info-box-title">Quick Contact</h4>
                       <ul class="contact__info-list list-unstyled">
                         <li>Email: <a href="mailto:Promina@7oroof.com">Promina@7oroof.com</a></li>
                         <li>Support: <a href="mailto:Promina@7oroof.com">Promina@7oroof.com</a></li>
-                      </ul><!-- /.contact__info-list -->
-                    </div><!-- /.contact-info-box -->
-                  </div><!-- /.contact__panel-info-top -->
+                      </ul>
+                    </div>
+                  </div>
                   <div class="contact__panel-info-bottom bg-theme2">
                     <strong class="contact__panel-info-title">We will get back to you within 24 hours, or call us
                       everyday, 09:00 AM - 12:00 PM</strong>
@@ -549,8 +522,8 @@
                       <i class="icon-phone"></i>
                       <a href="tel:5565454117">55 654 541 17</a>
                     </div>
-                  </div><!-- /.contact__panel-info-bottom -->
-                </div><!-- /.contact__panel-info -->
+                  </div>
+                </div>
                 <form method="post" action="assets/php/contact.php" id="contactForm" class="contact__panel-form">
                   <div class="row">
                     <div class="col-sm-12">
@@ -564,19 +537,19 @@
                         <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
                           required>
                       </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                         <input type="email" class="form-control" placeholder="Email" id="contact-email"
                           name="contact-email" required>
                       </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
                           name="contact-phone" required>
                       </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                         <select class="form-control" style="display: none;">
@@ -586,13 +559,13 @@
                           <option>Mechanical Engineering</option>
                         </select>
                       </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
                       <div class="form-group">
                         <textarea class="form-control" placeholder="Additional Details!" id="contact-messgae"
                           name="contact-messgae" required></textarea>
                       </div>
-                    </div><!-- /.col-lg-12 -->
+                    </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap align-items-center">
                       <button type="submit" class="btn btn__primary mr-40">
                         <span class="mx-2">Submit Request</span><i class="icon-arrow-right mx-2"></i>
@@ -603,7 +576,7 @@
                           <span class="radio-indicator"></span>
                         </label>
                       </div>
-                    </div><!-- /.col-lg-12 -->
+                    </div>
                   </div>
                 </form>
               </div><!-- /.contact__panel -->
@@ -615,15 +588,15 @@
       <!-- ========================= 
       Testimonials layout 1
       =========================  -->
-      <section class="testimonials testimonials-layout1 extra-padding">
+     <!--  <section class="testimonials testimonials-layout1 extra-padding">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="heading">
                 <h2 class="heading__title color-theme">What Our Clients Say!</h2>
-              </div><!-- /.heading -->
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="testimonials-wrapper">
@@ -631,94 +604,94 @@
                   <div class="slick__nav-item">
                     <span class="testimonial__thumb">
                       <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
-                    </span><!-- /.testimonial-thumb -->
+                    </span>
                     <span class="testimonial__meta">
                       <span class="testimonial__meta-title">John Peter</span>
                       <span class="testimonial__meta-desc">7oroof Inc</span>
-                    </span><!-- /.testimonial-meta -->
+                    </span>
                   </div>
                   <div class="slick__nav-item">
                     <span class="testimonial__thumb">
                       <img src="assets/images/testimonials/thumbs/2.jpg" alt="author thumb">
-                    </span><!-- /.testimonial-thumb -->
+                    </span>
                     <span class="testimonial__meta">
                       <span class="testimonial__meta-title">Sami Wade</span>
                       <span class="testimonial__meta-desc">Trustry</span>
-                    </span><!-- /.testimonial-meta -->
+                    </span>
                   </div>
                   <div class="slick__nav-item">
                     <span class="testimonial__thumb">
                       <img src="assets/images/testimonials/thumbs/3.jpg" alt="author thumb">
-                    </span><!-- /.testimonial-thumb -->
+                    </span>
                     <span class="testimonial__meta">
                       <span class="testimonial__meta-title">Sami Wade</span>
                       <span class="testimonial__meta-desc">Trustry</span>
-                    </span><!-- /.testimonial-meta -->
+                    </span>
                   </div>
-                </div><!-- /.slcik-nav -->
+                </div>
                 <div class="slider-with-navs">
-                  <!-- Testimonial #1 -->
+
                   <div class=" testimonial-item">
                     <div class="testimonial__content">
                       <p class="testimonial__desc">They are the best and expertly trained team members who take the
                         extra step and go the extra mile, all to fulfill our promise to deliver innovative and dynamic
                         solutions to our customers to fit the needs of a rapidly changing global environment</p>
-                    </div><!-- /.testimonial-content -->
-                  </div><!-- /. testimonial-item -->
-                  <!-- Testimonial #2 -->
+                    </div>
+                  </div>
+
                   <div class=" testimonial-item">
                     <div class="testimonial__content">
                       <p class="testimonial__desc">All to fulfill our promise to deliver innovative and dynamic
                         solutions to our customers to fit the needs of a rapidly changing global environment. They are
                         the best
                         and expertly trained team members who take the extra step and go the extra mile.</p>
-                    </div><!-- /.testimonial-content -->
-                  </div><!-- /. testimonial-item -->
-                  <!-- Testimonial #3 -->
+                    </div>
+                  </div>
+
                   <div class=" testimonial-item">
                     <div class="testimonial__content">
                       <p class="testimonial__desc">They are the best and expertly trained team members who take the
                         extra step and go the extra mile, all to fulfill our promise to deliver innovative and dynamic
                         solutions to our customers to fit the needs of a rapidly changing global environment.</p>
-                    </div><!-- /.testimonial-content -->
-                  </div><!-- /. testimonial-item -->
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div><!-- /.col-lg-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </section><!-- /.testimonials 1 -->
+            </div>
+          </div>
+        </div>
+      </section> -->
     </div>
 
     <!-- ======================
       Blog carousel
     ========================= -->
-    <section class="blog-carousel pt-0 pb-50 mt--200 z-index-2">
+<!--     <section class="blog-carousel pb-50 z-index-2">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="heading heading-layout3 mb-40">
               <h2 class="heading__title">Recent Articles</h2>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="slick-carousel"
               data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <!-- Blog Item #1 -->
+
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/1.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">Oil & Gas</a><a href="#">Insights</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">Importers achieve cost savings through the First Sale rule!</a>
                   </h4>
                   <span class="blog__meta-date">Jan 20, 2020</span>
@@ -729,21 +702,20 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-              <!-- Blog Item #2 -->
+                </div>
+              </div>
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/2.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">Industry</a><a href="#">Construction</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">Cargo flow through better supply chain visibility, control.</a>
                   </h4>
                   <span class="blog__meta-date">Oct 18, 2020</span>
@@ -753,21 +725,20 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-              <!-- Blog Item #3 -->
+                </div>
+              </div>
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/3.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">Engineering</a><a href="#">Distribution</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">Importance of specialized focus in portfolio, Oil & Gas</a></h4>
                   <span class="blog__meta-date">Jan 20, 2020</span>
                   <p class="blog__desc">Our team provides highly skilled & experienced portfolio managers who know the
@@ -776,21 +747,20 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-              <!-- Blog Item #4 -->
+                </div>
+              </div>
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/4.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">News</a><a href="#">Industry</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">Changes to our Trade Credit Policy and Procedures</a></h4>
                   <span class="blog__meta-date">Oct 24, 2017</span>
                   <p class="blog__desc">The Atradius platform will provide us with a much deeper pool of research to
@@ -799,21 +769,20 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-              <!-- Blog Item #5 -->
+                </div>
+              </div>
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/5.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">Insights</a><a href="#">Industry</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">New Additions to our great Metro trucks Fleet</a></h4>
                   <span class="blog__meta-date">Oct 27, 2017</span>
                   <p class="blog__desc">These new vehicles are all extra high body trucks, with a carrying height equal
@@ -823,21 +792,20 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-              <!-- Blog Item #6 -->
+                </div>
+              </div>
               <div class="blog-item">
                 <div class="blog__img">
                   <a href="#">
                     <img src="assets/images/blog/grid/6.jpg" alt="blog image">
                   </a>
-                </div><!-- /.blog-img -->
+                </div>
                 <div class="blog__content">
                   <div class="blog__meta">
                     <div class="blog__meta-cat">
                       <a href="#">News</a><a href="#">Logistics</a>
-                    </div><!-- /.blog-meta-cat -->
-                  </div><!-- /.blog-meta -->
+                    </div>
+                  </div>
                   <h4 class="blog__title"><a href="#">The new Driver Training & Recruitment Program</a></h4>
                   <span class="blog__meta-date">Oct 24, 2017</span>
                   <p class="blog__desc">If you know of anyone looking for a bigger opportunity, a fresh start, or just
@@ -846,51 +814,42 @@
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
-                </div><!-- /.blog-content -->
-              </div><!-- /.blog-item -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog carousel -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-    <!-- ========================= 
-            Google Map
-    =========================  -->
-    <section class="google-map-layout2 p-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 ">
-            <div class="contact-info-carousel">
-              <h5 class="contact__info-title">Locations</h5>
-              <div class="slick-carousel" data-slick='{"slidesToShow": 1, "arrows": true, "dots": false}'>
-                <div class="contact-info-box">
-                  <h4 class="contact__info-box-title">London Office</h4>
-                  <ul class="contact__info-list list-unstyled">
-                    <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
-                    <li>Email: <a href="mailto:Promina@7oroof.com">Promina@7oroof.com</a></li>
-                    <li>Hours: Mon-Fri: 8am – 7pm</li>
-                  </ul><!-- /.contact__info-list -->
-                </div><!-- /.contact-info-box -->
-                <div class="contact-info-box">
-                  <h4 class="contact__info-box-title">Berlin Office</h4>
-                  <ul class="contact__info-list list-unstyled">
-                    <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
-                    <li>Email: <a href="mailto:Promina@7oroof.com">Promina@7oroof.com</a></li>
-                    <li>Hours: Mon-Fri: 8am – 7pm</li>
-                  </ul><!-- /.contact__info-list -->
-                </div><!-- /.contact-info-box -->
-              </div><!-- /.slick-carousel -->
-            </div><!-- /.contact-info-carousel -->
-            <div id="map" style="height: 460px;"></div>
-            <script src="assets/js/google-map.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async
-              defer></script>
-            <!-- CLICK HERE (https://developers.google.com/maps/documentation/embed/get-api-key) TO  LERAN MORE ABOUT GOOGLE MAPS API KEY -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.GoogleMap -->
+     <!-- =====================
+         Clients
+      ======================== -->
+      <section class="clients">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="slick-carousel"
+                data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
+                <div class="client">
+                  <a href="#"><img src="assets/images/logo/bosch_svg_logo.svg" alt="client"></a>
+                </div>
+                <div class="client">
+                  <a href="#"><img src="assets/images/logo/daikin_svg_logo.svg" alt="client"></a>
+                </div>
+                <div class="client">
+                  <a href="#"><img src="assets/images/logo/gree_svg_logo.svg" alt="client"></a>
+                </div>
+                <div class="client">
+                  <a href="#"><img src="assets/images/logo/midea_svg_logo.svg" alt="client"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
 
     <!-- ========================
       Footer
@@ -977,7 +936,6 @@
       </div><!-- /.Footer-bottom -->
     </footer><!-- /.Footer -->
     <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
-
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
