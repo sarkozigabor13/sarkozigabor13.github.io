@@ -1895,6 +1895,7 @@ label.error {
   border-radius: 3px;
 }
 
+
 .form-control:focus {
   background-color: #f4f4f4;
   border-color: #1089ff;
@@ -5994,8 +5995,8 @@ textarea.form-control {
     Client
 ---------------------------*/
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .clients .client {
@@ -6834,7 +6835,7 @@ textarea.form-control {
 }
 
 .contact-panel .contact__number i {
-  color: #1089ff;
+  color: #ffffff;
   border-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -8230,7 +8231,7 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .services-layout2 {
-    padding-bottom: 240px;
+    padding-bottom: 0px;
   }
 }
 
@@ -8330,6 +8331,29 @@ section.services-layout2.bg-gray {
   100%
   {
       box-shadow: 0 0 0 0 rgba(255,109,74,.0), 0 0 0 25px rgba(255,109,74,0);
+  }
+}
+.pulsing-btn-blue{
+  animation: animate-blue 3s linear infinite;
+}
+
+@keyframes animate-blue
+{
+  0%
+  {
+      box-shadow: 0 0 0 0 #1089ff, 0 0 0 0 #1089ff;
+  }
+  40%
+  {
+      box-shadow: 0 0 0 15px rgba(255,109,74,0), 0 0 0 0 #1088ff91;
+  }
+  80%
+  {
+      box-shadow: 0 0 0 15px rgba(255,109,74,.0), 0 0 0 15px rgba(255,109,74,0);
+  }
+  100%
+  {
+      box-shadow: 0 0 0 0 rgba(255,109,74,.0), 0 0 0 15px rgba(255,109,74,0);
   }
 }
 
