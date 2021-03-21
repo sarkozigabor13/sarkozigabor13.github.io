@@ -6852,6 +6852,14 @@ textarea.form-control {
   padding-bottom: 40px;
 }
 
+.klimaAlapUrlap .contact__panel-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+
 .contact-panel .contact__panel-title {
   font-size: 24px;
 }
@@ -8550,6 +8558,11 @@ position: relative;
 top: 25%;
 }
 
+@media (max-width: 767.98px) { 
+  #myModalCovid .modal-dialog {
+  top: 5%;
+}}
+
 #myModalCovid .modal-content {
   background-color: #ffffff;
 }
@@ -8575,6 +8588,11 @@ top: 25%;
   color: #1089ff
 }
 
+@media (max-width: 767.98px) { 
+  #myModalCovid img{
+  max-width: 40%;
+}}
+
 #myModalCovid .intro-2 {
   font-size: 15px;
   font-weight: 500;
@@ -8594,3 +8612,7 @@ top: 25%;
   padding-left: 20px
 }
 
+@media (min-width: 576px) {
+.klimaurlapok{
+    max-width: 767px;
+}}
