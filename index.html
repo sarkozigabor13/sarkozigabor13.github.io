@@ -26,6 +26,9 @@
       <div class="loading"><span></span><span></span><span></span><span></span></div>
     </div><!-- /.preloader -->
 
+
+
+
     <!-- =========================
         Header
     =========================== -->
@@ -116,23 +119,49 @@
               </li> -->
               <!-- /.nav-item -->
               <li class="nav__item nav__item-btn d-none d-md-block">
-                <a href="request-quote.html" class="btn btn__primary action__btn-request">
+                <a href="#urlap-kitoltes-form" class="btn btn__primary action__btn-request">
                   <span>Kérjen ajánlatot!</span><i class="icon-arrow-right"></i>
                 </a>
               </li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
-          <div class="contact__number d-flex align-items-center">
+          <div class="contact__number d-flex align-items-center email-head-info">
             <i class="icon-envelope pulsing-btn"></i>
             <a href="mailto:info@sarkoziklima.hu">info@sarkoziklima.hu</a>
           </div>
-          <div class="contact__number d-flex align-items-center">
+          <div class="contact__number d-flex align-items-center telefon-head-info">
             <i class="icon-phone pulsing-btn"></i>
             <a href="tel:06306561253">06 30 473 95 79</a>
           </div><!-- /.contact__numbr -->
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
+
+
+    <!-- Pop-Up Covid-19 -->
+
+    <div id="myModalCovid" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content shadow">
+          <div class="modal-body shadow">
+            <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-center p-4"> <img src="assets/images/popup/popup-vaccine_01.svg"> </div>
+              </div>
+              <div class="col-md-6 popup-covid-szoveg">
+                <div class="mt-4"> <span class="intro-1">COVID-19 INFÓ</span></div>
+                <div class="mt-2"><span class="intro-2">Vállalkozásunk zavartalanul működik a pandémia ideje alatt is. </span> </div>
+              <div class="mt-2"><span class="intro-2">Kérjük, hogy mikor kollégáink kiérkeznek a helyszínre, a
+                  vírusvédelmi előírásoknak maradéktalanul tegyenek eleget!
+                </span> </div>
+              <div class="mt-4 mb-5"> <button class="btn btn-primary shadow" data-dismiss="modal">Vigyázzunk egymásra!</button> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================
         Slider
@@ -152,7 +181,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <a href="services-single-service.html">
+            <a href="pricing.html">
               <div class="service-item shadow">
                 <div class="service__content">
                   <div class="service__icon">
@@ -162,7 +191,7 @@
                   <p class="service__desc">A klíma telepítés megválasztás során rengeteg szempontot figyelembe kell
                     venni.
                   </p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__link">
+                  <a href="pricing.html" class="btn btn__secondary btn__link">
                     <span>Tovább tájékozódom!</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -174,7 +203,7 @@
             </a>
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <a href="services-single-service.html">
+            <a href="pricing.html">
               <div class="service-item shadow">
                 <div class="service__content">
                   <div class="service__icon">
@@ -185,7 +214,7 @@
                   <h4 class="service__title">Hőszivattyú telepítés</h4>
                   <p class="service__desc">A hőszivattyúban az a legjobb, hogy szinte bárhova lehet telepíteni. Nincs
                     égés, nincs kémény, nincs szénmonoxid.</p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__link">
+                  <a href="pricing.html" class="btn btn__secondary btn__link">
                     <span>Tovább tájékozódom!</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -197,7 +226,7 @@
             </a>
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <a href="services-single-service.html">
+            <a href="pricing.html">
               <div class="service-item shadow">
                 <div class="service__content">
                   <div class="service__icon">
@@ -206,7 +235,7 @@
                   <h4 class="service__title">Ingyenes felmérés</h4>
                   <p class="service__desc">Budapesten és környékén a felmérés teljesen díjmentes, semmilyen kötöttséggel
                     nem jár.</p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__link">
+                  <a href="pricing.html" class="btn btn__secondary btn__link">
                     <span>Tovább tájékozódom!</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -222,32 +251,32 @@
     </section><!-- /.Services Layout 2 -->
 
 
-   <!-- =====================
+    <!-- =====================
          Clients
       ======================== -->
-      <section class="clients">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div class="slick-carousel"
-                data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-                <div class="client">
-                  <a href="#"><img src="assets/images/logo/bosch_svg_logo.svg" alt="client"></a>
-                </div>
-                <div class="client">
-                  <a href="#"><img src="assets/images/logo/daikin_svg_logo.svg" alt="client"></a>
-                </div>
-                <div class="client">
-                  <a href="#"><img src="assets/images/logo/gree_svg_logo.svg" alt="client"></a>
-                </div>
-                <div class="client">
-                  <a href="#"><img src="assets/images/logo/midea_svg_logo.svg" alt="client"></a>
-                </div>
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="slick-carousel"
+              data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
+              <div class="client">
+                <a href="#"><img src="assets/images/logo/bosch_svg_logo.svg" alt="client"></a>
+              </div>
+              <div class="client">
+                <a href="#"><img src="assets/images/logo/daikin_svg_logo.svg" alt="client"></a>
+              </div>
+              <div class="client">
+                <a href="#"><img src="assets/images/logo/gree_svg_logo.svg" alt="client"></a>
+              </div>
+              <div class="client">
+                <a href="#"><img src="assets/images/logo/midea_svg_logo.svg" alt="client"></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
     <!-- ==========================
@@ -517,12 +546,13 @@
     </section> -->
 
     <div>
-      <div class="bg-img background-size-auto"><img src="assets/images/banners/bemutatkozas_banner.png" alt="background"></div>
+      <div class="bg-img background-size-auto"><img src="assets/images/banners/bemutatkozas_banner.png"
+          alt="background"></div>
 
       <!-- ==========================
         contact layout 1
       =========================== -->
-      <section class="contact-layout2 p-50">
+      <section class="contact-layout2 p-50" id="urlap-kitoltes-form">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -543,7 +573,7 @@
                     </div>
                   </div>
                   <div class="contact__panel-info-bottom bg-theme2">
-                    <strong class="contact__panel-info-title">Telefonhívását 08:00 és 18:00 között várjuk! Visszahívás 
+                    <strong class="contact__panel-info-title">Telefonhívását 08:00 és 18:00 között várjuk! Visszahívás
                       esetén 24 órán belül felveszük Önnel a kapcsolatot!
                     </strong>
                     <div class="contact__number d-flex align-items-center">
@@ -556,96 +586,108 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <h4 class="contact__panel-title">Milyen klímát vegyek?</h4>
-                      <p class="contact__panel-desc mb-40">Töltse ki ingyenes klímaajánló űrlapunkat, mi pedig szakértőink segítségével kiválasztjuk
-                        az Ön igényeinek legmegfelelőbb klímát! 
+                      <p class="contact__panel-desc mb-40">Töltse ki ingyenes klímaajánló űrlapunkat, mi pedig
+                        szakértőink segítségével kiválasztjuk
+                        az Ön igényeinek legmegfelelőbb klímát!
                       </p>
                     </div>
                   </div>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h4 class="contact__panel-title">Személyes adatok</h4>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h4 class="contact__panel-title">Személyes adatok</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Az Ön neve" id="contact-name"
+                          name="contact-name" required>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Az Ön neve" id="contact-name" name="contact-name"
-                            required>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Az Ön email címe" id="contact-email"
+                          name="contact-email" required>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Az Ön email címe" id="contact-email"
-                            name="contact-email" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Az Ön telefonszáma" id="contact-Phone"
-                            name="contact-phone" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Az Ön címe" id="contact-Phone"
-                            name="contact-phone" required>
-                        </div>
-                      </div>
-                    </div>        
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h4 class="contact__panel-title">Technikai paraméterek</h4>
-                      </div>
-                      
                     </div>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <select class="form-control" style="display: none;">
-                            <option value="" disabled selected>Az épület típusa</option>
-                            <option>Panel lakás</option>
-                            <option>Új építésű társasház</option>
-                            <option>Régi építésű társasház</option>
-                            <option>Családi ház</option>
-                          </select>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Az Ön telefonszáma" id="contact-Phone"
+                          name="contact-phone" required>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group input-group">
-                          <input type="number" min="1" class="form-control" placeholder="Helyiség alapterülete">
-                          <div class="input-group-append">
-                            <span class="input-group-text">m²</span>
-                          </div>
-                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Az Ön címe" id="contact-Phone"
+                          name="contact-phone" required>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="form-group input-group">
-                          <input type="number" min="1" class="form-control" placeholder="Belmagasság">
-                          <div class="input-group-append">
-                            <span class="input-group-text">cm</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="form-group">
-                          <textarea class="form-control" placeholder="Egyéb információ vagy megjegyzés" id="contact-messgae"
-                            name="contact-messgae" required></textarea>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap align-items-center">
-                        <button type="submit" class="btn btn__primary mr-40 pulsing-btn-blue">
-                          <span class="mx-2">Űrlap elküldése</span><i class="icon-arrow-right mx-2"></i>
-                        </button>
-                        <div class="form-group input-radio my-3">
-                          <label class="label-radio">Adatvédelmi nyilatkozat elfogadása
-                            <input type="checkbox" checked="">
-                            <span class="radio-indicator"></span>
-                          </label>
-                        </div>
-                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h4 class="contact__panel-title">Technikai paraméterek</h4>
                     </div>
 
-                  
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <select class="form-control" style="display: none;">
+                          <option value="" disabled selected>Az üzenet tárgya</option>
+                          <option>Klíma telepítés</option>
+                          <option>Hőszivattyú telepítés</option>
+                          <option>Karbantartás</option>
+                          <option>Ingyenes felmérés</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <select class="form-control" style="display: none;">
+                          <option value="" disabled selected>Az épület típusa</option>
+                          <option>Panel lakás</option>
+                          <option>Új építésű társasház</option>
+                          <option>Régi építésű társasház</option>
+                          <option>Családi ház</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group input-group">
+                        <input type="number" min="1" class="form-control" placeholder="Helyiség alapterülete">
+                        <div class="input-group-append">
+                          <span class="input-group-text">m²</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="form-group input-group">
+                        <input type="number" min="1" class="form-control" placeholder="Belmagasság">
+                        <div class="input-group-append">
+                          <span class="input-group-text">cm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Egyéb információ vagy megjegyzés"
+                          id="contact-messgae" name="contact-messgae" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap align-items-center">
+                      <button type="submit" class="btn btn__primary mr-40 pulsing-btn-blue">
+                        <span class="mx-2">Űrlap elküldése</span><i class="icon-arrow-right mx-2"></i>
+                      </button>
+                      <div class="form-group input-radio my-3">
+                        <label class="label-radio">Adatvédelmi nyilatkozat elfogadása
+                          <input type="checkbox" checked="" required>
+                          <span class="radio-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+
                 </form>
               </div><!-- /.contact__panel -->
             </div><!-- /.col-lg-12 -->
@@ -890,7 +932,7 @@
       </div>
     </section> -->
 
- 
+
 
 
 

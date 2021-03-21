@@ -1557,7 +1557,7 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #e5e5e5;
+  background-color: rgb(20 192 5);
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -3413,7 +3413,7 @@ textarea.form-control {
 
   .header-layout1 .navbar .navbar-brand,
   .header-layout1 .navbar .contact__number {
-    padding: 0 50px;
+    padding: 0 32px;
   }
 
   .header-layout1 .navbar .navbar-collapse {
@@ -3445,7 +3445,11 @@ textarea.form-control {
 
   .navbar .contact__number {
     position: absolute;
-    right: 60px;
+    right: 80px;
+  }
+
+  .navbar .email-head-info {
+    right: 250px;
   }
 
   .navbar .navbar-nav {
@@ -3619,6 +3623,7 @@ textarea.form-control {
     line-height: 28px;
     font-size: 12px;
     margin-right: 8px;
+    color: #ffffff;
     border-width: 1px;
   }
 
@@ -3699,6 +3704,16 @@ textarea.form-control {
     font-size: 12px;
   }
 }
+
+@media (max-width: 640px) {
+  .email-head-info {
+  display: none !important;
+  }}
+
+
+  i.icon-envelope.pulsing-btn {
+    font-size: 15px;
+  }
 
 /* Medium and large Screens */
 @media (min-width: 992px) {
@@ -3849,7 +3864,7 @@ textarea.form-control {
   }
 
   .header-transparent .fixed-navbar .action__btn-request:before {
-    background-color: #1b1a1a;
+    background-color: rgb(20 192 5);
   }
 
   .header-layout1 .navbar-brand {
@@ -6777,19 +6792,6 @@ textarea.form-control {
   z-index: 2;
 }
 
-.contact-panel:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 80px;
-  width: -webkit-calc(100% - 160px);
-  width: -moz-calc(100% - 160px);
-  width: -o-calc(100% - 160px);
-  width: calc(100% - 160px);
-  height: 3px;
-  background-color: #1089ff;
-}
-
 .contact-panel .contact__panel-info {
   flex: 0 0 34%;
   max-width: 34%;
@@ -7105,7 +7107,7 @@ textarea.form-control {
 
 .pricing-item .pricing__price {
   font-family: "Barlow", sans-serif;
-  font-size: 37px;
+  font-size: 25px;
   text-align: center;
   font-weight: 500;
   line-height: 1;
@@ -7124,7 +7126,6 @@ textarea.form-control {
   padding-left: 27px;
   font-size: 14px;
   margin-bottom: 11px;
-  text-transform: capitalize;
 }
 
 .pricing-item .pricing__list li:after {
@@ -7137,8 +7138,8 @@ textarea.form-control {
 }
 
 .pricing-item .btn {
-  height: 55px;
-  line-height: 55px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 1px;
 }
 
@@ -8507,3 +8508,89 @@ background-color: inherit;
 .nav__item.nav__item-btn.d-none.d-md-block span {
   font-size: 15px;
 }
+
+button.btn.btn__primary.mr-40.pulsing-btn-blue {
+  height: 3rem;
+  line-height: inherit;
+}
+
+button.btn.btn__primary.mr-40.pulsing-btn-blue:hover {
+  color: white;
+  animation: animate-green 3s linear infinite;
+}
+
+  
+
+@keyframes animate-green
+{
+  0%
+  {
+      box-shadow: 0 0 0 0 rgb(20 192 5), 0 0 0 0 rgb(20 192 5);
+  }
+  40%
+  {
+      box-shadow: 0 0 0 15px rgba(255,109,74,0), 0 0 0 0 rgb(20 192 5);
+  }
+  80%
+  {
+      box-shadow: 0 0 0 15px rgba(255,109,74,.0), 0 0 0 15px rgba(255,109,74,0);
+  }
+  100%
+  {
+      box-shadow: 0 0 0 0 rgba(255,109,74,.0), 0 0 0 15px rgba(255,109,74,0);
+  }
+}
+
+
+/* POP UP COVID-19 */ 
+
+
+#myModalCovid .modal-dialog {
+position: relative;
+top: 25%;
+}
+
+#myModalCovid .modal-content {
+  background-color: #ffffff;
+}
+
+#myModalCovid .modal-body {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: inherit;
+    
+}
+
+#myModalCovid .intro-1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#myModalCovid .close {
+  color: #1089ff;
+  cursor: pointer;
+}
+
+#myModalCovid .close:hover {
+  color: #1089ff
+}
+
+#myModalCovid .intro-2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#myModalCovid .popup-covid-szoveg {
+  color: #1089ff;
+}
+
+#myModalCovid .btn-primary {
+  color: #ffffff;
+  background-color: rgb(20 192 5);
+  border-color: rgb(20 192 5);
+  font-weight: 700;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
