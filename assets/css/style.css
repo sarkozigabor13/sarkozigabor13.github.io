@@ -7122,6 +7122,33 @@ textarea.form-control {
   color: #1b1a1a;
 }
 
+.pricing-item .pricing__text {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.pricing-item .pricing__text-grey {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1;
+  color: #1b1a1a;
+}
+
+.pricing-item .pricing__text-blue {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1;
+  color: #1089ff;
+}
+
 .pricing-item .pricing__list {
   padding-top: 40px;
   padding-bottom: 30px;
