@@ -5659,7 +5659,7 @@ textarea.form-control {
   height: 100%;
   overflow: hidden;
   border-radius: 4px;
-  background-color: rgba(254, 90, 14, 0.85);
+  background-color: #1088ffcc;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
@@ -8645,3 +8645,17 @@ top: 25%;
 .klimaurlapok{
     max-width: 767px;
 }}
+
+.bg-img-position-change {
+  background-position: center 39% !important;
+}
+
+.introduction-text {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.signature-img {
+  text-align: left;
+  max-width: 250px;
+}
