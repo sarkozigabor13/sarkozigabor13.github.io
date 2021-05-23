@@ -8659,3 +8659,33 @@ top: 25%;
   text-align: left;
   max-width: 250px;
 }
+
+@media (min-width: 992px) {
+  .min-height-priceitem {
+min-height: 60rem;
+  }}
+
+@media (min-width: 1200px) { 
+  .min-height-priceitem {
+    min-height: 50rem;
+  }}
+
+@media (min-width: 992px) {
+  .min-height-priceitem-gepesz {
+min-height: 45rem;
+  }}
+
+@media (min-width: 1200px) { 
+  .min-height-priceitem-gepesz {
+    min-height: 41rem;
+  }}
+
+@media (min-width: 992px) {
+  .min-height-priceitem-hoszivattyu {
+min-height: 52rem;
+  }}
+
+@media (min-width: 1200px) { 
+  .min-height-priceitem-hoszivattyu {
+    min-height: 48rem;
+  }}
