@@ -5085,8 +5085,9 @@ textarea.form-control {
   transform: scale(1.1);
 }
 
-.portfolio-item .portfolio__content {
-  padding-top: 26px;
+.portfolio__content {
+  /* padding-top: 26px; */
+  padding: 40px 0;
 }
 
 .portfolio-item .portfolio__cat a {
@@ -5112,13 +5113,14 @@ textarea.form-control {
   display: none;
 }
 
-.portfolio-item .portfolio__title {
-  font-size: 21px;
+.portfolio__title {
+  font-size: 21px !important;
   margin-bottom: 11px;
+  color: #1b1a1a !important;
 }
 
 .portfolio-item .portfolio__title a {
-  color: #1b1a1a;
+  color: #1b1a1a !important;
 }
 
 .portfolio-item .portfolio__title a:hover {
@@ -8688,3 +8690,12 @@ min-height: 52rem;
   .min-height-priceitem-hoszivattyu {
     min-height: 48rem;
   }}
+
+  .logo-gree-download:hover {
+    background-image: url(/assets/images/logo/gree_svg_logo.svg);
+    background-size: cover;
+  }
+
+  .product-price {
+    color: #007bff;
+  }
