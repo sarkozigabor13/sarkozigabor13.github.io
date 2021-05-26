@@ -1133,6 +1133,9 @@ select {
 .bg-overlay-2:before {
   background-color: rgba(27, 26, 26, 0.1);
 }
+.bg-overlay-product:before {
+  background-color: #1089ffc9;
+}
 
 .bg-overlay-3:before {
   background-color: rgba(27, 26, 26, 0.05);
@@ -2105,6 +2108,9 @@ textarea.form-control {
 }
 
 .icon-arrow-right {
+  font-size: 65%;
+}
+.icon-arrow-left {
   font-size: 65%;
 }
 
@@ -8698,4 +8704,17 @@ min-height: 52rem;
 
   .product-price {
     color: #007bff;
+  }
+
+  .product-single-name {
+    font-size: 1.5rem;
+    color: #1089ff;
+  }
+  .product-single-price {
+    font-size: 1.5rem;
+    color: #1089ff;
+  }
+
+  .no-border {
+    border: none !important;
   }
