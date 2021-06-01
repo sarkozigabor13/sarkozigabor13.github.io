@@ -8718,3 +8718,26 @@ min-height: 52rem;
   .no-border {
     border: none !important;
   }
+
+
+  
+/* MODAL ADATKEZELES */
+
+#modalAdatkezelesLink {
+  cursor: pointer;
+}
+#modalAdatkezeles {
+  background: rgb(95,159,222);
+  background: linear-gradient(336deg, rgba(95,159,222,1) 0%, rgba(16,137,255,1) 50%);
+}
+#modalAdatkezeles .modal-title {
+color: rgba(16,137,255,1);
+}
+#modalAdatkezeles .close{
+color: rgba(16,137,255,1);
+font-size: 25px;
+}
+#modalAdatkezeles .modal-footer .btn{
+height: 40px;
+line-height: 40px;
+}
