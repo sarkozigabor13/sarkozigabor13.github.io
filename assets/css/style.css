@@ -1528,7 +1528,7 @@ h6 {
   line-height: 65px;
   text-align: center;
   padding: 0 15px;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
   border: 0;
   border-radius: 3px;
   overflow: hidden;
@@ -2866,13 +2866,13 @@ textarea.form-control {
 }
 
 .navbar .nav__item .nav__item-link {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   display: block;
   position: relative;
   color: #1b1a1a;
   line-height: 75px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
 }
 
 .navbar .nav__item .nav__item-link:before {
@@ -5120,7 +5120,7 @@ textarea.form-control {
 }
 
 .portfolio__title {
-  font-size: 21px !important;
+  font-size: 17px !important;
   margin-bottom: 11px;
   color: #1b1a1a !important;
 }
@@ -6780,9 +6780,10 @@ textarea.form-control {
 
 .contact__number a {
   font-family: "Barlow", sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
+  letter-spacing: 0.3px;
 }
 
 .contact-panel {
@@ -8548,7 +8549,7 @@ background-color: inherit;
 }
 
 .nav__item.nav__item-btn.d-none.d-md-block span {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 button.btn.btn__primary.mr-40.pulsing-btn-blue {
@@ -8704,6 +8705,7 @@ min-height: 52rem;
 
   .product-price {
     color: #007bff;
+    font-size: 19px;
   }
 
   .product-single-name {
@@ -8740,4 +8742,33 @@ font-size: 25px;
 #modalAdatkezeles .modal-footer .btn{
 height: 40px;
 line-height: 40px;
+}
+
+/* Check List */ 
+
+.check-list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 8px;
+    height: 17px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    border-color: #1089ff;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
 }
