@@ -24,8 +24,8 @@
  */
 
  :root {
-    --pureWhite:           #fff;
-    --black:               rgb(10, 10, 10);
+    --white:           #fff;
+    --black:               #000;
     --color-main:          #0466C8;
     --color-second:        #023E7D;
     --color-dark:          #001233;
@@ -36,7 +36,7 @@
     --color-green:         #26e436;
     --color-light:         #26c5f3;
     --color-red:           red;
-    --sage:                #D2CCA1;
+    --aliceblue:           aliceblue;
     --paleSpringBud:       #DEDABA;
     --goldCrayola:         #E5C687;
     --richBlackForeground: #0F1A20;
@@ -54,21 +54,15 @@
 
 
 .light-theme {
-    --mainBackground:                   var(--pureWhite);
-    --themeDropDownBg:          var(--goldCrayola);
-    --themeIconBorderColor:     var(--sage);
-    --navBg:                    var(--sage);
-    --navLinkHoverBg:           var(--paleSpringBud);
+    --mainBackground:           var(--white);
     --fontColor:                var(--black);
+    --offCanvasBackground:      var(--aliceblue);
   }
   
   .dark-theme {
-    --mainBackground:                   var(--black);
-    --themeDropDownBg:          var(--msuGreen);
-    --themeIconBorderColor:     var(--richBlackForeground);
-    --navBg:                    var(--richBlackForeground);
-    --navLinkHoverBg:           var(--msuGreen);
+    --mainBackground:           var(--black);
     --fontColor:                var(--white);
+    --offCanvasBackground:      var(--aliceblue);
   }
 
 /*-----------------------------------------------
@@ -5007,22 +5001,28 @@ fieldset:disabled .btn {
 }
 
 .navbar {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
+    position:           relative;
+    display:            -webkit-box;
+    display:            -ms-flexbox;
+    display:            flex;
+    -ms-flex-wrap:      wrap;
+    flex-wrap:          wrap;
+    -webkit-box-align:  center;
+    -ms-flex-align:     center;
+    align-items:        center;
+    -webkit-box-pack:   justify;
+    -ms-flex-pack:      justify;
+    justify-content:    space-between;
+    padding-top:        0.5rem;
+    padding-right:      1rem;
+    padding-bottom:     0.5rem;
+    padding-left:       1rem;
+}
+
+.mobile-nav .navbar-mobile {
+    background-color:       var(--white);
+    -webkit-box-shadow:     0 25px 45px rgb(79 86 101 / 8%);
+    box-shadow:             0 25px 45px rgb(79 86 101 / 8%);
 }
 
 .navbar>.container,
@@ -5380,7 +5380,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.95);
+    color:      var(--fontColor);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -6380,10 +6380,10 @@ fieldset:disabled .btn {
     height: 1em;
     padding: 0.25em 0.25em;
     color: #000;
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     border: 0;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 0.25rem;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .btn-close:hover {
@@ -18656,6 +18656,76 @@ label {
 -----------------------------------------------*/
 
 .dark-theme nav {
-    background:                       var(--mainBackground) !important;
+    background:            var(--mainBackground) !important;
 }
 
+
+/* -------------------------------------------------------------------------- */
+
+/*                            Offcanvas mobile                                */
+
+/* -------------------------------------------------------------------------- */
+
+
+body.offcanvas-active{
+	overflow:               hidden;
+}
+
+.offcanvas-header{ 
+    display:                none; 
+}
+
+.screen-darken{
+	height:                 100%;
+	width:                  0%;
+	z-index:                30;
+	position:               fixed;
+	top:                    0;
+	right:                  0;
+	opacity:                0;
+	visibility:             hidden;
+	background-color:       rgba(34, 34, 34, 0.6);
+	transition:             opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:            1031; 
+	transition:         opacity .3s ease, width 0s;
+    opacity:            1;
+    width:              100%;
+    visibility:         visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+	
+	.offcanvas-header{ 
+        display:        block; 
+    }
+
+	.mobile-offcanvas{
+        background:     var(--offCanvasBackground);
+		visibility:     hidden;
+		transform:      translateX(100%);
+	    border-radius:  0; 
+		display:        block;
+	    position:       fixed;
+	    top:            0; 
+        right:          0;
+	    height:         100%;
+	    z-index:        1200;
+	    width:          80%;
+	    overflow-x:     hidden;
+	    transition:     visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+
+	.mobile-offcanvas.show{
+		visibility:     visible;
+    	transform:      translateX(0);
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display:        block;
+	}
+
+}	
+/* ============ mobile view .end// ============ */

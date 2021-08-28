@@ -1,8 +1,13 @@
 --------------- Ref sites ----------------
 
+Articles
 
 https://designmodo.com/create-style-guides/
 
+
+Main page
+
+https://designmodo.com/
 
 
 
@@ -11,3 +16,4 @@ https://designmodo.com/create-style-guides/
 
 
 - Make animatios to the page. 
+- Make cookie store to the page. 
