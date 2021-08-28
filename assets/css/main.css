@@ -24,7 +24,10 @@
  */
 
  :root {
-    --white:           #fff;
+
+    /*---------- Colors -------------*/ 
+
+    --white:               #fff;
     --black:               #000;
     --color-main:          #0466C8;
     --color-second:        #023E7D;
@@ -35,16 +38,31 @@
     --color-strong:        #b429f9;
     --color-green:         #26e436;
     --color-light:         #26c5f3;
-    --color-red:           red;
+    --color-red:           #ff0000;
     --aliceblue:           aliceblue;
     --paleSpringBud:       #DEDABA;
     --goldCrayola:         #E5C687;
     --richBlackForeground: #0F1A20;
     --msuGreen:            #2D4739;
     --gray:                #eee;
-    --bs-font-sans-serif:   "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --bs-font-monospace:    "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient:          linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+
+    --windowTopLight:      #ECECEC;
+    --windowTopDark:       #202020;
+    --windowTopTextLight:  #333333;
+    --windowTopTextDark:   #b1b1b3;
+    --windowListLight:     #7ABFDB;
+    --windowListDark:      #717171;
+
+    /*---------- Fonts -------------*/ 
+
+    --mainFont:             'General Sans', sans-serif;
+
+    /*---------- Box-shadow --------*/ 
+
+    --boxShadow:             0 1rem 3rem rgba(0,0,0,.175)!important;
+
+
 }
 
 
@@ -57,12 +75,32 @@
     --mainBackground:           var(--white);
     --fontColor:                var(--black);
     --offCanvasBackground:      var(--aliceblue);
+
+             
+/*----------  Code editor colors --------*/ 
+
+    --editorBackground:         var(--white);
+    --editorWindowTop:          var(--windowTopLight);
+    --editorWindowText:         var(--editorWindowTextLight);
+    --windowListText:           var(--windowListLight);
+
+
+
   }
   
   .dark-theme {
     --mainBackground:           var(--black);
     --fontColor:                var(--white);
     --offCanvasBackground:      var(--aliceblue);
+    
+
+/*----------  Code editor colors --------*/ 
+
+    --editorBackground:         var(--black);
+    --editorWindowTop:          var(--windowTopDark);
+    --editorWindowText:         var(--editorWindowText);
+    --windowListText:           var(--windowListDark);
+
   }
 
 /*-----------------------------------------------
@@ -121,7 +159,7 @@
 
 body {
     margin:                           0;
-    font-family:                      "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:                      var(--mainFont);
     font-size:                        1rem;
     font-weight:                      400;
     line-height:                      1.5;
@@ -150,10 +188,10 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-top:         0;
     margin-bottom:      0.5rem;
-    font-family:        "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:        var(--mainFont);
     font-weight:        500;
     line-height:        1.2;
-    color:            #242F51;
+    color:              var(--fontColor);
 }
 
 h1,
@@ -6833,7 +6871,7 @@ fieldset:disabled .btn {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6959,7 +6997,7 @@ fieldset:disabled .btn {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -17717,7 +17755,7 @@ label,
 .pagination,
 .valid-feedback,
 .invalid-feedback {
-    font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
 }
 
 pre {
@@ -17836,11 +17874,11 @@ label {
 -----------------------------------------------*/
 
 .font-sans-serif {
-    font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
 }
 
 .font-base {
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
 }
 
 /*-----------------------------------------------
@@ -18389,7 +18427,7 @@ label {
 .terms-sidebar .nav-link {
     color: #CDCCD1;
     font-weight: 500;
-    font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--mainFont);
 }
 
 .terms-sidebar .nav-link.active {

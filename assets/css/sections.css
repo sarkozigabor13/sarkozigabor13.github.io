@@ -171,18 +171,19 @@
   }
   
   .window-editor-layout {
-    width:                700px;
-    height:               500px;
+    width:                auto;
+    height:               auto;
     margin:               auto;
-    background-color:   #000;
-    box-shadow:           0 0 25px -7px #000;
+    background-color:     var(--editorBackground);
+    box-shadow:           var(--boxShadow);
+    border-radius:        0 0 10px 10px;
   }
   
   .window-editor-layout .window-top {
     display:              flex;
     align-items:          center;
     height:               30px;
-    background-color:   #202020;
+    background-color:     var(--editorWindowTop);
   }
   
   .window-editor-layout .window__controls {
@@ -197,21 +198,22 @@
   }
   
   .window-editor-layout .window__controls span:nth-child(1) {
-    background-color:   #b22222;
+    background-color:   #ff0000;
   }
   
   .window-editor-layout .window__controls span:nth-child(2) {
-    background-color:   #d6bf3e;
+    background-color:   #ffcc00;
   }
   
   .window-editor-layout .window__controls span:nth-child(3) {
-    background-color:   #4db434;
+    background-color:   #36dc0e;
   }
   
   .window-editor-layout.window-editor-layout .window__title {
     flex:                 1;
     text-align:           center;
-    color:              #b1b1b3;
+    color:                var(--editorWindowText);
+    border-radius:        10px 10px 0 0;
   }
   
   .window-editor-layout .window-main {
@@ -233,6 +235,7 @@
     content:              counter(item) "  ";
     counter-increment:    item;
     padding:              0 10px;
+    color:                var(--windowListText);
   }
   
   .window-editor-layout .tag {
