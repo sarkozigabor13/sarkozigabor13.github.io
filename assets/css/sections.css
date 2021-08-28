@@ -1,0 +1,601 @@
+/* -------------------------------------------------------------------------- */
+
+/*                                sections.css                                */
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/*
+ *
+ * This file contain the base of each section: 
+ *
+ * Code Editor Layout................base style of code editor.
+ * Toggle switch theme...............base style of toggle chechbox.
+ *
+ */
+  
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                              Code Editor Layout                            */
+
+/* -------------------------------------------------------------------------- */
+
+
+.window-editor-layout ul,ol {
+    list-style-type:      none;
+    margin:               0;
+    padding:              0;
+  }
+  
+  .window-editor-layout {
+    width:                700px;
+    height:               500px;
+    margin:               auto;
+    background-color:   #000;
+    box-shadow:           0 0 25px -7px #000;
+  }
+  
+  .window-editor-layout .window-top {
+    display:              flex;
+    align-items:          center;
+    height:               30px;
+    background-color:   #202020;
+  }
+  
+  .window-editor-layout .window__controls {
+    display:              inline-flex;
+  }
+  
+  .window-editor-layout .window__controls span {
+    width:                15px;
+    height:               15px;
+    margin-left:          10px;
+    border-radius:        50%;
+  }
+  
+  .window-editor-layout .window__controls span:nth-child(1) {
+    background-color:   #b22222;
+  }
+  
+  .window-editor-layout .window__controls span:nth-child(2) {
+    background-color:   #d6bf3e;
+  }
+  
+  .window-editor-layout .window__controls span:nth-child(3) {
+    background-color:   #4db434;
+  }
+  
+  .window-editor-layout.window-editor-layout .window__title {
+    flex:                 1;
+    text-align:           center;
+    color:              #b1b1b3;
+  }
+  
+  .window-editor-layout .window-main {
+    padding:              0.5em;
+    color:              #4e4e4e;
+    text-align:           left;
+  }
+  
+  .window-editor-layout .window-main ol {
+    counter-reset:        item;
+    font-family:          "Source Code Pro", monospace;
+  }
+  
+  .window-editor-layout .window-main ol li {
+    margin-bottom:        3px;
+  }
+  
+  .window-editor-layout .window-main ol li:before {
+    content:              counter(item) "  ";
+    counter-increment:    item;
+    padding:              0 10px;
+  }
+  
+  .window-editor-layout .tag {
+    color:              #4d86b9;
+  }
+  
+  .window-editor-layout .attr {
+    color:              #8dc6e3;
+  }
+  
+  .window-editor-layout .val {
+    color:              #c58b74;
+  }
+  
+  .window-editor-layout .text {
+    color:              #d4d4d4;
+  }
+  
+  .window-editor-layout .comment {
+    color:              #517343;
+  }
+  
+  @media only screen and (max-width: 601px) {
+  
+      .window-editor-layout .window {
+          width:              350px;
+          height:             350px;
+          font-size:          0.65em;
+      }
+  
+      .window-editor-layout.window__controls span {
+          width:              10px;
+          height:             10px;
+          margin-left:        5px;
+      }
+  
+      .window-editor-layout .window-main ol li:before {
+          padding:            0;
+      }
+  }
+  
+  .window-editor-layout .line {
+      display:            contents;
+  }
+  
+  
+  
+  /* -------------------------------------------------------------------------- */
+  
+  /*                             Dark / Light switch                            */
+  
+  /* -------------------------------------------------------------------------- */
+  
+  
+  
+  .toggle {
+    display:                        flex;
+  }
+  
+  .toggle label {
+    position:                       relative;
+    display:                        inline-block;
+    width:                          45px;
+    height:                         25px;
+    background-color:               #e1e1e1;
+    border-radius:                  50px;
+    transition:                     all 0.3s ease-in-out;
+    cursor:                         pointer;
+    box-shadow:                     inset 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color:    transparent;
+    margin-bottom:                  0;
+  }
+  
+  .toggle label:before {
+    content:                        "";
+    position:                       absolute;
+    top:                            2px;
+    left:                           2px;
+    height:                         22px;
+    width:                          22px;
+    background-color:               #fff;
+    border-radius:                  46px;
+    box-shadow:                     1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition:                     box-shadow 0.3s ease-in-out;
+    animation:                      moveLeft 0.3s ease-in-out;
+  }
+  
+  .toggle input {
+    display:                        none;
+  }
+  
+  .toggle input:checked + label {
+    background-color:               #57de72;
+  }
+  
+  .toggle input:checked + label:before {
+    transform:                      translateX(20px);
+    box-shadow:                     -1px -1px 5px rgba(0, 0, 0, 0.1);
+    animation:                      moveRight 0.3s ease-in-out;
+  }
+  @keyframes moveRight {
+    0% {
+        width:                      23px;
+        transform:                  translateX(0);
+   }
+    45% {
+        width:                      26px;
+   }
+    100% {
+        width:                      23px;
+        transform:                  translateX(20px);
+   }
+  }
+  @keyframes moveLeft {
+    0% {
+        width:                      23px;
+        transform:                  translateX(20px);
+   }
+    45% {
+        width:                      26px;
+   }
+    100% {
+        width:                      23px;
+        transform:                  translateX(0);
+   }
+  }
+  
+
+/* -------------------------------------------------------------------------- */
+  
+/*                             Main theme swticher                            */
+  
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* Radio Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* input[type=radio] {
+	position:               absolute;
+	visibility:             hidden;
+} */
+
+label { 
+	cursor:                 pointer; 
+	font-weight:            400;
+}
+
+.check {
+	width:                  30px; 
+    height:                 30px;
+	position:               absolute;
+	border-radius:          50%;
+	transition:             transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Reset */
+input#one ~ .check { 
+	transform:              translate(-8px, -25px); 
+	background:             black; 
+}
+input#two ~ .check { 
+	transform:              translate(-50px, -83px); 
+	background:             var(--primary-c);
+	box-shadow:             0 6px 12px rgba(33, 150, 243, 0.35);
+}
+
+/* Radio Input #1 */
+input#one:checked ~ .check { transform: translate(-50px, 33px); }
+
+/* Radio Input #2  */
+input#two:checked ~ .check { transform: translate(-50px, -25px); }
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                                 Google dots                                */
+  
+/* -------------------------------------------------------------------------- */
+
+@keyframes fade {
+    0%, 50% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes dot-anim {
+    0% {
+        top: -4vw;
+    }
+    50% {
+        top: 4vw;
+    }
+    100% {
+        top: -4vw;
+    }
+}
+@keyframes checked-radio-3 {
+    0% {
+        top: -10vw;
+        transform: scale(0);
+    }
+    100% {
+        top: 0;
+        transform: scale(1);
+    }
+}
+@keyframes unchecked-radio-3 {
+    0% {
+        bottom: 0;
+        transform: scale(1);
+    }
+    100% {
+        bottom: -10vw;
+        transform: scale(0);
+    }
+}
+@keyframes checked-radio-4 {
+    0% {
+        transform: rotate(0) translateY(-4.8vw) scale(.2);
+    }
+    83% {
+        transform: rotate(360deg) translateY(-2.5vw) scale(1);
+        transform-origin: 2vw;
+    }
+    88% {
+        transform: translateY(.6vw) scale(1);
+    }
+    93% {
+        transform: translateY(-.9vw) scale(1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes unchecked-radio-4 {
+    25% {
+        top: -6.5vw;
+    }
+    50% {
+        top: 9vw;
+    }
+    75% {
+        top: -10vw;
+    }
+    100% {
+        top: -10vw;
+        transform: scale(0);
+    }
+}
+
+
+
+label {
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.6s;
+}
+.radio:checked + label {
+    animation-play-state: paused;
+}
+label:before {
+    content: "";
+    position: absolute;
+    margin: 0.6vw;
+    width: 1.75vw;
+    height: 1.75vw;
+    background: white;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0 0 .8vw 0, rgba(0, 0, 0, 0.239216) 0 .8vw .8vw 0;
+    transition: all .2s;
+}
+label:hover:before {
+    box-shadow: rgba(0, 0, 0, 0.0784314) 0 0 1vw 0, rgba(0, 0, 0, 0.239216) 0 1vw 1vw 0;
+}
+label:after {
+    content: "";
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    transform: scale(0);
+}
+.radio:checked + label:after {
+    background: transparent;
+    transition: all .5s;
+    transform: scale(1);
+}
+/**** BLUE Radio button code ****/
+#radio-1 + label {
+    left: -60vw;
+    background: #4285F4;
+    animation-delay: 0s;
+}
+#radio-1 + label:before {
+    transform: scale(0);
+}
+#radio-1:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+/**** YELLOW radio button code ****/
+#radio-3 + label {
+    left: -60vw;
+    background: #FBBC05;
+    animation-delay: 0s;
+}
+#radio-3 + label:before {
+    /* background: #E91E63; */
+    transform: scale(0);
+}
+#radio-3:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+/**** GREEN radio button code ****/
+#radio-4 + label {
+    left: -60vw;
+    background: #34A853;
+    animation-delay: 0s;
+}
+#radio-4 + label:before {
+    /* background: #E91E63; */
+    transform: scale(0);
+}
+#radio-4:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+[type="radio"] {
+    display: none;
+} 
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                              Switcher badge                                */
+  
+/* -------------------------------------------------------------------------- */
+
+
+.form-wrapper {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.5);
+}
+.form-wrapper p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+.form-wrapper form {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+}
+.form-wrapper form label {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 10px 0;
+}
+.form-wrapper form label input[type="radio"] {
+    position: relative;
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 15px;
+    font-size: 12px;
+    float: left;
+    z-index: 1;
+}
+.form-wrapper form label input[type="radio"]:checked + div span {
+    position: absolute;
+    display: inline-block;
+    left: 100%;
+    top: -5px;
+    margin: 0 0 0 20px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(34, 34, 34, 0.2);
+    clear: both;
+    visibility: visible;
+    transform: translateX(0px);
+    transition: transform 200ms ease;
+}
+.form-wrapper form label input[type="radio"]:checked + div span:before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -1px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(34, 34, 34, 0.9);
+    transform: rotate(45deg);
+}
+.form-wrapper form label div {
+    position: relative;
+    display: inline-block;
+}
+.form-wrapper form label div span {
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: transform 200ms ease;
+}
+.form-wrapper form label:nth-of-type(1) input[type="radio"]:checked + div span {
+    background-color: #2ecc71;
+}
+.form-wrapper form label:nth-of-type(1) input[type="radio"]:checked + div span:before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(46, 204, 113, 0.9);
+}
+.form-wrapper form label:nth-of-type(2) input[type="radio"]:checked + div span {
+    background-color: #3498db;
+}
+.form-wrapper form label:nth-of-type(2) input[type="radio"]:checked + div span:before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(52, 152, 219, 0.9);
+}
+.form-wrapper form label:nth-of-type(3) input[type="radio"]:checked + div span {
+    background-color: #f1c40f;
+}
+.form-wrapper form label:nth-of-type(3) input[type="radio"]:checked + div span:before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(241, 196, 15, 0.9);
+}
+.form-wrapper form label:nth-of-type(4) input[type="radio"]:checked + div span {
+    background-color: #9b59b6;
+}
+.form-wrapper form label:nth-of-type(4) input[type="radio"]:checked + div span:before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(155, 89, 182, 0.9);
+}
+.form-wrapper form label:nth-of-type(5) input[type="radio"]:checked + div span {
+    background-color: #e74c3c;
+}
+.form-wrapper form label:nth-of-type(5) input[type="radio"]:checked + div span:before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(231, 76, 60, 0.9);
+}
+.form-wrapper form button {
+    position: relative;
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.form-wrapper form button:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #9b59b6;
+    border-radius: 5px;
+    transition: height, 250ms ease;
+    z-index: -1;
+}
+.form-wrapper form button:hover {
+    box-shadow: 0 0 10px rgba(34, 34, 34, 0.3);
+}
+.form-wrapper form button:hover:before {
+    height: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                              Theme switches                                */
+  
+/* -------------------------------------------------------------------------- */
+
