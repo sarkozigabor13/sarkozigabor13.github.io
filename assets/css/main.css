@@ -46,6 +46,8 @@
     --msuGreen:            #2D4739;
     --gray:                #eee;
 
+    
+    /*--------- Code editor ------*/ 
 
     --windowTopLight:      #ECECEC;
     --windowTopDark:       #202020;
@@ -62,6 +64,9 @@
 
     --boxShadow:             0 1rem 3rem rgba(0,0,0,.175)!important;
 
+    /*---------- Backgrounds -------*/ 
+
+    --backgroundLight:       linear-gradient(180deg, rgba(236,240,253,0) 0%, rgba(236,240,253,0.53) 14.32%, #ECF0FD 45.83%, rgba(236,240,253,0.43) 84.33%, rgba(236,240,253,0) 100%);      
 
 }
 
@@ -83,6 +88,11 @@
     --editorWindowTop:          var(--windowTopLight);
     --editorWindowText:         var(--editorWindowTextLight);
     --windowListText:           var(--windowListLight);
+    --windowText:               var(--black);
+
+/*--------------- Backgrounds ----------*/ 
+
+    --backgroundFirstSection:  var(--backgroundLight);
 
 
 
@@ -100,6 +110,12 @@
     --editorWindowTop:          var(--windowTopDark);
     --editorWindowText:         var(--editorWindowText);
     --windowListText:           var(--windowListDark);
+    --windowText:               var(--white);
+
+    
+/*--------------- Backgrounds ----------*/ 
+
+    --backgroundFirstSection:  var(--black);
 
   }
 
@@ -3644,15 +3660,15 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #2500F9;
-    border-color: #2500F9;
+    color: var(--fontColor);
+    background-color: var(--mainBackground);
+    border-color: var(--mainBackground);
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #1f00d4;
-    border-color: #1e00c7;
+    color: var(--fontColor);
+    background-color: var(--mainBackground);
+    border-color: var(--mainBackground);
 }
 
 .btn-check:focus+.btn-primary,
@@ -5501,20 +5517,21 @@ fieldset:disabled .btn {
 }
 
 .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.625rem;
+    position:               relative;
+    display:                -webkit-box;
+    display:                -ms-flexbox;
+    display:                flex;
+    -webkit-box-orient:     vertical;
+    -webkit-box-direction:  normal;
+    -ms-flex-direction:     column;
+    flex-direction:         column;
+    min-width:              0;
+    word-wrap:              break-word;
+    background-color:       #fff;
+    background-clip:        border-box;
+    border:                 none;
+    border-radius:          0.625rem;
+    box-shadow:             var(--boxShadow);
 }
 
 .card>hr {
@@ -18767,3 +18784,4 @@ body.offcanvas-active{
 
 }	
 /* ============ mobile view .end// ============ */
+

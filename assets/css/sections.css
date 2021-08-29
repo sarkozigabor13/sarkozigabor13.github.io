@@ -11,7 +11,10 @@
  * This file contain the base of each section: 
  *
  * Navbar Logo Name..................base style of dynamic logo. 
+ * Dark/Light switch.................base style of themes. 
+ * Mobile menu.......................base style of mobile menu. 
  * Code Editor Layout................base style of code editor.
+ * Section swticher..................base style of section swicher.
  * Toggle switch theme...............base style of toggle chechbox.
  *
  */
@@ -27,8 +30,6 @@
 .logo-name {
     color: var(--fontColor);
 }
-
-
 
 
 /* -------------------------------------------------------------------------- */
@@ -112,15 +113,15 @@
 
 /* -------------------------------------------------------------------------- */
   
-/*                              Mobile menu squares                              */
+/*                             Mobile menu squares                            */
   
 /* -------------------------------------------------------------------------- */
 
 
   .squares {
-      border:       none;
-      opacity:      1;
-      background:   transparent;
+    border:       none;
+    opacity:      1;
+    background:   transparent;
   }
   
   .square, .square:before, .square:after {
@@ -251,7 +252,7 @@
   }
   
   .window-editor-layout .text {
-    color:              #d4d4d4;
+    color:                var(--windowText);
   }
   
   .window-editor-layout .comment {
@@ -281,24 +282,91 @@
       display:            contents;
   }
   
-  
-  
-  
-  
 
 /* -------------------------------------------------------------------------- */
   
-/*                             Main theme swticher                            */
+/*                              Section swticher                              */
   
 /* -------------------------------------------------------------------------- */
 
+.c-details span {
+  font-weight:    300;
+  font-size:      13px
+}
 
+.badge span {
+  background-color:   red;
+  width:                60px;
+  height:               25px;
+  border-radius:        5px;
+  display:              flex;
+  color:              white;
+  justify-content:      center;
+  align-items:          center
+}
 
+.progress {
+  height:               10px;
+  border-radius:        10px
+}
+
+.progress div {
+  background-color:   red
+}
+
+.text1 {
+  font-size:           14px;
+  font-weight:         600
+}
+
+.text2 {
+  color:             #a5aec0
+}
 
 
 /* Radio Button
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* input[type=radio] {
+ 
+.switch-btn {
+  display:              block;
+  background-color:     transparent;
+  border:               0;
+  margin-right:         .5rem;
+}
+
+.switch-btn button {
+  border-radius:        50%;
+  width:                2rem;
+  height:               2rem;
+  border:               none;
+  box-shadow:           var(--boxShadow);
+}
+
+.switch-btns #light {
+  background:       rgb(245,0,0);
+  background:         -moz-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  background:         -webkit-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  background:         linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#f50000",endColorstr="#d27919",GradientType=1);
+}
+
+.switch-btns #dark {
+  background:       rgb(17,126,207);
+  background:       -moz-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  background:       -webkit-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  background:       linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  filter:           progid:DXImageTransform.Microsoft.gradient(startColorstr="#117ecf",endColorstr="#012c2f",GradientType=1);
+}
+
+.switch-btns #solar {
+  background:     rgb(43,244,6);
+  background:       -moz-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  background:       -webkit-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  background:       linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  filter:           progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bf406",endColorstr="#9ac3a7",GradientType=1);
+}
+
+input[type=radio] {
 	position:               absolute;
 	visibility:             hidden;
 } 
@@ -316,7 +384,6 @@ label {
 	transition:             transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-*/
 
 /* Reset */
 input#one ~ .check { 
@@ -338,168 +405,11 @@ input#two:checked ~ .check { transform: translate(-50px, -25px); }
 
 /* -------------------------------------------------------------------------- */
   
-/*                                 Google squares                                */
+/*                                 Google dots                                */
   
 /* -------------------------------------------------------------------------- */
 
-/* @keyframes fade {
-    0%, 50% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-@keyframes square-anim {
-    0% {
-        top: -4vw;
-    }
-    50% {
-        top: 4vw;
-    }
-    100% {
-        top: -4vw;
-    }
-}
-@keyframes checked-radio-3 {
-    0% {
-        top: -10vw;
-        transform: scale(0);
-    }
-    100% {
-        top: 0;
-        transform: scale(1);
-    }
-}
-@keyframes unchecked-radio-3 {
-    0% {
-        bottom: 0;
-        transform: scale(1);
-    }
-    100% {
-        bottom: -10vw;
-        transform: scale(0);
-    }
-}
-@keyframes checked-radio-4 {
-    0% {
-        transform: rotate(0) translateY(-4.8vw) scale(.2);
-    }
-    83% {
-        transform: rotate(360deg) translateY(-2.5vw) scale(1);
-        transform-origin: 2vw;
-    }
-    88% {
-        transform: translateY(.6vw) scale(1);
-    }
-    93% {
-        transform: translateY(-.9vw) scale(1);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-    }
-}
-@keyframes unchecked-radio-4 {
-    25% {
-        top: -6.5vw;
-    }
-    50% {
-        top: 9vw;
-    }
-    75% {
-        top: -10vw;
-    }
-    100% {
-        top: -10vw;
-        transform: scale(0);
-    }
-}
 
-
-
-label {
-    display: inline-block;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.6s;
-}
-.radio:checked + label {
-    animation-play-state: paused;
-}
-label:before {
-    content: "";
-    position: absolute;
-    margin: 0.6vw;
-    width: 1.75vw;
-    height: 1.75vw;
-    background: white;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.117647) 0 0 .8vw 0, rgba(0, 0, 0, 0.239216) 0 .8vw .8vw 0;
-    transition: all .2s;
-}
-label:hover:before {
-    box-shadow: rgba(0, 0, 0, 0.0784314) 0 0 1vw 0, rgba(0, 0, 0, 0.239216) 0 1vw 1vw 0;
-}
-label:after {
-    content: "";
-    position: absolute;
-    width: 3vw;
-    height: 3vw;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 50%;
-    transform: scale(0);
-}
-.radio:checked + label:after {
-    background: transparent;
-    transition: all .5s;
-    transform: scale(1);
-} */
-/**** BLUE Radio button code ****/
-#radio-1 + label {
-    left: -60vw;
-    background: #4285F4;
-    animation-delay: 0s;
-}
-#radio-1 + label:before {
-    transform: scale(0);
-}
-#radio-1:checked + label:before {
-    transform: scale(1);
-    transition: all .4s;
-}
-
-/**** YELLOW radio button code ****/
-#radio-3 + label {
-    left: -60vw;
-    background: #FBBC05;
-    animation-delay: 0s;
-}
-#radio-3 + label:before {
-    /* background: #E91E63; */
-    transform: scale(0);
-}
-#radio-3:checked + label:before {
-    transform: scale(1);
-    transition: all .4s;
-}
-/**** GREEN radio button code ****/
-#radio-4 + label {
-    left: -60vw;
-    background: #34A853;
-    animation-delay: 0s;
-}
-#radio-4 + label:before {
-    /* background: #E91E63; */
-    transform: scale(0);
-}
-#radio-4:checked + label:before {
-    transform: scale(1);
-    transition: all .4s;
-}
-[type="radio"] {
-    display: none;
-} 
 
 
 /* -------------------------------------------------------------------------- */
@@ -725,4 +635,13 @@ label:after {
 
 
 
+/* -------------------------------------------------------------------------- */
   
+/*                               Backgrounds                                  */
+  
+/* -------------------------------------------------------------------------- */
+
+.bg-gradient-sections {
+
+  background:   var(--backgroundFirstSection);
+}

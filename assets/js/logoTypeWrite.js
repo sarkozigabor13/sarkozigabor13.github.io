@@ -101,3 +101,45 @@
       .start();
 
  })();
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                          Typewrite in code editor                          */
+
+/* -------------------------------------------------------------------------- */
+
+
+(function() {
+      
+  const TextEditor = document.getElementById('appTextEditor');
+  const TextEditorNext = document.getElementById('appTextEditorTwo');
+
+
+  const typewriteTextEditor = new Typewriter(TextEditor, {
+    loop: false,
+    delay: 150,    
+  });
+
+  typewriteTextEditor
+  .pauseFor(2500)
+  .typeString('Milyen címet írjak?')
+  .pauseFor(1200)
+  .start();
+  
+
+  const typewriteTextEditorNexT = new Typewriter(TextEditorNext, {
+    loop: false,
+    delay: 150,
+  });
+  
+  typewriteTextEditorNexT 
+    .pauseFor(3850)
+    .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"scripts/script.js</span>&gt;&lt;/<span class="tag">script</span>&gt;')
+    .pauseFor(1200)
+    .start();
+
+
+    
+
+})();
