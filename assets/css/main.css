@@ -39,9 +39,9 @@
     --color-green:         #26e436;
     --color-light:         #26c5f3;
     --color-red:           #ff0000;
-    --aliceblue:           aliceblue;
-    --paleSpringBud:       #DEDABA;
-    --goldCrayola:         #E5C687;
+    --aliceblue:           #f0f8ff;
+    --paleSpringBud:       #dedaba;
+    --goldCrayola:         #e5c687;
     --richBlackForeground: #0F1A20;
     --msuGreen:            #2D4739;
     --gray:                #eee;
@@ -55,6 +55,15 @@
     --windowTopTextDark:   #b1b1b3;
     --windowListLight:     #7ABFDB;
     --windowListDark:      #717171;
+
+    /*-------- Switch section ------*/ 
+
+    --redSection:         linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+    --redSectionColor:    var(--color-red);
+    --blueSection:        linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+    --blueSectionColor:   #117ecf;
+    --greenSection:       linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+    --greenSectionColor:  #2bf406;
 
     /*---------- Fonts -------------*/ 
 
@@ -120,37 +129,25 @@
   }
 
 /*-----------------------------------------------
-|          Theme color classes section
+|          Section switch colors
 -----------------------------------------------*/
 
 
-.light {
-    --mainBackground:     var(--gray0);
-    --bg-nav:             linear-gradient(to right, var(--gray1), var(--gray3));
-    --bg-dropdown:  var(--gray0);
-    --text:         var(--gray6);
-    --border-color: var(--blue);
-    --bg-solar:     var(--yellow);
+.red-theme {
+    --sectionMain:      var(--redSection);
+    --sectionFontColor: var(--redSectionColor);
+    --sectionBorder: 
 }
   
 
-.dark {
-    --mainBackground:           var(--gray5);
-    --bg-nav:       linear-gradient(to right, var(--gray5), var(--gray6));
-    --bg-dropdown:  var(--gray6);
-    --text:         var(--gray0);
-    --border-color: var(--purple);
-    --bg-solar:     var(--blue);
+.blue-theme {
+    --sectionMain:      var(--blueSection);
+    --sectionFontColor: var(--blueSectionColor);
 }
 
-.solar {
-    --gray0: #fbffd4;
-    --gray1: #f7f8d0;
-    --gray2: #b6f880;
-    --gray3: #5ec72d;
-    --gray4: #3ea565;
-    --gray5: #005368;
-    --gray6: #003d4c;
+.green-theme {
+    --sectionMain:      var(--greenSection);
+    --sectionFontColor: var(--greenSectionColor);
 }
 
 

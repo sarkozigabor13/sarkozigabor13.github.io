@@ -15,7 +15,6 @@
  * Mobile menu.......................base style of mobile menu. 
  * Code Editor Layout................base style of code editor.
  * Section swticher..................base style of section swicher.
- * Toggle switch theme...............base style of toggle chechbox.
  *
  */
   
@@ -289,43 +288,70 @@
   
 /* -------------------------------------------------------------------------- */
 
-.c-details span {
-  font-weight:    300;
-  font-size:      13px
+
+.card-details span {
+  font-weight:          500;
+  font-size:            13px;
+  color:                var(--sectionFontColor);
 }
 
 .badge span {
-  background-color:   red;
-  width:                60px;
+  background:           var(--sectionMain);
+  font-weight:          600;
+  padding:              0 10px;
   height:               25px;
   border-radius:        5px;
   display:              flex;
-  color:              white;
   justify-content:      center;
-  align-items:          center
+  align-items:          center;
 }
 
 .progress {
   height:               10px;
-  border-radius:        10px
+  border-radius:        10px;
 }
 
 .progress div {
-  background-color:   red
+  background:           var(--sectionMain);
 }
 
-.text1 {
-  font-size:           14px;
-  font-weight:         600
+.text-sub {
+  font-size:            14px;
+  font-weight:          600;
+  color:                var(--sectionFontColor);
 }
 
 .text2 {
-  color:             #a5aec0
+  color:              #a5aec0;
 }
 
+.card-credit-card {
+  border-left:          10px solid var(--sectionFontColor);
+}
 
-/* Radio Button
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card-credit-card .chip {   
+  position:             absolute;
+  width:                50px;
+  height:               40px;
+  bottom:               30px;
+  right:                35px;
+  background:           linear-gradient(135deg, #ddccf0 0%, #d1e9f5 44%, #f8ece7 100%);
+  border-radius:        8px;
+}
+
+.card-credit-card .chip::before {   
+  content:              "";
+  position:             absolute;
+  top:                  0;
+  bottom:               0;
+  left:                 0;
+  right:                0;
+  margin:               auto;
+  border:               4px solid rgba(128, 128, 128, 0.1);
+  width:                80%;
+  height:               70%;
+  border-radius:        5px;
+}
  
 .switch-btn {
   display:              block;
@@ -342,72 +368,29 @@
   box-shadow:           var(--boxShadow);
 }
 
-.switch-btns #light {
-  background:       rgb(245,0,0);
-  background:         -moz-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
-  background:         -webkit-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
-  background:         linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
-  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#f50000",endColorstr="#d27919",GradientType=1);
+.switch-btns #red-theme {
+  background:         rgb(245,0,0);
+  background:           -moz-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  background:           -webkit-linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  background:           linear-gradient(163deg, rgba(245,0,0,1) 0%, rgba(210,121,25,1) 100%);
+  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr="#f50000",endColorstr="#d27919",GradientType=1);
 }
 
-.switch-btns #dark {
-  background:       rgb(17,126,207);
-  background:       -moz-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
-  background:       -webkit-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
-  background:       linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
-  filter:           progid:DXImageTransform.Microsoft.gradient(startColorstr="#117ecf",endColorstr="#012c2f",GradientType=1);
+.switch-btns #blue-theme {
+  background:         rgb(17,126,207);
+  background:         -moz-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  background:         -webkit-linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  background:         linear-gradient(163deg, rgba(17,126,207,1) 0%, rgba(1,44,47,1) 100%);
+  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#117ecf",endColorstr="#012c2f",GradientType=1);
 }
 
-.switch-btns #solar {
-  background:     rgb(43,244,6);
-  background:       -moz-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
-  background:       -webkit-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
-  background:       linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
-  filter:           progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bf406",endColorstr="#9ac3a7",GradientType=1);
+.switch-btns #green-theme {
+  background:       rgb(43,244,6);
+  background:         -moz-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  background:         -webkit-linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  background:         linear-gradient(163deg, rgba(43,244,6,1) 0%, rgba(154,195,167,1) 100%);
+  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bf406",endColorstr="#9ac3a7",GradientType=1);
 }
-
-input[type=radio] {
-	position:               absolute;
-	visibility:             hidden;
-} 
-
-label { 
-	cursor:                 pointer; 
-	font-weight:            400;
-}
-
-.check {
-	width:                  30px; 
-    height:                 30px;
-	position:               absolute;
-	border-radius:          50%;
-	transition:             transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-
-/* Reset */
-input#one ~ .check { 
-	transform:              translate(-8px, -25px); 
-	background:             black; 
-}
-input#two ~ .check { 
-	transform:              translate(-50px, -83px); 
-	background:             var(--primary-c);
-	box-shadow:             0 6px 12px rgba(33, 150, 243, 0.35);
-}
-
-/* Radio Input #1 */
-input#one:checked ~ .check { transform: translate(-50px, 33px); }
-
-/* Radio Input #2  */
-input#two:checked ~ .check { transform: translate(-50px, -25px); }
-
-
-/* -------------------------------------------------------------------------- */
-  
-/*                                 Google dots                                */
-  
-/* -------------------------------------------------------------------------- */
 
 
 
@@ -579,56 +562,42 @@ input#two:checked ~ .check { transform: translate(-50px, -25px); }
 
 
 
-
-
-
-
-
-
-
-/* -------------------------------------------------------------------------- */
-  
-/*                              Theme switches                                */
-  
-/* -------------------------------------------------------------------------- */
-
-
-
-
 .bar-container {
-    background: #f0f0f0;
-    height: 10px;
-    width: 100%;
-    border-radius: 10px;
+  background:   #f0f0f0;
+  height:         10px;
+  width:          100%;
+  border-radius:  10px;
   }
+  
 .bar-container .bar {
-    background: #00F260;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 10px;
-    width: 0%;
-    border-radius: 10px;
-    transition: width 400ms;
+  background:     #00F260;  /* fallback for old browsers */
+  background:     -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background:     linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:         10px;
+  width:          0%;
+  border-radius:  10px;
+  transition:     width 400ms;
   }
+
 .bar-container  .btn {
-    outline: none;
-    margin: 2em auto;
-    border: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    padding: 1em;
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.30);
-    cursor: pointer;
-    transition: transform 400ms;
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    text-align: center;
+  outline:        none;
+  margin:         2em auto;
+  border:         none;
+  height:         50px;
+  width:          50px;
+  border-radius:  100%;
+  padding:        1em;
+  background:   #11998e;  /* fallback for old browsers */
+  background:     -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background:     linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:        #fff;
+  box-shadow:     0 10px 10px 0 rgba(0,0,0,0.30);
+  cursor:         pointer;
+  transition:     transform 400ms;
+  font-weight:    600;
+  text-align:     center;
   }
+
 .bar-container  .btn:hover {
     transform: translateY(-10px);
   }

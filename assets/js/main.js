@@ -4,7 +4,7 @@ function ownKeys(object, enumerableOnly) {
     var keys = Object.keys(object);
     if (Object.getOwnPropertySymbols) {
         var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+        if (enumerableOnly) symbols = symbols.filter(function (sym) {
             return Object.getOwnPropertyDescriptor(object, sym).enumerable;
         });
         keys.push.apply(keys, symbols);
@@ -16,13 +16,13 @@ function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
         var source = arguments[i] != null ? arguments[i] : {};
         if (i % 2) {
-            ownKeys(Object(source), true).forEach(function(key) {
+            ownKeys(Object(source), true).forEach(function (key) {
                 _defineProperty(target, key, source[key]);
             });
         } else if (Object.getOwnPropertyDescriptors) {
             Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
         } else {
-            ownKeys(Object(source)).forEach(function(key) {
+            ownKeys(Object(source)).forEach(function (key) {
                 Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
             });
         }
@@ -67,7 +67,7 @@ var isIterableArray = function isIterableArray(array) {
 };
 
 var camelize = function camelize(str) {
-    var text = str.replace(/[-_\s.]+(.)?/g, function(_, c) {
+    var text = str.replace(/[-_\s.]+(.)?/g, function (_, c) {
         return c ? c.toUpperCase() : '';
     });
     return "".concat(text.substr(0, 1).toLowerCase()).concat(text.substr(1));
@@ -88,7 +88,7 @@ var hexToRgb = function hexToRgb(hexValue) {
     hexValue.indexOf('#') === 0 ? hex = hexValue.substring(1) : hex = hexValue; // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
 
     var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex.replace(shorthandRegex, function(m, r, g, b) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex.replace(shorthandRegex, function (m, r, g, b) {
         return r + r + g + g + b + b;
     }));
     return result ? [parseInt(result[1], 16), parseInt(result[2], 16), parseInt(result[3], 16)] : null;
@@ -180,7 +180,7 @@ var getBreakpoint = function getBreakpoint(el) {
     var breakpoint;
 
     if (classes) {
-        breakpoint = breakpoints[classes.split(' ').filter(function(cls) {
+        breakpoint = breakpoints[classes.split(' ').filter(function (cls) {
             return cls.includes('navbar-expand-');
         }).pop().split('-').pop()];
     }
@@ -310,7 +310,7 @@ var navbarInit = function navbarInit() {
     };
     var navbar = document.querySelector(Selector.NAVBAR); // responsive nav collapsed
 
-    navbar.addEventListener('click', function(e) {
+    navbar.addEventListener('click', function (e) {
         if (e.target.classList.contains('nav-link') && window.innerWidth < utils.getBreakpoint(navbar)) {
             navbar.querySelector(Selector.NAVBAR_TOGGLER).click();
         }
@@ -336,7 +336,7 @@ var navbarInit = function navbarInit() {
         var transition = 'background-color 0.35s ease';
         navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
 
-        window.addEventListener(Events.SCROLL, function() {
+        window.addEventListener(Events.SCROLL, function () {
             var scrollTop = html.scrollTop;
             var alpha = scrollTop / windowHeight * 0.15; // Add class on scroll
 
@@ -352,7 +352,7 @@ var navbarInit = function navbarInit() {
             alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? navbar.classList.add(shadowName) : navbar.classList.remove(shadowName);
         }); // Toggle bg class on window resize
 
-        utils.resize(function() {
+        utils.resize(function () {
             var breakPoint = utils.getBreakpoint(navbar);
 
             if (window.innerWidth > breakPoint) {
@@ -368,18 +368,18 @@ var navbarInit = function navbarInit() {
                 navbar.style.transition = utils.hasClass(navbarCollapse, 'show') ? transition : 'none';
             }
         });
-        navbarCollapse.addEventListener(Events.SHOW_BS_COLLAPSE, function() {
+        navbarCollapse.addEventListener(Events.SHOW_BS_COLLAPSE, function () {
             navbar.classList.add(bgClassName);
             navbar.classList.add(shadowName);
             navbar.style.backgroundImage = backgroundImage;
             navbar.style.transition = transition;
         });
-        navbarCollapse.addEventListener(Events.HIDE_BS_COLLAPSE, function() {
+        navbarCollapse.addEventListener(Events.HIDE_BS_COLLAPSE, function () {
             navbar.classList.remove(bgClassName);
             navbar.classList.remove(shadowName);
             !html.scrollTop && (navbar.style.backgroundImage = 'none');
         });
-        navbarCollapse.addEventListener(Events.HIDDEN_BS_COLLAPSE, function() {
+        navbarCollapse.addEventListener(Events.HIDDEN_BS_COLLAPSE, function () {
             navbar.style.transition = 'none';
         });
     }
@@ -392,8 +392,8 @@ var navbarInit = function navbarInit() {
 
 
 var scrollToTop = function scrollToTop() {
-    document.querySelectorAll('[data-anchor] > a, [data-scroll-to]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
+    document.querySelectorAll('[data-anchor] > a, [data-scroll-to]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
             var _utils$getData;
 
             e.preventDefault();
@@ -425,52 +425,52 @@ docReady(scrollToTop);
 
 /* -------------------------------------------------------------------------- */
 
-function darken_screen(yesno){
-    if( yesno == true ){
+function darken_screen(yesno) {
+    if (yesno == true) {
         document.querySelector('.screen-darken').classList.add('active');
     }
-    else if(yesno == false){
+    else if (yesno == false) {
         document.querySelector('.screen-darken').classList.remove('active');
     }
 }
 
-function close_offcanvas(){
+function close_offcanvas() {
     darken_screen(false);
     document.querySelector('.mobile-offcanvas.show').classList.remove('show');
     document.body.classList.remove('offcanvas-active');
 }
 
-function show_offcanvas(offcanvas_id){
+function show_offcanvas(offcanvas_id) {
     darken_screen(true);
     document.getElementById(offcanvas_id).classList.add('show');
     document.body.classList.add('offcanvas-active');
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
-        
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[data-trigger]').forEach(function (everyelement) {
+
         let offcanvas_id = everyelement.getAttribute('data-trigger');
-        
+
         everyelement.addEventListener('click', function (e) {
             e.preventDefault();
             show_offcanvas(offcanvas_id);
-              
+
         });
     });
 
-    document.querySelectorAll('.btn-close').forEach(function(everybutton){
-        
+    document.querySelectorAll('.btn-close').forEach(function (everybutton) {
+
         everybutton.addEventListener('click', function (e) {
             e.preventDefault();
             close_offcanvas();
-          });
+        });
     });
 
-    document.querySelector('.screen-darken').addEventListener('click', function(event){
+    document.querySelector('.screen-darken').addEventListener('click', function (event) {
         close_offcanvas();
     });
-    
-}); 
+
+});
 // DOMContentLoaded  end
 
 
@@ -484,24 +484,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-(function() {
+(function () {
 
     const themeSwitchDark = document.querySelector('.toggle-switch-theme');
 
     themeSwitchDark.addEventListener('change', () => {
-      document.body.classList.toggle('dark-theme');
-    }); 
+        document.body.classList.toggle('dark-theme');
+    });
 
 })();
 
 
-(function() {
+(function () {
 
     const themeSwitchDark = document.querySelector('.toggle-switch-theme-mobile');
 
     themeSwitchDark.addEventListener('change', () => {
-      document.body.classList.toggle('dark-theme');
-    }); 
+        document.body.classList.toggle('dark-theme');
+    });
 
 })();
 
@@ -513,54 +513,44 @@ document.addEventListener("DOMContentLoaded", function(){
 /* -------------------------------------------------------------------------- */
 
 
-(function() {
+(function () {
 
     // DOM Elements
 
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const solarButton = document.getElementById('solar');
-const body = document.getElementById('switchSection');
-/* const body = document.body; */
+    const redButton = document.getElementById('red-theme');
+    const blueButton = document.getElementById('blue-theme');
+    const greenButton = document.getElementById('green-theme');
+    const section = document.getElementById('switchSection');
+    const sectionClass = section.classList;
+
+    // Button Event Handlers
+
+    blueButton.onclick = () => {
+
+        if (sectionClass.contains('green-theme')) {
+            sectionClass.replace('green-theme', 'blue-theme');
+        } else {
+            sectionClass.replace('red-theme', 'blue-theme');
+        }
+    };
+
+    redButton.onclick = () => {
+
+        if (sectionClass.contains('blue-theme')) {
+            sectionClass.replace('blue-theme', 'red-theme');
+        } else {
+            sectionClass.replace('green-theme', 'red-theme');
+        }
+    };
 
 
-// Apply the cached theme on reload
-
-const theme = localStorage.getItem('theme');
-const isSolar = localStorage.getItem('isSolar');
-
-if (theme) {
-  body.classList.add(theme);
-  isSolar && body.classList.add('solar');
-}
-
-// Button Event Handlers
-
-darkButton.onclick = () => {
-  body.classList.replace('light', 'dark');
-  localStorage.setItem('theme', 'dark');
-};
-
-lightButton.onclick = () => {
-  body.classList.replace('dark', 'light');
-
-  localStorage.setItem('theme', 'light');
-};
-
-solarButton.onclick = () => {
-
-  if (body.classList.contains('solar')) {
-    
-    body.classList.remove('solar');
-    localStorage.removeItem('isSolar');
-
-  } else {
-
-    body.classList.add('solar');
-    localStorage.setItem('isSolar', true);
-
-  }
-};
+    greenButton.onclick = () => {
+        if (sectionClass.contains('blue-theme')) {
+            sectionClass.replace('blue-theme', 'green-theme');
+        } else {
+            sectionClass.replace('red-theme', 'green-theme');
+        }
+    };
 
 })();
 
@@ -579,13 +569,23 @@ var txt = document.getElementById('text');
 var count = 0;
 // Listen for an event on the button
 // Increase the width of the bar by 10 percent(10%)
-btn.addEventListener('click', ()=>{
-  bar.style.width = count + '%';
-  txt.innerHTML = count + '%';
-  if(count == 100){
-      btn.innerHTML = "Ennyike"
-  }
-  else {
-      count = count + 10;
-  }
+btn.addEventListener('click', () => {
+    bar.style.width = count + '%';
+    txt.innerHTML = count + '%';
+    if (count == 100) {
+        btn.innerHTML = "Ennyike"
+    }
+    else {
+        count = count + 10;
+    }
 });
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                                Accordions                                  */
+
+/* -------------------------------------------------------------------------- */
+
+
