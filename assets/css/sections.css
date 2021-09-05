@@ -393,6 +393,25 @@
 }
 
 
+/* -------------------------------------------------------------------------- */
+  
+/*                                 Accordions                                 */
+  
+/* -------------------------------------------------------------------------- */
+
+.accordion-nav .nav-link {
+  box-shadow:     0 0.6375rem 0.975rem 0 #f4f8fe, 0 3px 6px 0 #f4f8fe;
+}
+
+.accordion-nav .nav-link.active {
+  box-shadow:     var(--boxShadow);
+}
+
+.accordion-nav .accordion-head {
+  font-weight:    700;
+}
+
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -402,7 +421,7 @@
 /* -------------------------------------------------------------------------- */
 
 
-.form-wrapper {
+/* .form-wrapper {
     position: relative;
     display: block;
     width: 400px;
@@ -550,7 +569,7 @@
 }
 .form-wrapper form button:hover:before {
     height: 100%;
-}
+} */
 
 
 /* -------------------------------------------------------------------------- */
@@ -614,3 +633,7 @@
 
   background:   var(--backgroundFirstSection);
 }
+
+
+
+

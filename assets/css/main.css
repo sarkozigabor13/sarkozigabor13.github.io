@@ -351,8 +351,8 @@ sup {
 }
 
 a {
-    color:         #2500F9;
-    text-decoration: none;
+    color:              var(--fontColor);
+    text-decoration:    none;
 }
 
 a:hover {
@@ -5021,8 +5021,8 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #2500F9;
+    color: var(--fontColor);
+    background-color: var(--mainBackground);
 }
 
 .nav-fill>.nav-link,
