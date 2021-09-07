@@ -414,6 +414,7 @@
 
 
 
+
 /* -------------------------------------------------------------------------- */
   
 /*                              Switcher badge                                */
@@ -636,4 +637,165 @@
 
 
 
+/* -------------------------------------------------------------------------- */
+  
+/*                              Vertical steps                                */
+  
+/* -------------------------------------------------------------------------- */
 
+
+.steps-sessions ul,.steps-sessions li {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+.steps-sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+.steps-sessions li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.steps-sessions li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+.steps-sessions li:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+.steps-time {
+  color: #2a2839;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+  .steps-time {
+    font-size: 0.9rem;
+ }
+}
+@media screen and (max-width: 600px) {
+  .steps-timeime {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+ }
+}
+.steps-sessions p {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 600px) {
+  .steps-sessions p {
+    font-size: 0.9rem;
+ }
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                                   Toast                                    */
+  
+/* -------------------------------------------------------------------------- */
+
+.toast {
+  width:                  auto;
+  max-width:              100%;
+  font-size:              0.875rem;
+  pointer-events:         auto;
+  background-color:       rgba(255, 255, 255, 0.85);
+  background-clip:        padding-box;
+  -webkit-box-shadow:     var(--boxShadow);
+  box-shadow:             var(--boxShadow);
+  border-radius:          0.25rem;
+}
+
+.toast:not(.showing):not(.show) {
+  opacity: 0;
+}
+
+.toast.hide {
+  display: none;
+}
+
+.toast-container {
+  max-width:          100%;
+  pointer-events:     none;
+}
+
+.toast-container> :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.toast-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #C3C1C8;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.toast-header .btn-close {
+  margin-right: -0.375rem;
+  margin-left: 0.75rem;
+}
+
+.toast-body {
+  padding: 0.75rem;
+  word-wrap: break-word;
+}
+
+.circle-status {
+  width: 16px;
+  height: 16px;
+  background: rgb(0, 207, 17);
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
+  margin-right: 1rem;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(3, 102, 3, 0.459);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
