@@ -980,6 +980,7 @@ progress {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 100%;
+    z-index: 1;
 }
 
 .offset-1 {
