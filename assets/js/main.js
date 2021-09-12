@@ -569,7 +569,7 @@ var txt = document.getElementById('text');
 var count = 0;
 // Listen for an event on the button
 // Increase the width of the bar by 10 percent(10%)
-btn.addEventListener('click', () => {
+/* btn.addEventListener('click', () => {
     bar.style.width = count + '%';
     txt.innerHTML = count + '%';
     if (count == 100) {
@@ -578,11 +578,68 @@ btn.addEventListener('click', () => {
     else {
         count = count + 10;
     }
+}) */;
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                                  Toasts                                    */
+
+/* -------------------------------------------------------------------------- */
+
+
+
+$(document).ready(function () {
+
+    $(".show-toast").click(function () {
+        $("#myToast").toast({
+            delay: 3000
+        });
+    });
+
+    $(".send-fake-invite").click(function(){
+        $("#fakeInviteToast").toast('show');
+    });
 });
 
 
+/* -------------------------------------------------------------------------- */
+
+/*                                  Footer                                    */
+
+/* -------------------------------------------------------------------------- */
 
 
+$(document).ready(function($) {
 
-
+    $(window).on('scroll', function() {
   
+      //ADD .TIGHT
+      if ($(window).scrollTop() + $(window).height() > $('.tricky-wrapper').outerHeight()) {
+        $('body').addClass('tight');
+        $('.arrow').hide();
+      } else {
+        $('body').removeClass('tight');
+        $('.arrow').show();
+      }
+    });
+  
+    //BACK TO PRESENTATION MODE
+    $("html").on("click", "body.tight .tricky-wrapper", function() {
+      $('html, body').animate({
+        scrollTop: $('.tricky-wrapper').outerHeight() - $(window).height()
+      }, 500);
+    });
+  
+  });
+  
+  $('.arrow').click(function(){
+     $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
+  });
+
+
+
+
+
+
