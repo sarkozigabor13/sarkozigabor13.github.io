@@ -48,24 +48,6 @@ $(window).scroll(function () {
         $("#myToast").toast({ delay: 5000 });
         $("#myToast").toast('show');
 
-
-
-        // Emoji confetti 
-        // https://github.com/loonywizard/js-confetti
-
-        const canvas = document.getElementById('custom_canvas')
-        const button = document.getElementById('buttonConfetti')
-
-        const jsConfetti = new JSConfetti({ canvas })
-
-        setTimeout(() => {
-            jsConfetti.addConfetti({
-                emojis: ['🦄', '✅', '🪐', '🙈', '🤸🏻‍♂️'],
-                emojiSize: 100,
-                confettiNumber: 50,
-            })
-        }, 250)
-
     }
 });
 

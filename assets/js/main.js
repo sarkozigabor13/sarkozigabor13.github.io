@@ -484,27 +484,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 (function () {
 
-    const themeSwitchDark = document.querySelector('.toggle-switch-theme');
+    const themeIcon = document.getElementById('themeIcon');
+    const iconClass = themeIcon.classList;
 
-    themeSwitchDark.addEventListener('change', () => {
-        document.body.classList.toggle('dark-theme');
-    });
+    themeIcon.onclick = () => {
 
+
+        if (iconClass.contains('bi-moon')) {
+
+            iconClass.replace('bi-moon', 'bi-sun');
+            document.body.classList.toggle('dark-theme');
+        } else {
+            iconClass.replace('bi-sun', 'bi-moon');
+            document.body.classList.toggle('dark-theme');
+        }
+    };
 })();
 
 
 (function () {
 
-    const themeSwitchDark = document.querySelector('.toggle-switch-theme-mobile');
+    const themeIcon = document.getElementById('themeIconPhone');
+    const iconClass = themeIcon.classList;
 
-    themeSwitchDark.addEventListener('change', () => {
-        document.body.classList.toggle('dark-theme');
-    });
+    themeIcon.onclick = () => {
 
+
+        if (iconClass.contains('bi-moon')) {
+
+            iconClass.replace('bi-moon', 'bi-sun');
+            document.body.classList.toggle('dark-theme');
+        } else {
+            iconClass.replace('bi-sun', 'bi-moon');
+            document.body.classList.toggle('dark-theme');
+        }
+    };
 })();
-
 
 /* -------------------------------------------------------------------------- */
 
@@ -563,23 +581,52 @@ document.addEventListener("DOMContentLoaded", function () {
 /* -------------------------------------------------------------------------- */
 
 
-var btn = document.getElementById('btnProgress');
-var bar = document.getElementById('bar');
-var txt = document.getElementById('text');
-var count = 0;
-// Listen for an event on the button
-// Increase the width of the bar by 10 percent(10%)
+(function() {
 
-btn.addEventListener('click', () => {
-    bar.style.width = count + '%';
-    txt.innerHTML = count + '%';
-    if (count == 100) {
-        btn.innerHTML = "Ennyike"
-    }
-    else {
-        count = count + 10;
-    }
-});
+    var btn = document.getElementById('btnProgress');
+    var bar = document.getElementById('bar');
+    var txt = document.getElementById('text');
+    var count = 0;
+    
+    // Listen for an event on the button
+    // Increase the width of the bar by 10 percent(10%)
+    
+    btn.addEventListener('click', () => {
+    
+        bar.style.width = count + '%';
+        txt.innerHTML = count + '%';
+    
+        if (count == 100) {
+    
+            btn.innerHTML = "Köszi";
+           
+    
+            // Emoji confetti 
+            // https://github.com/loonywizard/js-confetti
+    
+            const canvas = document.getElementById('custom_canvas')
+            const button = document.getElementById('buttonConfetti')
+    
+            const jsConfetti = new JSConfetti({ canvas })
+    
+            setTimeout(() => {
+                jsConfetti.addConfetti({
+                    emojis: ['🦄', '✅', '🪐', '🙈', '🤸🏻‍♂️'],
+                    emojiSize: 100,
+                    confettiNumber: 50,
+                })
+            }, 250)
+        }
+        else {
+            count = count + 10;
+        }
+    });
+    count = count + 10;
+
+})(); 
+
+
+
 
 
 
@@ -599,7 +646,7 @@ $(document).ready(function () {
         });
     });
 
-    $(".send-fake-invite").click(function(){
+    $(".send-fake-invite").click(function () {
         $("#fakeInviteToast").toast('show');
     });
 });
@@ -612,32 +659,34 @@ $(document).ready(function () {
 /* -------------------------------------------------------------------------- */
 
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
 
-    $(window).on('scroll', function() {
-  
-      //ADD .TIGHT
-      if ($(window).scrollTop() + $(window).height() > $('.tricky-wrapper').outerHeight()) {
-        $('body').addClass('tight');
-        $('.arrow').hide();
-      } else {
-        $('body').removeClass('tight');
-        $('.arrow').show();
-      }
+    $(window).on('scroll', function () {
+
+        //ADD .TIGHT
+        if ($(window).scrollTop() + $(window).height() > $('.tricky-wrapper').outerHeight()) {
+            $('body').addClass('tight');
+            $('.arrow').hide();
+        } else {
+            $('body').removeClass('tight');
+            $('.arrow').show();
+        }
     });
-  
+
     //BACK TO PRESENTATION MODE
-    $("html").on("click", "body.tight .tricky-wrapper", function() {
-      $('html, body').animate({
-        scrollTop: $('.tricky-wrapper').outerHeight() - $(window).height()
-      }, 500);
+    $("html").on("click", "body.tight .tricky-wrapper", function () {
+        $('html, body').animate({
+            scrollTop: $('.tricky-wrapper').outerHeight() - $(window).height()
+        }, 500);
     });
-  
-  });
-  
-  $('.arrow').click(function(){
-     $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
-  });
+
+});
+
+$('.arrow').click(function () {
+    $("html").animate({ scrollTop: $('html').prop("scrollHeight") }, 1200);
+});
+
+
 
 
 

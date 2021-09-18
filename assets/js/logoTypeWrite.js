@@ -10,7 +10,7 @@
 
 (function() {
       
-    const appLogoName = document.getElementById('appLogoName');
+    const appLogoName = document.getElementById('appLogoNameTxt');
 
     const typewriterLogoName = new Typewriter(appLogoName, {
       loop: true,

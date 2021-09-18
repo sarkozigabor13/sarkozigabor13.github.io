@@ -159,6 +159,47 @@
 
 /* -------------------------------------------------------------------------- */
 
+/*                               Cookies Layout                               */
+ 
+/* -------------------------------------------------------------------------- */
+
+  .cookiealert {
+    position:             fixed;
+    bottom:               0;
+    left:                 0;
+    width:                100%;
+    margin:               0 !important;
+    z-index:              999;
+    opacity:              0;
+    visibility:           hidden;
+    border-radius:        0;
+    transform:            translateY(100%);
+    transition:           all 500ms ease-out;
+    color:                var(--fontColor);
+    background-color:   #f3f5fe;
+    -webkit-box-shadow:   0 -10px 20px 0px rgb(78 80 86 / 16%);
+    box-shadow:           0 -10px 20px 0px rgb(78 80 86 / 16%);
+}
+
+.cookiealert.show {
+    opacity:              1;
+    visibility:           visible;
+    transform:            translateY(0%);
+    transition-delay:     1000ms;
+}
+
+.cookiealert a {
+    text-decoration:    underline
+}
+
+.cookiealert .acceptcookies {
+    margin-left:        10px;
+    vertical-align:     baseline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*                              Code Editor Layout                            */
 
 /* -------------------------------------------------------------------------- */
