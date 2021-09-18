@@ -77,15 +77,6 @@
                                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
                                         <li class="nav-item"><a class="nav-link fw-medium"
                                                 href="project.html">Projektek</a></li>
-                                        <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a></li>
-                                        <li class="nav-item"><a class="nav-link fw-medium">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    fill="currentColor" class="bi bi-moon" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                                                </svg>
-                                            </a></li>
-
                                         <li class="nav-item d-flex align-items-center">
                                             <form class="px-lg-3">
                                                 <div class="toggle-nav">
@@ -94,6 +85,18 @@
                                                 </div>
                                             </form>
                                         </li>
+                                        <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a></li>
+                                        <li class="nav-item">
+                                            <button data-trigger="navbar_main" class="d-lg-none btn btn-warning"
+                                                type="button">
+                                                Show
+                                                navbar </button>
+                                            <button data-trigger="card_mobile" class="d-lg-none btn btn-warning"
+                                                type="button">
+                                                Show
+                                                card </button>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -161,9 +164,9 @@
                                 <div class="col-md-7 col-lg-6 text-center text-md-start">
                                     <h1 class="mb-4 display-3 fw-bold lh-sm">Oldalépítés és<br
                                             class="d-block d-lg-none d-xl-block" />frontend fejlesztés</h1>
-                                    <p class="mt-3 mb-4 fs-1">Fő fókuszban a digitális élmények létrehozása kliens
-                                        oldalon.<br class="d-none d-lg-block" />Átlátható, fenntartható, szembarát.</p>
-                                    <a class="btn btn-lg btn-primary rounded-pill hover-top" href="#switchSection"
+                                    <p class="mt-3 mb-4 fs-1">Teljeskörű weboldalak létrehozása, projektek<br
+                                            class="d-none d-lg-block" />fejlesztése sturktúráltan, letisztultan.</p><a
+                                        class="btn btn-lg btn-primary rounded-pill hover-top" href="#switchSection"
                                         role="button">Görgess
                                         lejjebb! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
@@ -352,12 +355,18 @@
                                         href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
                                         aria-selected="false">
                                         <i class="fa fa-calendar-minus-o mr-2"></i>
-                                        <span class="accordion-head">Könyvtárak</span>
+                                        <span class="accordion-head">Bookings</span>
                                         <span class="d-none" id="profileTabPanel">
-                                            <p class="mt-3">Bootstrap, Bulma, Tailwind. Szívesen használom őket és
-                                                szívesen dolgozok akár Elementorral, Wordpressel
-                                                ha erre van szükség. Mindig jó, ha újat tanul az ember.
-                                            </p>
+                                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Est dolor
+                                                perferendis
+                                                quos, veniam
+                                                voluptate consequatur nisi magni eos, delectus modi iste nihil ducimus
+                                                natus
+                                                totam iusto
+                                                impedit, dolores sapiente suscipit accusantium? Obcaecati dignissimos,
+                                                consectetur placeat rerum
+                                                at quas quaerat libero eligendi!</p>
                                         </span>
                                     </a>
 
@@ -398,30 +407,25 @@
                                         <div class="card settings-box">
                                             <div class="header px-4 pt-3 pb-1">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="h5">Tartalom hozzáférhetősége</div>
+                                                    <div class="h5">Tartalom láthatósága</div>
                                                     <div class="close ml-auto"><span class="fas fa-times"></span></div>
                                                 </div>
                                             </div>
                                             <hr>
-                                            <div class="content px-4"> <b>Jogosultság</b>
-                                                <p class="text-muted">Korlátoztott hozzáférésre jogosult személyek
-                                                    kiválasztása
-                                                <p>
+                                            <div class="content px-4"> <b>Roles</b>
+                                                <p class="text-muted">Access limited to everyone of select role(s)</p>
                                                 <div class="form-inline d-flex mb-3"> <input type="text"
-                                                        placeholder="Hívj meg valakit..">
-                                                    <select name="edit" id="edit" class="ml-auto">
-                                                        <option value="can edit">Tulajdonos</option>
-                                                        <option value="can edit">Közreműködő</option>
-                                                        <option value="can edit">Megtekintheti</option>
-                                                    </select>
-                                                </div>
+                                                        placeholder="invite someone"> <select name="edit" id="edit"
+                                                        class="ml-auto">
+                                                        <option value="can edit">can edit</option>
+                                                    </select> </div>
                                                 <hr>
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <div class="row">
                                                         <div class="col-8 d-flex">
                                                             <div class="pr-2"> <input type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 m-3"> <b>Tulajdonos</b>
-                                                                <p class="text-muted">Birtokolja a file-t
+                                                            <div class="d-flex flex-column"> <b>Makers</b>
+                                                                <p class="text-muted">Everyone assigned the maker role
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -437,32 +441,24 @@
                                                                 alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="d-flex align-items-start py-3">
-                                                        <div class="pr-2"> <input type="checkbox"> </div>
-                                                        <div class="d-flex flex-column my-0 m-3"> <b>Látogató</b>
-                                                            <p class="text-muted">Megtekintheti a file-t</p>
+                                                    <div class="d-flex align-items-start pt-3">
+                                                        <div class="pr-2"> <input type="checkbox" checked> </div>
+                                                        <div class="d-flex flex-column"> <b>Contributors</b>
+                                                            <p class="text-muted">Everyone assigned the contributor role
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-8 d-flex">
-                                                            <div class="pr-2"> <input type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 m-3">
-                                                                <b>Közreműködők</b>
-                                                                <p class="text-muted">Szerkesztheti a file-t
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col d-flex align-items-start">
-                                                            <img src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                                width="35" height="35" class="rounded-circle" id="pic1"
-                                                                alt="">
+                                                    <div class="d-flex align-items-start pt-3">
+                                                        <div class="pr-2"> <input type="checkbox" checked> </div>
+                                                        <div class="d-flex flex-column"> <b>Viewers</b>
+                                                            <p class="text-muted">Everyone assigned the viewer role</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center justify-content-center pt-4">
-                                                    <button class="btn btn-primary">Mégsem</button>
-                                                    <button type="button" class="btn mx-3 show-toast">Küldés</button>
-
+                                                    <button class="btn mx-3">Cancel</button>
+                                                    <button type="button" class="btn btn-primary send-fake-invite">Show
+                                                        Toast</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -695,59 +691,52 @@
 
                                         <!-- Toast -->
                                         <div class="toast-container">
-
-
-
                                             <div class="toast fade show mb-5" role="alert" aria-live="assertive"
                                                 aria-atomic="true">
                                                 <div class="toast-header">
-                                                    <strong class="me-auto">HTML, Git, Codepan</strong>
-                                                    <small class="text-muted mx-3">1,5 éve</small>
                                                     <span class="circle-status"></span>
+
+                                                    <strong class="me-auto">Linda like your photo</strong>
+                                                    <small class="text-muted">just now</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="toast-body">
-                                                    <div class="bar-container">
-                                                        <div class="bar-success" id="barOne"></div>
-                                                    </div>
+                                                    See? Just like this.
                                                 </div>
                                             </div>
+
                                             <div class="toast fade show mb-5" role="alert" aria-live="assertive"
                                                 aria-atomic="true">
                                                 <div class="toast-header">
-                                                    <strong class="me-auto">CSS, CSS3, Bootsrap</strong>
-                                                    <small class="text-muted mx-3">1,5 éve</small>
                                                     <span class="circle-status"></span>
+
+                                                    <strong class="me-auto">Jacob sent a message</strong>
+                                                    <small class="text-muted">2 seconds ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="toast-body">
-                                                    <div class="bar-container">
-                                                        <div class="bar-success" id="barOne"></div>
-                                                    </div>
+                                                    See? Just like this.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="toast fade show mb-5" role="alert" aria-live="assertive"
+
+
+                                        <button type="button" class="btn btn-primary show-toast">Show Toast</button>
+                                        <div class="toast mt-5" id="myToast" role="alert" aria-live="assertive"
                                             aria-atomic="true">
                                             <div class="toast-header">
-                                                <strong class="me-auto">Javascript, React</strong>
-                                                <small class="text-muted mx-3">jelenleg</small>
-                                                <span class="circle-status"></span>
+                                                <img src="..." class="rounded me-2" alt="...">
+                                                <strong class="me-auto">Bootstrap</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <div class="toast-body">
-                                                <div class="bar-container">
-                                                    <div class="bar" id="bar"></div>
-                                                </div>
-                                                <div>
-                                                    <button class="btn btn-push" type="button"
-                                                        id="btnProgress">Pimpelés</button>
-                                                    <span class="text mx-3" id="text">0%</span>
-                                                </div>
-
+                                                Hello, world! This is a toast message.
                                             </div>
                                         </div>
-
-
-
-
 
                                     </div>
 
@@ -770,7 +759,7 @@
                         <div class="row align-items-center mb-6">
                             <div class="col-12">
                                 <div class="pb-5">
-                                    <h1 class="fw-bold lh-base">Eddigi munkáim</h1>
+                                    <h1 class="fw-bold lh-base">Recent works</h1>
                                 </div>
 
                             </div>
@@ -804,7 +793,8 @@
                                 <div class="project-card">
                                     <div class="row">
                                         <div class="col-md-5 col-lg-4 offset-lg-1 d-flex align-items-center">
-                                            <h1 class="fw-bold lh-base">Portfolió oldal
+                                            <h1 class="fw-bold lh-base">Smart jackpots that you may love this anytime
+                                                &amp; anywhere
                                             </h1>
                                         </div>
                                         <div
@@ -819,7 +809,8 @@
                                 <div class="project-card">
                                     <div class="row">
                                         <div class="col-md-5 col-lg-4 offset-lg-1 d-flex align-items-center">
-                                            <h1 class="fw-bold lh-base">Sárközi Klíma
+                                            <h1 class="fw-bold lh-base">Smart jackpots that you may love this anytime
+                                                &amp; anywhere
                                             </h1>
                                         </div>
                                         <div
@@ -844,21 +835,6 @@
                 <!-- ===============================================-->
                 <!--    Toasts-->
                 <!-- ===============================================-->
-
-
-                <div id="myToast" class="toast fade mb-5" role="alert" aria-live="assertive" aria-atomic="true"
-                    style="position: fixed; right: 1rem; bottom: 1rem; width: 400px;">
-                    <div class="toast-header">
-                        <span class="circle-status"></span>
-
-                        <strong class="me-auto">Linda like your photo</strong>
-                        <small class="text-muted">just now</small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                        See? Just like this.
-                    </div>
-                </div>
 
             </div>
         </div>

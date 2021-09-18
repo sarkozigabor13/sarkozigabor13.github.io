@@ -563,13 +563,14 @@ document.addEventListener("DOMContentLoaded", function () {
 /* -------------------------------------------------------------------------- */
 
 
-var btn = document.getElementById('btn');
+var btn = document.getElementById('btnProgress');
 var bar = document.getElementById('bar');
 var txt = document.getElementById('text');
 var count = 0;
 // Listen for an event on the button
 // Increase the width of the bar by 10 percent(10%)
-/* btn.addEventListener('click', () => {
+
+btn.addEventListener('click', () => {
     bar.style.width = count + '%';
     txt.innerHTML = count + '%';
     if (count == 100) {
@@ -578,7 +579,7 @@ var count = 0;
     else {
         count = count + 10;
     }
-}) */;
+});
 
 
 

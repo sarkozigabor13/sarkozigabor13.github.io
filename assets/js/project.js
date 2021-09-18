@@ -47,22 +47,38 @@ $(window).scroll(function () {
         // Toast activity
         $("#myToast").toast({ delay: 5000 });
         $("#myToast").toast('show');
+
+
+
+        // Emoji confetti 
+        // https://github.com/loonywizard/js-confetti
+
+        const canvas = document.getElementById('custom_canvas')
+        const button = document.getElementById('buttonConfetti')
+
+        const jsConfetti = new JSConfetti({ canvas })
+
+        setTimeout(() => {
+            jsConfetti.addConfetti({
+                emojis: ['🦄', '✅', '🪐', '🙈', '🤸🏻‍♂️'],
+                emojiSize: 100,
+                confettiNumber: 50,
+            })
+        }, 250)
+
     }
 });
 
 
-
-
-
 var timeSpent = 0; //seconds on page
 var timer;
-window.onload = function () {
-    timer = setInterval(function () { timeSpent++; }, 998);
+window.onload = function() {
+  timer = setInterval( function() { timeSpent++; }, 998 );
 };
 
-window.onunload = function () {
-    timer = clearInterval(timer);
-    console.log(timer);
+window.onunload = function() {
+  timer = clearInterval( timer );
+  console.log(timer);
 }
 
 
@@ -75,12 +91,51 @@ function readingTime() {
     const words = text.trim().split(/\s+/).length;
     const time = Math.ceil(words / wpm);
     document.getElementById("time").innerText = time;
+  }
+  readingTime();
+
+
+/* ---------- Like counter --------------- */
+
+
+document.querySelector("#buttonHeart").addEventListener("click", clickCounter);
+document.addEventListener("DOMContentLoaded", showValue);
+
+let counter = document.getElementById("counterHeart");
+
+function showValue() {
+	counter.innerHTML = `${localStorage.clickcount || 0}`;
 }
-readingTime();
+
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    showValue();
+  } else {
+    counter.innerHTML = "Your browser does not support web storage...";
+  }
+}
+
+
+/* ---------- View counter --------------- */
+
+
+// https://countapi.xyz/
+// It have to registre myself
+
+function callbackName(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+
+/* ---------- View counter --------------- */
 
 
 
-
-
-
+ScrollReveal().reveal('.headline', { delay: 3500 })
+ScrollReveal().reveal('.tagline', { delay: 1000 })
+ScrollReveal().reveal('.punchline', { delay: 5000 })
 

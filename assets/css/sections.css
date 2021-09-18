@@ -693,15 +693,15 @@
 }
 
 .settings-box #pic1 {
-  right: 35%
-}
-
-.settings-box #pic2 {
   right: 20%
 }
 
+.settings-box #pic2 {
+  right: 16%
+}
+
 .settings-box #pic3 {
-  right: 5%
+  right: 12%
 }
 
 .settings-box .col-10 .pr-2 {
@@ -833,7 +833,43 @@
   clear: both
 }
 
+/* -------------------------------------------------------------------------- */
+  
+/*                                 Progress bar                               */
+  
+/* -------------------------------------------------------------------------- */
 
+.bar-container {
+  background:   #f0f0f0;
+  height:         10px;
+  width:          100%;
+  border-radius:  10px;
+}
+.bar {
+  background:   #00F260;  /* fallback for old browsers */
+  background:     -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background:     linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:         10px;
+  width:          0%;
+  border-radius:  10px;
+  transition:     width 400ms;
+}
+
+.bar-success {
+  background:   #00F260;  /* fallback for old browsers */
+  background:     -webkit-linear-gradient(to left, #32e605, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background:     linear-gradient(to left, #32e605, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:         10px;
+  width:          100%;
+  border-radius:  10px;
+}
+
+.btn-push {
+  box-shadow: var(--boxShadow);
+  margin: 10px 0;
+  padding: 5px;
+
+}
 
 
 /* -------------------------------------------------------------------------- */
