@@ -157,45 +157,8 @@
   }
 
 
-/* -------------------------------------------------------------------------- */
 
-/*                               Cookies Layout                               */
- 
-/* -------------------------------------------------------------------------- */
 
-  .cookiealert {
-    position:             fixed;
-    bottom:               0;
-    left:                 0;
-    width:                100%;
-    margin:               0 !important;
-    z-index:              999;
-    opacity:              0;
-    visibility:           hidden;
-    border-radius:        0;
-    transform:            translateY(100%);
-    transition:           all 500ms ease-out;
-    color:                var(--fontColor);
-    background-color:   #f3f5fe;
-    -webkit-box-shadow:   0 -10px 20px 0px rgb(78 80 86 / 16%);
-    box-shadow:           0 -10px 20px 0px rgb(78 80 86 / 16%);
-}
-
-.cookiealert.show {
-    opacity:              1;
-    visibility:           visible;
-    transform:            translateY(0%);
-    transition-delay:     2000ms;
-}
-
-.cookiealert a {
-    text-decoration:    underline
-}
-
-.cookiealert .acceptcookies {
-    margin-left:        10px;
-    vertical-align:     baseline;
-}
 
 
 /* -------------------------------------------------------------------------- */
@@ -441,11 +404,14 @@
 /* -------------------------------------------------------------------------- */
 
 .accordion-nav .nav-link {
-  box-shadow:     0 0.6375rem 0.975rem 0 #f4f8fe, 0 3px 6px 0 #f4f8fe;
+  outline: 1px solid #f1f1f1;
+  -moz-outline-radius: var(--borderRadius);
+  box-shadow: 0 0 3px 0 #f1f1f1;
 }
 
-.accordion-nav .nav-link.active {
-  box-shadow:     var(--boxShadow);
+.accordion-nav .nav-link:hover {
+  outline: 3px solid #f1f1f1;
+  box-shadow: 0 0 5px 0 #f1f1f1;
 }
 
 .accordion-nav .accordion-head {
@@ -920,15 +886,18 @@
 /* -------------------------------------------------------------------------- */
 
 .toast {
+  position:               fixed;
+  right:                  2rem;
+  bottom:                 2rem;
   width:                  auto;
   max-width:              100%;
-  font-size:              0.875rem;
+  font-size:              0.85rem;
   pointer-events:         auto;
-  background-color:       rgba(255, 255, 255, 0.85);
+  background-color:       #fff;
   background-clip:        padding-box;
-  -webkit-box-shadow:     var(--boxShadow);
-  box-shadow:             var(--boxShadow);
-  border-radius:          0.25rem;
+  -webkit-box-shadow:     6px 6px 12px 0px #0000001A;
+  box-shadow:             6px 6px 12px 0px #0000001A;
+  border-radius:          var(--borderRadius);
 }
 
 .toast:not(.showing):not(.show) {
@@ -970,8 +939,17 @@
 }
 
 .toast-body {
-  padding: 0.75rem;
+  padding: 1.25rem 0.75rem;
   word-wrap: break-word;
+}
+
+.toast-body p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.toast-body .toast-head {
+  margin-bottom: .2rem;
 }
 
 .circle-status {
@@ -1001,6 +979,123 @@
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
 }
+
+/* -------------------------------------------------------------------------- */
+
+/*                                 Fake toast                                 */
+ 
+/* -------------------------------------------------------------------------- */
+
+.fake-toast {
+  width:                  auto;
+  max-width:              100%;
+  font-size:              0.875rem;
+  pointer-events:         auto;
+  background-color:       rgba(255, 255, 255, 0.85);
+  background-clip:        padding-box;
+  -webkit-box-shadow:     var(--boxShadow);
+  box-shadow:             var(--boxShadow);
+  border-radius:          0.25rem;
+}
+
+.fake-toast:not(.showing):not(.show) {
+  opacity: 0;
+}
+
+.fake-toast.hide {
+  display: none;
+}
+
+.fake-toast-container {
+  max-width:          100%;
+  pointer-events:     none;
+}
+
+.fake-toast-container> :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.fake-toast-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #C3C1C8;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.fake-toast-header .btn-close {
+  margin-right: -0.375rem;
+  margin-left: 0.75rem;
+}
+
+.fake-toast-body {
+  padding: 1.25rem 0.75rem;
+  word-wrap: break-word;
+}
+
+.fake-toast-body p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.fake-toast-body .fake-toast-head {
+  margin-bottom: .2rem;
+}
+
+.fake-toast .circle-status {
+  width: 16px;
+  height: 16px;
+  background: rgb(0, 207, 17);
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
+  margin-right: 1rem;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(3, 102, 3, 0.459);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                               Cookies Layout                               */
+ 
+/* -------------------------------------------------------------------------- */
+
+
+.toast-cookie {
+  width: 27rem;
+  height: 5.15rem;
+}
+
+.toast-icon {
+  width: 32px;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
   

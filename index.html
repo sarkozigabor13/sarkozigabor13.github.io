@@ -264,8 +264,8 @@
                 <section class="py-5">
 
                     <div class="container">
-                        <div class="row align-items-center mb-6">
-                            <div class="col-md-5 col-lg-4 offset-lg-1">
+                        <div class="row align-items-center mb-6 vh-100">
+                            <div class="col-md-5 col-lg-5">
                                 <div class="pb-5">
                                     <h1 class="fw-bold lh-base">Munícióm</h1>
                                 </div>
@@ -636,46 +636,46 @@
                                     <div class="tab-pane fade rounded bg-white" id="v-pills-messages" role="tabpanel"
                                         aria-labelledby="v-pills-messages-tab">
 
-                                        <!-- Toast -->
-                                        <div class="toast-container">
+                                        <!-- Fake-toasts -->
+                                        <div class="fake-toast-container">
 
 
 
-                                            <div class="toast fade show mb-5" role="alert" aria-live="assertive"
+                                            <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
                                                 aria-atomic="true">
-                                                <div class="toast-header">
+                                                <div class="fake-toast-header">
                                                     <strong class="me-auto">HTML, Git, Codepan</strong>
                                                     <small class="text-muted mx-3">1,5 éve</small>
                                                     <span class="circle-status"></span>
                                                 </div>
-                                                <div class="toast-body">
+                                                <div class="fake-toast-body">
                                                     <div class="bar-container">
                                                         <div class="bar-success" id="barOne"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="toast fade show mb-5" role="alert" aria-live="assertive"
+                                            <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
                                                 aria-atomic="true">
-                                                <div class="toast-header">
+                                                <div class="fake-toast-header">
                                                     <strong class="me-auto">CSS, CSS3, Bootsrap</strong>
                                                     <small class="text-muted mx-3">1,5 éve</small>
                                                     <span class="circle-status"></span>
                                                 </div>
-                                                <div class="toast-body">
+                                                <div class="fake-toast-body">
                                                     <div class="bar-container">
                                                         <div class="bar-success" id="barOne"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="toast fade show mb-5" role="alert" aria-live="assertive"
+                                        <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
                                             aria-atomic="true">
-                                            <div class="toast-header">
+                                            <div class="fake-toast-header">
                                                 <strong class="me-auto">Javascript, React</strong>
                                                 <small class="text-muted mx-3">jelenleg</small>
                                                 <span class="circle-status"></span>
                                             </div>
-                                            <div class="toast-body">
+                                            <div class="fake-toast-body">
                                                 <div class="bar-container">
                                                     <div class="bar" id="bar"></div>
                                                 </div>
@@ -978,20 +978,28 @@
             </div>
         </div>
 
+
         <!-- ===============================================-->
         <!--    Cookies-->
         <!-- ===============================================-->
 
 
-        <div id="cookieToast" class="toast mt-5 cookiealert" data-delay="10000" role="alert" aria-live="assertive"
-            aria-atomic="true" style="position: fixed; bottom: 2rem; left: 2rem;">
-            <div class="toast-header">
-                <span class="mr-2"> &#x1F36A;</span>
-                <strong class="me-auto">Nyaaaami</strong>
-                <button type="button" class="close acceptcookies" data-bs-dismiss="toast" aria-label="Close">X</button>
-            </div>
+    
+
+        <div id="cookieToast" class="toast mt-5 cookiealert toast-cookie" data-delay="10000" role="alert" aria-live="assertive"
+            aria-atomic="true">
             <div class="toast-body">
-                Szereted a sütiket? Ez az oldal nem használ. 
+                <div class="row">
+                    <button type="button" class="close acceptcookies" data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x"></i></button>
+                    <div class="col-2 pr-2 d-flex justify-content-center">
+                        <img class="toast-icon" src="assets/img/illustrations/cookie.svg" alt="toast-icon">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="toast-head"><strong>Ennél valamit?</strong></p>
+                        <p">Rossz hírem van, ezen az oldalon nem találsz sütiket.</p>
+                       
+                    </div>
+                </div>  
             </div>
         </div>
 
