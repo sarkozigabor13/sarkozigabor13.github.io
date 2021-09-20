@@ -5049,13 +5049,24 @@ fieldset:disabled .btn {
     text-align: center;
 }
 
+.tab-pane {
+    position: relative;
+}
+
 .tab-content>.tab-pane {
     display: none;
 }
 
 .tab-content>.active {
     display: block;
+    -webkit-animation: moveall 1s;
+    animation: moveall 1s;
 }
+
+@keyframes moveall {
+    0%   {bottom: -200px;}
+    100% {bottom: 0px;}
+  }
 
 .navbar {
     position:           relative;
