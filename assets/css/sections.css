@@ -288,74 +288,40 @@
 
 /* -------------------------------------------------------------------------- */
   
-/*                              Section swticher                              */
+/*                      Section swticher - Credit card                        */
   
 /* -------------------------------------------------------------------------- */
 
 
-.card-details span {
-  font-weight:          500;
-  font-size:            13px;
-  color:                var(--sectionFontColor);
-}
-
-.badge span {
-  background:           var(--sectionMain);
-  font-weight:          600;
-  padding:              0 10px;
-  height:               25px;
-  border-radius:        5px;
-  display:              flex;
-  justify-content:      center;
-  align-items:          center;
-}
-
-.progress {
-  height:               10px;
-  border-radius:        10px;
-}
-
-.progress div {
-  background:           var(--sectionMain);
-}
-
-.text-sub {
-  font-size:            14px;
-  font-weight:          600;
-  color:                var(--sectionFontColor);
-}
-
-.text2 {
-  color:              #a5aec0;
-}
-
 .card-credit-card {
-  border-left:          10px solid var(--sectionFontColor);
+  width:          29rem;
+  height:         17.65rem;
+  border-radius:  12px 12px 0 0 ;
 }
 
-.card-credit-card .chip {   
-  position:             absolute;
-  width:                50px;
-  height:               40px;
-  bottom:               30px;
-  right:                35px;
-  background:           linear-gradient(135deg, #ddccf0 0%, #d1e9f5 44%, #f8ece7 100%);
-  border-radius:        8px;
+.credit-card-top { 
+  padding:        32px 32px 16px 32px ;
 }
 
-.card-credit-card .chip::before {   
-  content:              "";
-  position:             absolute;
-  top:                  0;
-  bottom:               0;
-  left:                 0;
-  right:                0;
-  margin:               auto;
-  border:               4px solid rgba(128, 128, 128, 0.1);
-  width:                80%;
-  height:               70%;
-  border-radius:        5px;
+.credit-card-bottom {
+  height:         7.07rem; 
+  padding:        16px 32px 32px 32px;
+  color:         rgb(255, 255, 255);
+  background:     linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
+  border-radius:  0 0 12px 12px;
+
 }
+
+.credit-card-logo {
+  width:              52px;
+  height:             16px;
+}
+
+.credit-card-data {
+  font-family:        var(--creditCardFont);
+  font-size:          1.15rem;
+}
+
  
 .switch-btn {
   display:              block;

@@ -23,6 +23,17 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+ @font-face {
+    font-family: 'OCR A Extended';
+    src: url('/assets/fonts/OCRAExtended.woff2') format('woff2'),
+        url('/assets/fonts/OCRAExtended.woff') format('woff'),
+        url('/assets/fonts/OCRAExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
  :root {
 
     /*---------- Colors -------------*/ 
@@ -68,6 +79,7 @@
     /*---------- Fonts -------------*/ 
 
     --mainFont:             'General Sans', sans-serif;
+    --creditCardFont:       'OCR A Extended';
 
     /*---------- Box-shadow --------*/ 
 
