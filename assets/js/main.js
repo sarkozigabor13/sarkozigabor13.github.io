@@ -535,38 +535,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // DOM Elements
 
-    const redButton = document.getElementById('red-theme');
-    const blueButton = document.getElementById('blue-theme');
-    const greenButton = document.getElementById('green-theme');
+    const creditCardLogo = document.querySelector('.credit-card-logo');
+    const firstButton = document.getElementById('first-theme');
+    const secondButton = document.getElementById('second-theme');
+    const thirdButton = document.getElementById('third-theme');
     const section = document.getElementById('switchSection');
     const sectionClass = section.classList;
 
     // Button Event Handlers
 
-    blueButton.onclick = () => {
+    secondButton.onclick = () => {
 
-        if (sectionClass.contains('green-theme')) {
-            sectionClass.replace('green-theme', 'blue-theme');
+        if (sectionClass.contains('third-theme')) {
+            sectionClass.replace('third-theme', 'second-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_r.svg";
+            
         } else {
-            sectionClass.replace('red-theme', 'blue-theme');
+            sectionClass.replace('first-theme', 'second-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_r.svg";
         }
     };
 
-    redButton.onclick = () => {
+    firstButton.onclick = () => {
 
-        if (sectionClass.contains('blue-theme')) {
-            sectionClass.replace('blue-theme', 'red-theme');
+        if (sectionClass.contains('second-theme')) {
+            sectionClass.replace('second-theme', 'first-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_p.svg";
         } else {
-            sectionClass.replace('green-theme', 'red-theme');
+            sectionClass.replace('third-theme', 'first-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_p.svg";
+           
         }
     };
 
 
-    greenButton.onclick = () => {
-        if (sectionClass.contains('blue-theme')) {
-            sectionClass.replace('blue-theme', 'green-theme');
+    thirdButton.onclick = () => {
+        if (sectionClass.contains('second-theme')) {
+            sectionClass.replace('second-theme', 'third-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
         } else {
-            sectionClass.replace('red-theme', 'green-theme');
+            sectionClass.replace('first-theme', 'third-theme');
+            creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
         }
     };
 
