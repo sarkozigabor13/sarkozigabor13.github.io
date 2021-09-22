@@ -158,9 +158,6 @@
 
 
 
-
-
-
 /* -------------------------------------------------------------------------- */
 
 /*                              Code Editor Layout                            */
@@ -294,22 +291,21 @@
 
 
 .card-credit-card {
-  width:          29rem;
-  height:         17.65rem;
-  border-radius:  12px 12px 0 0 ;
+  width:              29rem;
+  height:             17.65rem;
+  border-radius:      12px 12px 0 0 ;
 }
 
 .credit-card-top { 
-  padding:        32px 32px 16px 32px ;
+  padding:            32px 32px 16px 32px ;
 }
 
 .credit-card-bottom {
-  height:         7.07rem; 
-  padding:        16px 32px 32px 32px;
-  color:         rgb(255, 255, 255);
-  background:     var(--sectionMain);
-  border-radius:  0 0 12px 12px;
-
+  height:             7.07rem; 
+  padding:            16px 32px 32px 32px;
+  color:            rgb(255, 255, 255);
+  background:         var(--sectionMain);
+  border-radius:      0 0 12px 12px;
 }
 
 .credit-card-logo {
@@ -322,7 +318,11 @@
   font-size:          1.15rem;
 }
 
- 
+.credit-card-balance {
+  font-family:        var(--creditCardFont);
+  font-size:          1.5rem;
+}
+
 .switch-btn {
   display:              block;
   background-color:     transparent;
