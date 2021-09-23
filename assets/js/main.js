@@ -594,7 +594,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var btn = document.getElementById('btnProgress');
     var bar = document.getElementById('bar');
-    var txt = document.getElementById('text');
+    var txt = document.getElementById('textProgress');
     var count = 0;
     
     // Listen for an event on the button
@@ -603,8 +603,27 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener('click', () => {
     
         bar.style.width = count + '%';
-        txt.innerHTML = count + '%';
     
+            
+        if (count == 10) {
+            txt.innerHTML = 'Javascript haladó (pl.: ciklusok, eseménykezelés)';
+        }
+        if (count == 20) {
+            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 30) {
+            txt.innerHTML = 'Javascript expert (pl.: ajax kérés, closures)';
+        }
+        if (count == 40) {
+            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 50) {
+            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 60) {
+            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+        }
+
         if (count == 100) {
     
             btn.innerHTML = "Köszi";
