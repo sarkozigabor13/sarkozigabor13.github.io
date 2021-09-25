@@ -606,22 +606,31 @@ document.addEventListener("DOMContentLoaded", function () {
     
             
         if (count == 10) {
-            txt.innerHTML = 'Javascript haladó (pl.: ciklusok, eseménykezelés)';
+            txt.innerHTML = 'Javascript haladó (pl.: ciklusok, események, tömbök)';
         }
         if (count == 20) {
             txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
         }
         if (count == 30) {
-            txt.innerHTML = 'Javascript expert (pl.: ajax kérés, closures)';
+            txt.innerHTML = 'Javascript expert (pl.: this, closures, arrow)';
         }
         if (count == 40) {
-            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'Javascript zseni (pl.: metódusok, konstruktor, prototípusok)';
         }
         if (count == 50) {
-            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React bemutatkozó (pl.: ismerkedés, alapk)';
         }
         if (count == 60) {
-            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 70) {
+            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 80) {
+            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+        }
+        if (count == 90) {
+            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
         }
 
         if (count == 100) {
