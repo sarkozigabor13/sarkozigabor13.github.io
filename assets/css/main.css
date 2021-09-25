@@ -71,7 +71,7 @@
 
     --redSection:         linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
     --redSectionColor:    var(--color-red);
-    --blueSection:        linear-gradient(86.71deg, #FFC32A 25.46%, #FF9D2A 98.11%);
+    --blueSection:        linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
     --blueSectionColor:   #117ecf;
     --greenSection:       linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
     --greenSectionColor:  #2bf406;

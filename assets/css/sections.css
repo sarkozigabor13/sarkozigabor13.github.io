@@ -338,6 +338,10 @@
   box-shadow:           var(--boxShadow);
 }
 
+#switchSection{
+  background:         #F3F8FA;
+}
+
 .switch-btns #first-theme {
   background:           -moz-linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
   background:           -webkit-linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
@@ -346,9 +350,9 @@
 }
 
 .switch-btns #second-theme {
-  background:         -moz-linear-gradient(86.71deg, #FFC32A 25.46%, #FF9D2A 98.11%);
-  background:         -webkit-linear-gradient(86.71deg, #FFC32A 25.46%, #FF9D2A 98.11%);
-  background:         linear-gradient(86.71deg, #FFC32A 25.46%, #FF9D2A 98.11%);
+  background:         -moz-linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
+  background:         -webkit-linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
+  background:         linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
   filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#117ecf",endColorstr="#012c2f",GradientType=1);
 }
 
@@ -358,6 +362,9 @@
   background:         linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
   filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bf406",endColorstr="#9ac3a7",GradientType=1);
 }
+
+
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -655,6 +662,11 @@
   position: relative
 }
 
+.settings-box .input-checkbox{
+  position: relative;
+  top: 3px;
+}
+
 .settings-box #pic1,
 .settings-box #pic2,
 .settings-box #pic3 {
@@ -678,15 +690,12 @@
   display: inline
 }
 
-.settings-box .btn {
-  min-width: 100px
-}
-
-.settings-box .btn.mx-3 {
+.settings-box .btn.show-toast {
   background-color: #fff;
   color: #0779e4;
   border: 1px solid #0779e4
 }
+
 
 .settings-box .btn.mx-3:hover {
   background-color: #0779e4;
