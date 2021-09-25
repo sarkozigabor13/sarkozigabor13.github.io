@@ -70,92 +70,695 @@
     <!-- ===============================================-->
     <main class="main" id="top">
         <div class="tricky-wrapper">
-            <div class="wrap">
-                <!-- ============================================-->
-                <!-- <section> begin ============================-->
-                <div class="bg-gradient-sections">
-                    <div class="d-none d-lg-block">
-                        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3"
-                            data-navbar-on-scroll="data-navbar-on-scroll">
-                            <div class="container">
-                                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
-                                    <div class="logo-name">gabor.</div>
-                                </a>
-                                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation"><span
-                                        class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
-                                    id="navbarSupportedContent">
+            <div class="container">
+
+
+                <div class="wrap">
+                    <!-- ============================================-->
+                    <!-- <section> begin ============================-->
+                    <div class="bg-gradient-sections">
+                        <div class="d-none d-lg-block">
+                            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+                                data-navbar-on-scroll="data-navbar-on-scroll">
+                                <div class="container">
+                                    <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
+                                        <div class="logo-name">gabor.</div>
+                                    </a>
+                                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation"><span
+                                            class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+                                        id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                                            <li class="nav-item"><a class="nav-link fw-medium"
+                                                    href="project.html">Projektek</a></li>
+                                            <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link fw-medium" href="#">
+                                                    <i id="themeIcon" class="bi bi-moon"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="d-block d-lg-none mobile-nav">
+                            <span class="screen-darken"></span>
+
+                            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-mobile"
+                                data-navbar-on-scroll="data-navbar-on-scroll">
+                                <div class="container">
+                                    <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
+                                        <div class="logo-name">Weboldal <span id="appLogoNameMobile"></span> </div>
+                                    </a>
+                                    <div class="mobile-menu-squares-container">
+                                        <button data-trigger="navbar_main" class="squares d-flex align-items-center"
+                                            type="button">
+                                            <div class="square"></div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </nav>
+
+                            <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-light py-3"
+                                data-navbar-on-scroll="data-navbar-on-scroll">
+                                <div class="container">
+                                    <div class="offcanvas-header">
+                                        <button class="btn-close float-end squares" type="button">
+                                            <div class="square"></div>
+                                        </button>
+                                    </div>
+                                    <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
+                                        <div class="logo-name">Weboldal <span id="appLogoName"></span> </div>
+                                    </a>
+
                                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                                        <li class="nav-item"><a class="nav-link fw-medium"
-                                                href="project.html">Projektek</a></li>
+                                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                                href="#pricing">Projektek</a></li>
+
                                         <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a></li>
                                         <li class="nav-item"><a class="nav-link fw-medium" href="#">
-                                                <i id="themeIcon" class="bi bi-moon"></i>
+                                                <i id="themeIconPhone" class="bi bi-moon"></i>
                                             </a>
                                         </li>
+
                                     </ul>
+                                </div> <!-- container-fluid.// -->
+                            </nav>
+                        </div>
+                        <section class="py-0" id="home">
+                            <div class="bg-holder" style="background-position:bottom;background-size:cover;">
+                            </div>
+                            <!--/.bg-holder-->
+                            <div class="container position-relative">
+                                <div class="row align-items-center py-8">
+                                    <div class="col-md-7 col-lg-6 text-center text-md-start">
+                                        <h1 class="mb-4 display-3 fw-bold lh-sm">Weboldal<br
+                                                class="d-block d-lg-none d-xl-block" /><span id="appLogoNameTxt"></span>
+                                        </h1>
+                                        <p class="mt-3 mb-4 fs-1">Fő fókuszban a digitális élmények létrehozása kliens
+                                            oldalon.<br class="d-none d-lg-block" />Átlátható, fenntartható oldalépítés,
+                                            frontend fejlesztés.</p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 text-center text-md-end">
+
+                                        <!-- Code Editor Layout -->
+
+                                        <img class="img-fluid" src="assets/img/illustrations/hero.png" width="550"
+                                            alt="">
+
+                                    </div>
                                 </div>
                             </div>
-                        </nav>
+                        </section>
                     </div>
-                    <div class="d-block d-lg-none mobile-nav">
-                        <span class="screen-darken"></span>
+                    <!-- <section> close ============================-->
+                    <!-- ============================================-->
 
-                        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-mobile"
-                            data-navbar-on-scroll="data-navbar-on-scroll">
-                            <div class="container">
-                                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
-                                    <div class="logo-name">Weboldal <span id="appLogoNameMobile"></span> </div>
-                                </a>
-                                <div class="mobile-menu-squares-container">
-                                    <button data-trigger="navbar_main" class="squares d-flex align-items-center"
-                                        type="button">
-                                        <div class="square"></div>
-                                    </button>
+                    <!-- ============================================-->
+                    <!-- <section> begin ============================-->
+                    <section class="first-theme" id="switchSection">
+                        <div class="container switch--theme--container">
+                            <div class="row align-items-center mb-6">
+                                <div class="col-md-5 col-lg-6">
+                                    <div class="card card-credit-card mt-3">
+
+                                        <div class="credit-card-top">
+                                            <div class="row d-flex justify-content-between">
+                                                <div class="col-6">
+                                                    <img class="credit-card-logo"
+                                                        src="assets/img/illustrations/visa_p.svg" alt="visa_logo">
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="credit-card-data text-end">08/22</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-4 mb-0 d-flex">
+                                                <div class="col-5">
+                                                    <small>Cardholder</small>
+                                                </div>
+                                                <div class="col-7">
+                                                    <small>Cardholder</small>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2 mb-0 d-flex">
+                                                <div class="col-5">
+                                                    <p class="credit-card-data">Nagy Lajos</p>
+                                                </div>
+                                                <div class="col-7">
+                                                    <p class="credit-card-data">**** **** **** 1223</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="credit-card-bottom">
+                                            <div class="row mb-0">
+                                                <div class="col-12">
+                                                    <small>Balance</small>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2 mb-0">
+                                                <div class="col-12">
+                                                    <p class="credit-card-balance mb-0">$ 230,310</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                 </div>
-
+                                <div class="col-md-6 col-lg-5 offset-lg-1 py-5 ps-5">
+                                    <h1 class="mb-4 display-3 fw-bold lh-sm">Pont olyan</h1>
+                                    <p class="mb-0">Applikációk, értesítő üzenet, webshop, hírlevél vagy könyvbemutató
+                                        oldal. Minden
+                                        fejlesztés a felhasználói élményt és esztétikumot helyezi előtérbe: szekciókra
+                                        bontva, egységesen létrehozni egy fenntarható és átlátható produktumot.
+                                    </p>
+                                    <p class="mt-3">Csekkold a színeket!</p>
+                                    <div class="py-5">
+                                        <div class="theme-switches">
+                                            <ul class="d-flex p-0 switch-btns">
+                                                <li class="switch-btn">
+                                                    <button id="first-theme" href="#"></button>
+                                                </li>
+                                                <li class="switch-btn">
+                                                    <button id="second-theme" href="#"></button>
+                                                </li>
+                                                <li class="switch-btn">
+                                                    <button id="third-theme" href="#"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </nav>
+                        </div>
+                        <!-- end of .container-->
 
-                        <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-light py-3"
-                            data-navbar-on-scroll="data-navbar-on-scroll">
-                            <div class="container">
-                                <div class="offcanvas-header">
-                                    <button class="btn-close float-end squares" type="button">
-                                        <div class="square"></div>
-                                    </button>
-                                </div>
-                                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
-                                    <div class="logo-name">Weboldal <span id="appLogoName"></span> </div>
-                                </a>
+                    </section>
+                    <!-- <section> close ============================-->
+                    <!-- ============================================-->
 
-                                <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                                    <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
-                                            href="#pricing">Projektek</a></li>
+                    <!-- ============================================-->
+                    <!-- <section> begin ============================-->
+                    <section class="py-5">
 
-                                    <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a></li>
-                                    <li class="nav-item"><a class="nav-link fw-medium" href="#">
-                                            <i id="themeIconPhone" class="bi bi-moon"></i>
+                        <div class="container">
+                            <div class="row align-items-center mb-6 vh-100">
+                                <div class="col-md-5 col-lg-5">
+                                    <div class="pb-5">
+                                        <h1 class="fw-bold lh-base">Munícióm</h1>
+                                    </div>
+
+
+                                    <div class="nav flex-column nav-pills nav-pills-custom accordion-nav"
+                                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                        <a class="nav-link mb-3 p-3 active" id="v-pills-home-tab" data-toggle="pill"
+                                            href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                            aria-selected="true">
+                                            <i class="fa fa-user-circle-o mr-2"></i>
+                                            <span class="accordion-head">Élmény létrehozása</span>
+                                            <span id="homeTabPanel">
+                                                <p class="mt-3">Legyen szó ecommerce tartalomgyártásról, üzenetküldő
+                                                    alkalmazásról vagy ügyfélszolgálati rendszerek létrehozásáról,
+                                                    szívesen
+                                                    segítek. Plusz Shoprenteres rendszerben jártas vagyok, illetve
+                                                    Shopify
+                                                    is szóba jöhet.
+                                                </p>
+                                            </span>
                                         </a>
-                                    </li>
 
-                                </ul>
-                            </div> <!-- container-fluid.// -->
-                        </nav>
-                    </div>
-                    <section class="py-0" id="home">
+
+
+
+                                        <a class="nav-link mb-3 p-3" id="v-pills-profile-tab" data-toggle="pill"
+                                            href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                            aria-selected="false">
+                                            <i class="fa fa-calendar-minus-o mr-2"></i>
+                                            <span class="accordion-head">Könyvtárak</span>
+                                            <span class="d-none" id="profileTabPanel">
+                                                <p class="mt-3">Bootstrap, Bulma, Tailwind. Szívesen használom őket és
+                                                    szívesen dolgozok akár Elementorral, Wordpressel
+                                                    ha erre van szükség. Mindig jó, ha újat tanul az ember.
+                                                </p>
+                                            </span>
+                                        </a>
+
+
+
+
+                                        <a class="nav-link mb-3 p-3" id="v-pills-messages-tab" data-toggle="pill"
+                                            href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                            aria-selected="false">
+                                            <i class="fa fa-star mr-2"></i>
+                                            <span class="accordion-head">Pimpelés</span>
+                                            <span class="d-none" id="messagesTabPanel">
+                                                <p class="mt-3">Alapvető ismeretekkel rendelkezem HTML5, CSS, CSS3, GIt
+                                                    verziókezelés
+                                                    Figma, Trello és Javascript terén. Jelenleg tanulom a Javascriptet
+                                                    mélyebben, ezek után
+                                                    pedig Reactet veszem gorcső alá.
+
+                                                </p>
+
+                                                <p class="mt-3">Nyomd a gombot és segítsd pimpelni a tudásom.</p>
+                                            </span>
+                                        </a>
+
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5 offset-lg-1 py-5 ps-5">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade rounded bg-white show active" id="v-pills-home"
+                                            role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+                                            <!-- Settings box -->
+
+                                            <div class="card settings-box">
+                                                <div class="header px-4 pt-3 pb-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="h5">Tartalom hozzáférhetősége</div>
+                                                        <div class="close ml-auto"><span class="fas fa-times"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="content px-4"> <b>Jogosultság</b>
+                                                    <p class="text-muted">Korlátoztott hozzáférésre jogosult személyek
+                                                        kiválasztása
+                                                    <p>
+                                                    <div class="form-inline d-flex mb-3"> <input type="text"
+                                                            placeholder="Hívj meg valakit..">
+                                                        <select name="edit" id="edit" class="ml-auto">
+                                                            <option value="can edit">Tulajdonos</option>
+                                                            <option value="can edit">Közreműködő</option>
+                                                            <option value="can edit">Megtekintheti</option>
+                                                        </select>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <div class="row">
+                                                            <div class="col-8 d-flex">
+                                                                <div class="pr-2"> <input type="checkbox" checked>
+                                                                </div>
+                                                                <div class="d-flex flex-column my-0 m-3">
+                                                                    <b>Tulajdonos</b>
+                                                                    <p class="text-muted">Birtokolja a file-t
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col d-flex align-items-start"> <img
+                                                                    src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                                    width="35" height="35" class="rounded-circle"
+                                                                    id="pic1" alt="">
+                                                                <img src="https://images.pexels.com/photos/3789115/pexels-photo-3789115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                                    width="35" height="35" class="rounded-circle"
+                                                                    id="pic2" alt="">
+                                                                <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                                    width="35" height="35" class="rounded-circle"
+                                                                    id="pic3" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-start py-3">
+                                                            <div class="pr-2"> <input type="checkbox"> </div>
+                                                            <div class="d-flex flex-column my-0 m-3"> <b>Látogató</b>
+                                                                <p class="text-muted">Megtekintheti a file-t</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-8 d-flex">
+                                                                <div class="pr-2"> <input type="checkbox" checked>
+                                                                </div>
+                                                                <div class="d-flex flex-column my-0 m-3">
+                                                                    <b>Közreműködők</b>
+                                                                    <p class="text-muted">Szerkesztheti a file-t
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col d-flex align-items-start">
+                                                                <img src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                                    width="35" height="35" class="rounded-circle"
+                                                                    id="pic1" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-center pt-4">
+                                                        <button class="btn btn-primary">Mégsem</button>
+                                                        <button type="button"
+                                                            class="btn mx-3 show-toast">Küldés</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade rounded bg-white" id="v-pills-profile" role="tabpanel"
+                                            aria-labelledby="v-pills-profile-tab">
+
+                                            <!-- Vertical timeline -->
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">User Timeline</h5>
+                                                    <div class="scroll-area">
+                                                        <div
+                                                            class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Meeting with client
+                                                                        </h4>
+                                                                        <p>Meeting with USA Client, today at <a
+                                                                                href="javascript:void(0);"
+                                                                                data-abc="true">12:00
+                                                                                PM</a></p> <span
+                                                                            class="vertical-timeline-element-date">9:30
+                                                                            AM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Another meeting with UK client today, at <b
+                                                                                class="text-danger">3:00 PM</b></p>
+                                                                        <p>Yet another one, at <span
+                                                                                class="text-success">5:00
+                                                                                PM</span></p> <span
+                                                                            class="vertical-timeline-element-date">12:25
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-danger">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Discussion with team
+                                                                            about new
+                                                                            product launch</h4>
+                                                                        <p>meeting with team mates about the launch of
+                                                                            new
+                                                                            product.
+                                                                            and tell them about new features</p> <span
+                                                                            class="vertical-timeline-element-date">6:00
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-primary">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title text-success">
+                                                                            Discussion
+                                                                            with
+                                                                            marketing team</h4>
+                                                                        <p>Discussion with marketing team about the
+                                                                            popularity of
+                                                                            last product</p> <span
+                                                                            class="vertical-timeline-element-date">9:00
+                                                                            AM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-success">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Purchase new hosting
+                                                                            plan
+                                                                        </h4>
+                                                                        <p>Purchase new hosting plan as discussed with
+                                                                            development
+                                                                            team, today at <a href="javascript:void(0);"
+                                                                                data-abc="true">10:00 AM</a></p> <span
+                                                                            class="vertical-timeline-element-date">10:30
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Another conference call today, at <b
+                                                                                class="text-danger">11:00 AM</b></p>
+                                                                        <p>Yet another one, at <span
+                                                                                class="text-success">1:00
+                                                                                PM</span></p> <span
+                                                                            class="vertical-timeline-element-date">12:25
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Another meeting with UK client today, at <b
+                                                                                class="text-danger">3:00 PM</b></p>
+                                                                        <p>Yet another one, at <span
+                                                                                class="text-success">5:00
+                                                                                PM</span></p> <span
+                                                                            class="vertical-timeline-element-date">12:25
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-danger">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Discussion with team
+                                                                            about new
+                                                                            product launch</h4>
+                                                                        <p>meeting with team mates about the launch of
+                                                                            new
+                                                                            product.
+                                                                            and tell them about new features</p> <span
+                                                                            class="vertical-timeline-element-date">6:00
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-primary">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title text-success">
+                                                                            Discussion
+                                                                            with
+                                                                            marketing team</h4>
+                                                                        <p>Discussion with marketing team about the
+                                                                            popularity of
+                                                                            last product</p> <span
+                                                                            class="vertical-timeline-element-date">9:00
+                                                                            AM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-success">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Purchase new hosting
+                                                                            plan
+                                                                        </h4>
+                                                                        <p>Purchase new hosting plan as discussed with
+                                                                            development
+                                                                            team, today at <a href="javascript:void(0);"
+                                                                                data-abc="true">10:00 AM</a></p> <span
+                                                                            class="vertical-timeline-element-date">10:30
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="vertical-timeline-item vertical-timeline-element">
+                                                                <div> <span
+                                                                        class="vertical-timeline-element-icon bounce-in">
+                                                                        <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                        </i>
+                                                                    </span>
+                                                                    <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Another conference call today, at <b
+                                                                                class="text-danger">11:00 AM</b></p>
+                                                                        <p>Yet another one, at <span
+                                                                                class="text-success">1:00
+                                                                                PM</span></p> <span
+                                                                            class="vertical-timeline-element-date">12:25
+                                                                            PM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade rounded bg-white" id="v-pills-messages"
+                                            role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                                            <!-- Fake-toasts -->
+                                            <div class="fake-toast-container">
+
+
+
+                                                <div class="fake-toast fade show mb-5" role="alert"
+                                                    aria-live="assertive" aria-atomic="true">
+                                                    <div class="fake-toast-header">
+                                                        <strong class="me-auto">HTML, Git, Codepan</strong>
+                                                        <small class="text-muted mx-3">1,5 éve</small>
+                                                        <span class="circle-status"></span>
+                                                    </div>
+                                                    <div class="fake-toast-body">
+                                                        <div class="bar-container">
+                                                            <div class="bar-success" id="barOne"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fake-toast fade show mb-5" role="alert"
+                                                    aria-live="assertive" aria-atomic="true">
+                                                    <div class="fake-toast-header">
+                                                        <strong class="me-auto">CSS, CSS3, Bootsrap</strong>
+                                                        <small class="text-muted mx-3">1,5 éve</small>
+                                                        <span class="circle-status"></span>
+                                                    </div>
+                                                    <div class="fake-toast-body">
+                                                        <div class="bar-container">
+                                                            <div class="bar-success" id="barOne"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
+                                                aria-atomic="true">
+                                                <div class="fake-toast-header">
+                                                    <strong class="me-auto">Javascript, React</strong>
+                                                    <small class="text-muted mx-3">jelenleg</small>
+                                                    <span class="circle-status"></span>
+                                                </div>
+                                                <div class="fake-toast-body">
+                                                    <div class="bar-container">
+                                                        <div class="bar" id="bar"></div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-push" type="button"
+                                                            id="btnProgress">Pimpelés</button>
+                                                        <span>Téma:</span>
+                                                        <span class="text mx-3" id="textProgress">Javascript alapok
+                                                            (pl.:
+                                                            változók, operátorok, deklarálás, szintaxis)</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end of .container-->
+                    </section>
+                    <!-- <section> close ============================-->
+                    <!-- ============================================-->
+
+                    <!-- ============================================-->
+                    <!-- <section> begin ============================-->
+                    <section class="py-5">
                         <div class="bg-holder" style="background-position:bottom;background-size:cover;">
                         </div>
                         <!--/.bg-holder-->
                         <div class="container position-relative">
-                            <div class="row align-items-center py-8">
+                            <div class="row align-items-center">
                                 <div class="col-md-7 col-lg-6 text-center text-md-start">
                                     <h1 class="mb-4 display-3 fw-bold lh-sm">Weboldal<br
-                                            class="d-block d-lg-none d-xl-block" /><span id="appLogoNameTxt"></span>
-                                    </h1>
+                                            class="d-block d-lg-none d-xl-block" /></h1>
                                     <p class="mt-3 mb-4 fs-1">Fő fókuszban a digitális élmények létrehozása kliens
                                         oldalon.<br class="d-none d-lg-block" />Átlátható, fenntartható oldalépítés,
                                         frontend fejlesztés.</p>
@@ -164,682 +767,124 @@
 
                                     <!-- Code Editor Layout -->
 
-                                    <img class="img-fluid" src="assets/img/illustrations/hero.png" width="550" alt="">
+                                    <div class="window-editor-layout">
+                                        <div class="window-top">
+                                            <div class="window__controls">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="window__title">index.html - Helyes kis oldal</div>
+                                        </div>
+                                        <div class="window-main">
+                                            <ol>
+                                                <li>&lt;!<span class="tag">DOCTYPE </span><span class="attr">
+                                                        html</span>&gt;
+                                                </li>
+                                                <li>&lt;<span class="tag">html</span>&gt;</li>
+
+                                                <li>&nbsp;&nbsp;&lt;<span class="tag">head</span>&gt;</li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">title</span>&gt;<span
+                                                        id="appTextEditor" class="text">Work in
+                                                        progress...</span>&lt;<span class="tag">/title</span>&gt;
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span
+                                                        class="attr">href</span>=<span
+                                                        class="val">"styles/style.css"</span>
+                                                    <span class="attr">rel</span>=<span
+                                                        class="val">"stylesheet"</span>&gt;
+                                                </li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- It's already
+                                                        in my
+                                                        head
+                                                        --&gt;</span></li>
+                                                <li>&nbsp;&nbsp;&lt;/<span class="tag">head</span>&gt;</li>
+                                                <li>&nbsp;&nbsp;&lt;<span class="tag">body</span>&gt;</li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- I'm currently
+                                                        working
+                                                        on
+                                                        my body --&gt;</span></li>
+                                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">script</span> <span
+                                                        class="attr">src</span>=<span
+                                                        class="val">"scripts/script.js</span>&gt;&lt;/<span
+                                                        class="tag">script</span>&gt; </li>
+                                                <li id="appTextEditorTwo"></li>
+                                                <li>&nbsp;&nbsp;&lt;/<span class="tag">body</span>&gt;</li>
+                                                <li>&lt;/<span class="tag">html</span>&gt;</li>
+                                            </ol>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <!-- <section> close ============================-->
+                    <!-- ============================================-->
+
+                    <!-- ============================================-->
+                    <!-- <section> begin ============================-->
+                    <section class="project-section">
+
+                        <div class="container">
+                            <div class="row align-items-center mt-6">
+                                <div class="col-12">
+                                    <div class="pb-5">
+                                        <h1 class="fw-bold lh-base">Eddigi munkáim</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-6 my-5">
+                                    <a href="#" class="project-card">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="fw-bold lh-base mb-0">Bearing Express</h5>
+                                            <i class="bi bi-gear project-icon"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 my-5">
+                                    <a href="#" class="project-card">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="fw-bold lh-base mb-0">Portfólió oldal</h5>
+                                            <i class="bi bi-heart project-icon"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 my-5">
+                                    <a href="#" class="project-card">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="fw-bold lh-base mb-0">Sárközi Klíma</h5>
+                                            <i class="bi bi-snow project-icon"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 my-5">
+                                    <a href="#" class="project-card">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="fw-bold lh-base mb-0">Idée Design Studio</h5>
+                                            <i class="bi bi-palette2 project-icon"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-center mb-6">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <a href="projects.html" class="fw-bold lh-base">Összes project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
+
+                <!-- end of .container-->
+
                 <!-- <section> close ============================-->
                 <!-- ============================================-->
-
-                <!-- ============================================-->
-                <!-- <section> begin ============================-->
-                <section class="first-theme" id="switchSection">
-                    <div class="container switch--theme--container">
-                        <div class="row align-items-center mb-6">
-                            <div class="col-md-5 col-lg-6">
-                                <div class="card card-credit-card mt-3">
-
-                                    <div class="credit-card-top">
-                                        <div class="row d-flex justify-content-between">
-                                            <div class="col-6">
-                                                <img class="credit-card-logo" src="assets/img/illustrations/visa_p.svg"
-                                                    alt="visa_logo">
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="credit-card-data text-end">08/22</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mt-4 mb-0 d-flex">
-                                            <div class="col-5">
-                                                <small>Cardholder</small>
-                                            </div>
-                                            <div class="col-7">
-                                                <small>Cardholder</small>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-2 mb-0 d-flex">
-                                            <div class="col-5">
-                                                <p class="credit-card-data">Nagy Lajos</p>
-                                            </div>
-                                            <div class="col-7">
-                                                <p class="credit-card-data">**** **** **** 1223</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="credit-card-bottom">
-                                        <div class="row mb-0">
-                                            <div class="col-12">
-                                                <small>Balance</small>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-2 mb-0">
-                                            <div class="col-12">
-                                                <p class="credit-card-balance mb-0">$ 230,310</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-5 offset-lg-1 py-5 ps-5">
-                                <h1 class="mb-4 display-3 fw-bold lh-sm">Pont olyan</h1>
-                                <p class="mb-0">Applikációk, értesítő üzenet, webshop, hírlevél vagy könyvbemutató
-                                    oldal. Minden
-                                    fejlesztés a felhasználói élményt és esztétikumot helyezi előtérbe: szekciókra
-                                    bontva, egységesen létrehozni egy fenntarható és átlátható produktumot.
-                                </p>
-                                <p class="mt-3">Csekkold a színeket!</p>
-                                <div class="py-5">
-                                    <div class="theme-switches">
-                                        <ul class="d-flex p-0 switch-btns">
-                                            <li class="switch-btn">
-                                                <button id="first-theme" href="#"></button>
-                                            </li>
-                                            <li class="switch-btn">
-                                                <button id="second-theme" href="#"></button>
-                                            </li>
-                                            <li class="switch-btn">
-                                                <button id="third-theme" href="#"></button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of .container-->
-
-                </section>
-                <!-- <section> close ============================-->
-                <!-- ============================================-->
-
-                <!-- ============================================-->
-                <!-- <section> begin ============================-->
-                <section class="py-5">
-
-                    <div class="container">
-                        <div class="row align-items-center mb-6 vh-100">
-                            <div class="col-md-5 col-lg-5">
-                                <div class="pb-5">
-                                    <h1 class="fw-bold lh-base">Munícióm</h1>
-                                </div>
-
-
-                                <div class="nav flex-column nav-pills nav-pills-custom accordion-nav" id="v-pills-tab"
-                                    role="tablist" aria-orientation="vertical">
-
-                                    <a class="nav-link mb-3 p-3 active" id="v-pills-home-tab" data-toggle="pill"
-                                        href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                        aria-selected="true">
-                                        <i class="fa fa-user-circle-o mr-2"></i>
-                                        <span class="accordion-head">Élmény létrehozása</span>
-                                        <span id="homeTabPanel">
-                                            <p class="mt-3">Legyen szó ecommerce tartalomgyártásról, üzenetküldő
-                                                alkalmazásról vagy ügyfélszolgálati rendszerek létrehozásáról, szívesen
-                                                segítek. Plusz Shoprenteres rendszerben jártas vagyok, illetve Shopify
-                                                is szóba jöhet.
-                                            </p>
-                                        </span>
-                                    </a>
-
-
-
-
-                                    <a class="nav-link mb-3 p-3" id="v-pills-profile-tab" data-toggle="pill"
-                                        href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                        aria-selected="false">
-                                        <i class="fa fa-calendar-minus-o mr-2"></i>
-                                        <span class="accordion-head">Könyvtárak</span>
-                                        <span class="d-none" id="profileTabPanel">
-                                            <p class="mt-3">Bootstrap, Bulma, Tailwind. Szívesen használom őket és
-                                                szívesen dolgozok akár Elementorral, Wordpressel
-                                                ha erre van szükség. Mindig jó, ha újat tanul az ember.
-                                            </p>
-                                        </span>
-                                    </a>
-
-
-
-
-                                    <a class="nav-link mb-3 p-3" id="v-pills-messages-tab" data-toggle="pill"
-                                        href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                        aria-selected="false">
-                                        <i class="fa fa-star mr-2"></i>
-                                        <span class="accordion-head">Pimpelés</span>
-                                        <span class="d-none" id="messagesTabPanel">
-                                            <p class="mt-3">Alapvető ismeretekkel rendelkezem HTML5, CSS, CSS3, GIt
-                                                verziókezelés
-                                                Figma, Trello és Javascript terén. Jelenleg tanulom a Javascriptet
-                                                mélyebben, ezek után
-                                                pedig Reactet veszem gorcső alá.
-
-                                            </p>
-
-                                            <p class="mt-3">Nyomd a gombot és segítsd pimpelni a tudásom.</p>
-                                        </span>
-                                    </a>
-
-
-
-
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-5 offset-lg-1 py-5 ps-5">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade rounded bg-white show active" id="v-pills-home"
-                                        role="tabpanel" aria-labelledby="v-pills-home-tab">
-
-                                        <!-- Settings box -->
-
-                                        <div class="card settings-box">
-                                            <div class="header px-4 pt-3 pb-1">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="h5">Tartalom hozzáférhetősége</div>
-                                                    <div class="close ml-auto"><span class="fas fa-times"></span></div>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="content px-4"> <b>Jogosultság</b>
-                                                <p class="text-muted">Korlátoztott hozzáférésre jogosult személyek
-                                                    kiválasztása
-                                                <p>
-                                                <div class="form-inline d-flex mb-3"> <input type="text"
-                                                        placeholder="Hívj meg valakit..">
-                                                    <select name="edit" id="edit" class="ml-auto">
-                                                        <option value="can edit">Tulajdonos</option>
-                                                        <option value="can edit">Közreműködő</option>
-                                                        <option value="can edit">Megtekintheti</option>
-                                                    </select>
-                                                </div>
-                                                <hr>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-8 d-flex">
-                                                            <div class="pr-2"> <input type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 m-3"> <b>Tulajdonos</b>
-                                                                <p class="text-muted">Birtokolja a file-t
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col d-flex align-items-start"> <img
-                                                                src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                                width="35" height="35" class="rounded-circle" id="pic1"
-                                                                alt="">
-                                                            <img src="https://images.pexels.com/photos/3789115/pexels-photo-3789115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                                width="35" height="35" class="rounded-circle" id="pic2"
-                                                                alt="">
-                                                            <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                                width="35" height="35" class="rounded-circle" id="pic3"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex align-items-start py-3">
-                                                        <div class="pr-2"> <input type="checkbox"> </div>
-                                                        <div class="d-flex flex-column my-0 m-3"> <b>Látogató</b>
-                                                            <p class="text-muted">Megtekintheti a file-t</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-8 d-flex">
-                                                            <div class="pr-2"> <input type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 m-3">
-                                                                <b>Közreműködők</b>
-                                                                <p class="text-muted">Szerkesztheti a file-t
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col d-flex align-items-start">
-                                                            <img src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                                width="35" height="35" class="rounded-circle" id="pic1"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center pt-4">
-                                                    <button class="btn btn-primary">Mégsem</button>
-                                                    <button type="button" class="btn mx-3 show-toast">Küldés</button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="tab-pane fade rounded bg-white" id="v-pills-profile" role="tabpanel"
-                                        aria-labelledby="v-pills-profile-tab">
-
-                                        <!-- Vertical timeline -->
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">User Timeline</h5>
-                                                <div class="scroll-area">
-                                                    <div
-                                                        class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-success"></i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Meeting with client</h4>
-                                                                    <p>Meeting with USA Client, today at <a
-                                                                            href="javascript:void(0);"
-                                                                            data-abc="true">12:00
-                                                                            PM</a></p> <span
-                                                                        class="vertical-timeline-element-date">9:30
-                                                                        AM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another meeting with UK client today, at <b
-                                                                            class="text-danger">3:00 PM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">5:00
-                                                                            PM</span></p> <span
-                                                                        class="vertical-timeline-element-date">12:25
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-danger">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Discussion with team
-                                                                        about new
-                                                                        product launch</h4>
-                                                                    <p>meeting with team mates about the launch of new
-                                                                        product.
-                                                                        and tell them about new features</p> <span
-                                                                        class="vertical-timeline-element-date">6:00
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-primary">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title text-success">Discussion
-                                                                        with
-                                                                        marketing team</h4>
-                                                                    <p>Discussion with marketing team about the
-                                                                        popularity of
-                                                                        last product</p> <span
-                                                                        class="vertical-timeline-element-date">9:00
-                                                                        AM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-success">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Purchase new hosting plan
-                                                                    </h4>
-                                                                    <p>Purchase new hosting plan as discussed with
-                                                                        development
-                                                                        team, today at <a href="javascript:void(0);"
-                                                                            data-abc="true">10:00 AM</a></p> <span
-                                                                        class="vertical-timeline-element-date">10:30
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another conference call today, at <b
-                                                                            class="text-danger">11:00 AM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">1:00
-                                                                            PM</span></p> <span
-                                                                        class="vertical-timeline-element-date">12:25
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another meeting with UK client today, at <b
-                                                                            class="text-danger">3:00 PM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">5:00
-                                                                            PM</span></p> <span
-                                                                        class="vertical-timeline-element-date">12:25
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-danger">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Discussion with team
-                                                                        about new
-                                                                        product launch</h4>
-                                                                    <p>meeting with team mates about the launch of new
-                                                                        product.
-                                                                        and tell them about new features</p> <span
-                                                                        class="vertical-timeline-element-date">6:00
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-primary">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title text-success">Discussion
-                                                                        with
-                                                                        marketing team</h4>
-                                                                    <p>Discussion with marketing team about the
-                                                                        popularity of
-                                                                        last product</p> <span
-                                                                        class="vertical-timeline-element-date">9:00
-                                                                        AM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-success">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Purchase new hosting plan
-                                                                    </h4>
-                                                                    <p>Purchase new hosting plan as discussed with
-                                                                        development
-                                                                        team, today at <a href="javascript:void(0);"
-                                                                            data-abc="true">10:00 AM</a></p> <span
-                                                                        class="vertical-timeline-element-date">10:30
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div> <span
-                                                                    class="vertical-timeline-element-icon bounce-in"> <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another conference call today, at <b
-                                                                            class="text-danger">11:00 AM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">1:00
-                                                                            PM</span></p> <span
-                                                                        class="vertical-timeline-element-date">12:25
-                                                                        PM</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="tab-pane fade rounded bg-white" id="v-pills-messages" role="tabpanel"
-                                        aria-labelledby="v-pills-messages-tab">
-
-                                        <!-- Fake-toasts -->
-                                        <div class="fake-toast-container">
-
-
-
-                                            <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
-                                                aria-atomic="true">
-                                                <div class="fake-toast-header">
-                                                    <strong class="me-auto">HTML, Git, Codepan</strong>
-                                                    <small class="text-muted mx-3">1,5 éve</small>
-                                                    <span class="circle-status"></span>
-                                                </div>
-                                                <div class="fake-toast-body">
-                                                    <div class="bar-container">
-                                                        <div class="bar-success" id="barOne"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
-                                                aria-atomic="true">
-                                                <div class="fake-toast-header">
-                                                    <strong class="me-auto">CSS, CSS3, Bootsrap</strong>
-                                                    <small class="text-muted mx-3">1,5 éve</small>
-                                                    <span class="circle-status"></span>
-                                                </div>
-                                                <div class="fake-toast-body">
-                                                    <div class="bar-container">
-                                                        <div class="bar-success" id="barOne"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fake-toast fade show mb-5" role="alert" aria-live="assertive"
-                                            aria-atomic="true">
-                                            <div class="fake-toast-header">
-                                                <strong class="me-auto">Javascript, React</strong>
-                                                <small class="text-muted mx-3">jelenleg</small>
-                                                <span class="circle-status"></span>
-                                            </div>
-                                            <div class="fake-toast-body">
-                                                <div class="bar-container">
-                                                    <div class="bar" id="bar"></div>
-                                                </div>
-                                                <div>
-                                                    <button class="btn btn-push" type="button"
-                                                        id="btnProgress">Pimpelés</button>
-                                                    <span>Téma:</span>
-                                                    <span class="text mx-3" id="textProgress">Javascript alapok (pl.:
-                                                        változók, operátorok, deklarálás, szintaxis)</span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- end of .container-->
-                </section>
-                <!-- <section> close ============================-->
-                <!-- ============================================-->
-
-                <!-- ============================================-->
-                <!-- <section> begin ============================-->
-                <section class="py-5">
-                    <div class="bg-holder" style="background-position:bottom;background-size:cover;">
-                    </div>
-                    <!--/.bg-holder-->
-                    <div class="container position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-md-7 col-lg-6 text-center text-md-start">
-                                <h1 class="mb-4 display-3 fw-bold lh-sm">Weboldal<br
-                                        class="d-block d-lg-none d-xl-block" /></h1>
-                                <p class="mt-3 mb-4 fs-1">Fő fókuszban a digitális élmények létrehozása kliens
-                                    oldalon.<br class="d-none d-lg-block" />Átlátható, fenntartható oldalépítés,
-                                    frontend fejlesztés.</p>
-                            </div>
-                            <div class="col-md-5 col-lg-6 text-center text-md-end">
-
-                                <!-- Code Editor Layout -->
-
-                                <div class="window-editor-layout">
-                                    <div class="window-top">
-                                        <div class="window__controls">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="window__title">index.html - Helyes kis oldal</div>
-                                    </div>
-                                    <div class="window-main">
-                                        <ol>
-                                            <li>&lt;!<span class="tag">DOCTYPE </span><span class="attr">
-                                                    html</span>&gt;
-                                            </li>
-                                            <li>&lt;<span class="tag">html</span>&gt;</li>
-
-                                            <li>&nbsp;&nbsp;&lt;<span class="tag">head</span>&gt;</li>
-                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">title</span>&gt;<span
-                                                    id="appTextEditor" class="text">Work in
-                                                    progress...</span>&lt;<span class="tag">/title</span>&gt;
-                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span
-                                                    class="attr">href</span>=<span class="val">"styles/style.css"</span>
-                                                <span class="attr">rel</span>=<span class="val">"stylesheet"</span>&gt;
-                                            </li>
-                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- It's already
-                                                    in my
-                                                    head
-                                                    --&gt;</span></li>
-                                            <li>&nbsp;&nbsp;&lt;/<span class="tag">head</span>&gt;</li>
-                                            <li>&nbsp;&nbsp;&lt;<span class="tag">body</span>&gt;</li>
-                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- I'm currently
-                                                    working
-                                                    on
-                                                    my body --&gt;</span></li>
-                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">script</span> <span
-                                                    class="attr">src</span>=<span
-                                                    class="val">"scripts/script.js</span>&gt;&lt;/<span
-                                                    class="tag">script</span>&gt; </li>
-                                            <li id="appTextEditorTwo"></li>
-                                            <li>&nbsp;&nbsp;&lt;/<span class="tag">body</span>&gt;</li>
-                                            <li>&lt;/<span class="tag">html</span>&gt;</li>
-                                        </ol>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- <section> close ============================-->
-                <!-- ============================================-->
-
-                <!-- ============================================-->
-                <!-- <section> begin ============================-->
-                <section class="project-section">
-
-                    <div class="container">
-                        <div class="row align-items-center mt-6">
-                            <div class="col-12">
-                                <div class="pb-5">
-                                    <h1 class="fw-bold lh-base">Eddigi munkáim</h1>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-6 my-5">
-                                <a href="#" class="project-card">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="fw-bold lh-base mb-0">Bearing Express</h5>
-                                        <i class="bi bi-gear project-icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6 my-5">
-                                <a href="#" class="project-card">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="fw-bold lh-base mb-0">Portfólió oldal</h5>
-                                        <i class="bi bi-heart project-icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6 my-5">
-                                <a href="#" class="project-card">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="fw-bold lh-base mb-0">Sárközi Klíma</h5>
-                                        <i class="bi bi-snow project-icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-6 my-5">
-                                <a href="#" class="project-card">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="fw-bold lh-base mb-0">Idée Design Studio</h5>
-                                        <i class="bi bi-palette2 project-icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="row align-items-center mb-6">
-                            <div class="col-12 d-flex justify-content-end">
-                                <a href="projects.html" class="fw-bold lh-base">Összes project</a>
-                            </div>
-                        </div>
-                    </div>
             </div>
 
-            <!-- end of .container-->
-            </section>
-            <!-- <section> close ============================-->
-            <!-- ============================================-->
-
-
-        </div>
         </div>
         <footer class="w-100 py-4 flex-shrink-0">
             <div class="container">
