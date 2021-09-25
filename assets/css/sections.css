@@ -27,7 +27,8 @@
 /* -------------------------------------------------------------------------- */
 
 .logo-name {
-    color: var(--fontColor);
+    color:      var(--fontColor);
+    font-size:  24px;
 }
 
 

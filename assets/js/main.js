@@ -493,12 +493,12 @@ document.addEventListener("DOMContentLoaded", function () {
     themeIcon.onclick = () => {
 
 
-        if (iconClass.contains('bi-moon')) {
+        if (iconClass.contains('bi-moon-fill')) {
 
-            iconClass.replace('bi-moon', 'bi-sun');
+            iconClass.replace('bi-moon-fill', 'bi-sun');
             document.body.classList.toggle('dark-theme');
         } else {
-            iconClass.replace('bi-sun', 'bi-moon');
+            iconClass.replace('bi-sun', 'bi-moon-fill');
             document.body.classList.toggle('dark-theme');
         }
     };

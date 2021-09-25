@@ -78,8 +78,11 @@
 
     /*---------- Fonts -------------*/ 
 
-    --mainFont:             'General Sans', sans-serif;
-    --creditCardFont:       'OCR A Extended';
+    --mainFont:                 'General Sans', sans-serif;
+    --creditCardFont:           'OCR A Extended';
+    --mainTextSize:              20px;
+    --secondaryTextSize:         16px;
+    --subTextSize:               14px;
 
     /*---------- Box-shadow --------*/ 
 
@@ -656,14 +659,14 @@ progress {
 }
 
 .display-3 {
-    font-size: calc(1.4236rem + 2.08318vw);
+    font-size: calc(1.5rem + 2.08318vw);
     font-weight: 900;
     line-height: 1;
 }
 
 @media (min-width: 1200px) {
     .display-3 {
-        font-size: 2.98598rem;
+        font-size: 3rem;
     }
 }
 
@@ -4971,11 +4974,12 @@ fieldset:disabled .btn {
 }
 
 .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
+    font-size:          16px;
+    display:            block;
+    padding:            0.5rem 1rem;
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    -o-transition:      color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition:         color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -10085,6 +10089,9 @@ fieldset:disabled .btn {
 
 .rounded-circle {
     border-radius: 50% !important;
+    background-color: #F2F4F5;
+    width: 40px;
+    height: 40px;
 }
 
 .rounded-pill {
@@ -20585,3 +20592,16 @@ body.offcanvas-active{
 }	
 /* ============ mobile view .end// ============ */
 
+
+.mainTextSize {
+    font-size:      var(--mainTextSize);
+    font-weight:    500;
+}
+
+.secondaryTextSize {
+    font-size: var(--secondaryTextSize);
+}
+
+.subTextSize {
+    font-size: var(--subTextSize);
+}
