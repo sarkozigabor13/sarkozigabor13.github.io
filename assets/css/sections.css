@@ -712,106 +712,118 @@
 
 /* -------------------------------------------------------------------------- */
   
-/*                             Vertical timeline                              */
+/*                               Order tracking                               */
   
 /* -------------------------------------------------------------------------- */
 
-
-.scroll-area {
-  overflow-x: hidden;
-  height: 400px
+.steps-container {
+  margin-top: 3rem;
 }
 
-.vertical-timeline {
-  width: 100%;
-  position: relative;
-  padding: 1.5rem 0 1rem
-}
-
-.vertical-timeline::before {
+.step::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 67px;
-  height: 100%;
-  width: 4px;
-  background: #e9ecef;
-  border-radius: .25rem
+  border-left-style: dashed;
+  border-left-width: 2px;
+  border-color: #ADADAD;
+  top: 18px;
+  left: 21px;
+  margin-left: 1px;
+  width: 2px;
+  height: 124%;
+  z-index: 0;
 }
 
-.vertical-timeline-element {
+.step:nth-last-child(1)::before{
+  content: none;
+}
+
+.row-step {
   position: relative;
-  margin: 0 0 1rem
+  bottom: 5px;
 }
 
-.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
-  visibility: visible;
-  animation: cd-bounce-1 .8s
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+}
+.step--data {
+  padding-left: 0;
 }
 
-.vertical-timeline-element-icon {
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.caption {
+  font-size: 0.8em;
+}
+
+.step + .step {
+  margin-top: 2rem
+}
+
+
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+
+
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+/* Circle */
+.circle {
+  background: gray;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
   position: absolute;
-  top: 0;
-  left: 60px
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
 }
 
-.vertical-timeline-element-icon .badge-dot-xl {
-  box-shadow: 0 0 0 5px #fff
+.circle i {
+  font-size: 10px;
+    bottom: 5px;
+    position: relative;
 }
 
-.badge-dot-xl {
-  width: 18px;
-  height: 18px;
-  position: relative
-}
-
-.badge:empty {
+.step:last-child .circle:after {
   display: none
 }
 
-.badge-dot-xl::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: .25rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -5px 0 0 -5px;
-  background: #fff
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
 }
 
-.vertical-timeline-element-content {
-  position: relative;
-  margin-left: 90px;
-  font-size: .8rem
-}
-
-.vertical-timeline-element-content .timeline-title {
-  font-size: .8rem;
-  text-transform: uppercase;
-  margin: 0 0 .5rem;
-  padding: 2px 0 0;
-  font-weight: bold
-}
-
-.vertical-timeline-element-content .vertical-timeline-element-date {
-  display: block;
-  position: absolute;
-  left: -90px;
-  top: 0;
-  padding-right: 10px;
-  text-align: right;
-  color: #adb5bd;
-  font-size: .7619rem;
-  white-space: nowrap
-}
-
-.vertical-timeline-element-content:after {
-  content: "";
-  display: table;
-  clear: both
-}
 
 /* -------------------------------------------------------------------------- */
   

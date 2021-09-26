@@ -4980,6 +4980,7 @@ fieldset:disabled .btn {
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     -o-transition:      color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     transition:         color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    cursor:             pointer;    
 }
 
 @media (prefers-reduced-motion: reduce) {
