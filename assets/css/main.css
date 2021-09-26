@@ -83,6 +83,7 @@
     --mainTextSize:              20px;
     --secondaryTextSize:         16px;
     --subTextSize:               14px;
+    --subTextInfo:               12px;
 
     /*---------- Box-shadow --------*/ 
 
@@ -20600,9 +20601,13 @@ body.offcanvas-active{
 }
 
 .secondaryTextSize {
-    font-size: var(--secondaryTextSize);
+    font-size:      var(--secondaryTextSize);
 }
 
 .subTextSize {
-    font-size: var(--subTextSize);
+    font-size:      var(--subTextSize);
+}
+
+.subTextInfo {
+    font-size:      var(--subTextInfo);
 }
