@@ -92,6 +92,7 @@
     /*--------- Border radius ------*/ 
 
     --borderRadius:          12px;
+    --borderShadowRadius:    24px;
 
     /*---------- Backgrounds -------*/ 
 

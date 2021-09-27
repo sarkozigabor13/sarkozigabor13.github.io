@@ -621,12 +621,12 @@
 /* -------------------------------------------------------------------------- */
 
 .settings-box {
-  max-width: 500px;
-  background-color: #fff;
-  border-radius: 10px;
-  min-height: 450px;
-  margin: 50px auto;
-  box-shadow: 30px 50px 80px #e7e7e7;
+  max-width:            386px;
+  background-color:   #fff;
+  border-radius:        var(--borderShadowRadius);
+  min-height:           464px;
+  margin: auto;
+  box-shadow: 1px 2px 4px 0px #0000001A, 12px 12px 24px 0px #0000001A, 0px -2px 12px 0px #0000000D;
   padding: 1rem;
 }
 
@@ -716,6 +716,14 @@
   
 /* -------------------------------------------------------------------------- */
 
+
+.steps-card {
+  max-width:            386px;
+  background-color:   #fff;
+  border-radius:        var(--borderShadowRadius);
+  min-height:           450px;
+}
+
 .steps--card {
   padding: 40px;
 }
@@ -756,15 +764,21 @@
   padding-left: 0;
 }
 
+.step--date {
+  font-size:      10px;
+  color:        #ADADAD;
+}
+
 .track-title {
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 
-.title {
+.step--title {
   line-height: 1.5em;
   font-weight: 600;
+  font-size: 12px
 }
 
 .caption {
