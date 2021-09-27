@@ -744,7 +744,7 @@ progress {
     margin-top:         -1rem;
     margin-bottom:      1rem;
     font-size:          75%;
-    color:            #C3C1C8;
+    color:            #ADADAD;
 }
 
 .blockquote-footer::before {
@@ -776,7 +776,7 @@ progress {
 
 .figure-caption {
     font-size:       75%;
-    color:         #C3C1C8;
+    color:         #ADADAD;
 }
 
 .container,
@@ -2760,27 +2760,27 @@ progress {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #C3C1C8;
+    color: #ADADAD;
     opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-    color: #C3C1C8;
+    color: #ADADAD;
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #C3C1C8;
+    color: #ADADAD;
     opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-    color: #C3C1C8;
+    color: #ADADAD;
     opacity: 1;
 }
 
 .form-control::placeholder {
-    color: #C3C1C8;
+    color: #ADADAD;
     opacity: 1;
 }
 
@@ -2978,7 +2978,7 @@ textarea.form-control-lg {
 }
 
 .form-select:disabled {
-    color: #C3C1C8;
+    color: #ADADAD;
     background-color: #EBEBED;
 }
 
@@ -4411,7 +4411,7 @@ fieldset:disabled .btn {
 
 .btn-link:disabled,
 .btn-link.disabled {
-    color: #C3C1C8;
+    color: #ADADAD;
 }
 
 .btn-lg,
@@ -4787,7 +4787,7 @@ fieldset:disabled .btn {
     padding: 0.5rem 1rem;
     margin-bottom: 0;
     font-size: 0.875rem;
-    color: #C3C1C8;
+    color: #ADADAD;
     white-space: nowrap;
 }
 
@@ -4999,7 +4999,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link.disabled {
-    color: #C3C1C8;
+    color: #ADADAD;
     pointer-events: none;
     cursor: default;
 }
@@ -5023,7 +5023,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link.disabled {
-    color: #C3C1C8;
+    color: #ADADAD;
     background-color: transparent;
     border-color: transparent;
 }
@@ -5755,13 +5755,13 @@ fieldset:disabled .btn {
 .breadcrumb-item+.breadcrumb-item::before {
     float: left;
     padding-right: 0.5rem;
-    color: #C3C1C8;
+    color: #ADADAD;
     content: var(--bs-breadcrumb-divider, "/")/* rtl: var(--bs-breadcrumb-divider, "/") */
     ;
 }
 
 .breadcrumb-item.active {
-    color: #C3C1C8;
+    color: #ADADAD;
 }
 
 .pagination {
@@ -5822,7 +5822,7 @@ fieldset:disabled .btn {
 }
 
 .page-item.disabled .page-link {
-    color: #C3C1C8;
+    color: #ADADAD;
     pointer-events: none;
     background-color: #fff;
     border-color: #E1E0E4;
@@ -6124,7 +6124,7 @@ fieldset:disabled .btn {
 
 .list-group-item.disabled,
 .list-group-item:disabled {
-    color: #C3C1C8;
+    color: #ADADAD;
     pointer-events: none;
     background-color: #fff;
 }
@@ -8149,7 +8149,7 @@ fieldset:disabled .btn {
 }
 
 .border-600 {
-    border-color: #C3C1C8 !important;
+    border-color: #ADADAD !important;
 }
 
 .border-700 {
@@ -9937,7 +9937,7 @@ fieldset:disabled .btn {
 }
 
 .bg-600 {
-    background-color: #C3C1C8 !important;
+    background-color: #ADADAD !important;
 }
 
 .bg-700 {
@@ -10242,7 +10242,7 @@ fieldset:disabled .btn {
 }
 
 .text-600 {
-    color: #C3C1C8 !important;
+    color: #ADADAD !important;
 }
 
 .text-700 {
@@ -11752,7 +11752,7 @@ fieldset:disabled .btn {
         color: #CDCCD1 !important;
     }
     .text-sm-600 {
-        color: #C3C1C8 !important;
+        color: #ADADAD !important;
     }
     .text-sm-700 {
         color: #7D7987 !important;
@@ -13209,7 +13209,7 @@ fieldset:disabled .btn {
         color: #CDCCD1 !important;
     }
     .text-md-600 {
-        color: #C3C1C8 !important;
+        color: #ADADAD !important;
     }
     .text-md-700 {
         color: #7D7987 !important;
@@ -16477,7 +16477,7 @@ fieldset:disabled .btn {
         color: #CDCCD1 !important;
     }
     .text-lg-600 {
-        color: #C3C1C8 !important;
+        color: #ADADAD !important;
     }
     .text-lg-700 {
         color: #7D7987 !important;
@@ -17934,7 +17934,7 @@ fieldset:disabled .btn {
         color: #CDCCD1 !important;
     }
     .text-xl-600 {
-        color: #C3C1C8 !important;
+        color: #ADADAD !important;
     }
     .text-xl-700 {
         color: #7D7987 !important;
@@ -19391,7 +19391,7 @@ fieldset:disabled .btn {
         color: #CDCCD1 !important;
     }
     .text-xxl-600 {
-        color: #C3C1C8 !important;
+        color: #ADADAD !important;
     }
     .text-xxl-700 {
         color: #7D7987 !important;
@@ -19956,7 +19956,7 @@ label {
 }
 
 .link-600 {
-    color: #C3C1C8 !important;
+    color: #ADADAD !important;
 }
 
 .link-600:hover,

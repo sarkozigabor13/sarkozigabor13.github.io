@@ -620,6 +620,10 @@
   
 /* -------------------------------------------------------------------------- */
 
+.settings-box--padding {
+  padding: 40px;
+}
+
 .settings-box {
   max-width:            386px;
   background-color:   #fff;
@@ -627,7 +631,13 @@
   min-height:           464px;
   margin: auto;
   box-shadow: 1px 2px 4px 0px #0000001A, 12px 12px 24px 0px #0000001A, 0px -2px 12px 0px #0000000D;
-  padding: 1rem;
+ 
+}
+
+.settings-box--header {
+  font-size:      16px;
+  font-weight:    700;
+  margin-bottom:  24px;
 }
 
 .settings-box p.text-muted {
@@ -635,66 +645,75 @@
   margin: 0
 }
 
-.settings-box input,
-.settings-box select {
-  border: none;
+.settings-box--input {
   outline: none;
-  box-shadow: none
+  border: 1px solid #adadad;
+  box-shadow: none;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  height: 48px;
 }
 
-.settings-box .content .form-inline {
+.settings-box input::placeholder {
+  padding: 0 10px;
+}
+
+.settings-box .form-inline {
   font-size: 0.85rem;
-  border: 2px solid #0779e4;
-  border-radius: 8px;
-  height: 35px;
-  margin-top: 0.5rem;
-  padding: 0px 10px
+  margin-bottom: 0.5rem;
+  margin: 0px 32px
 }
 
-.settings-box select {
-  font-weight: 700
-}
-
-.settings-box .content .form-inline:hover {
-  border: 2px solid #056ccc
-}
-
-.settings-box .pics {
-  position: relative
-}
 
 .settings-box .input-checkbox{
   position: relative;
   top: 3px;
+  height: 16px;
+  width: 16px;
 }
 
-.settings-box #pic1,
-.settings-box #pic2,
-.settings-box #pic3 {
-  position: absolute;
-  border: 3px solid #fff
+.settings-box--muted {
+  font-size: 12px;
+  margin-bottom: 28px;
 }
 
-.settings-box #pic1 {
-  right: 20%
+.setting-box--text-main {
+  font-size: 12px;
+  color: var(--fontColor);
+  font-weight: 600;
+  
 }
 
-.settings-box #pic2 {
-  right: 16%
+.setting-box--text-muted {
+  font-size: 12px;
+  color: #adadad;
+  font-weight: 400;
+  margin-top: 2px;
 }
 
-.settings-box #pic3 {
-  right: 12%
-}
+
 
 .settings-box .col-10 .pr-2 {
   display: inline
 }
 
-.settings-box .btn.show-toast {
+.settings-box .btn--show-toast {
+  font-size: 12px;
+  padding: 9px 24px;
   background-color: #fff;
-  color: #0779e4;
-  border: 1px solid #0779e4
+  color: var(--fontColor);
+  border: 1px solid var(--fontColor);
+  border-radius: var(--borderRadius);
+}
+
+.settings-box .btn--cancel {
+  font-size: 12px;
+  padding: 9px 24px;
+  font-weight: 400;
+  color: var(--fontColor);
+  border: 1px solid #f1f1f1;
+  border-radius: var(--borderRadius);
+  margin-right: 16px;
 }
 
 

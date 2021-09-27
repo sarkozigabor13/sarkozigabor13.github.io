@@ -343,48 +343,47 @@
                                         <!-- Settings box -->
 
                                         <div class="card settings-box">
-                                            <div class="header px-4 pt-3 pb-1">
+                                            <div class="header pb-1 settings-box--padding">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="h5">Tartalom hozzáférhetősége</div>
+                                                    <div class="h5 settings-box--header">Tartalom hozzáférhetősége</div>
                                                 </div>
                                             </div>
-
-                                            <div class="content px-4"> 
-                                                <div class="form-inline d-flex mb-3"> 
-                                                    <input type="text"  placeholder="Hívj meg valakit..">
-                                                </div>
-                                                <p>Korlátozott hozzáférésre jogosult személyek kiválasztása</p>
+                                            <div class="form-inline d-flex mb-3"> 
+                                                <input type="text" class="settings-box--input"  placeholder="Hívj meg valakit..">
+                                            </div>
+                                            <div class="settings-box--content settings-box--padding pt-0"> 
+                                                <p class="settings-box--muted">Korlátozott hozzáférésre jogosult személyek kiválasztása</p>
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <div class="row">
                                                         <div class="col-8 d-flex">
                                                             <div class="pr-2"> <input class="input-checkbox" type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 mx-3"> <b>Tulajdonos</b>
-                                                                <p class="text-muted">Birtokolja a file-t
+                                                            <div class="d-flex flex-column my-0 mx-3 setting-box--text-main"> <b>Tulajdonos</b>
+                                                                <p class="setting-box--text-muted">Birtokolja a file-t
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex align-items-start py-3">
                                                         <div class="pr-2"> <input class="input-checkbox" type="checkbox"> </div>
-                                                        <div class="d-flex flex-column my-0 mx-3"> <b>Látogató</b>
-                                                            <p class="text-muted">Megtekintheti a file-t</p>
+                                                        <div class="d-flex flex-column my-0 mx-3 setting-box--text-main"> <b>Látogató</b>
+                                                            <p class="setting-box--text-muted">Megtekintheti a file-t</p>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-8 d-flex">
                                                             <div class="pr-2"> <input class="input-checkbox" type="checkbox" checked> </div>
-                                                            <div class="d-flex flex-column my-0 mx-3">
+                                                            <div class="d-flex flex-column my-0 mx-3 setting-box--text-main">
                                                                 <b>Közreműködők</b>
-                                                                <p class="text-muted">Szerkesztheti a file-t
+                                                                <p class="setting-box--text-muted">Szerkesztheti a file-t
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center justify-content-center pt-4">
-                                                    <div class="col-8 offset-4">
-                                                        <button class="btn btn-primary">Mégsem</button>
-                                                        <button type="button" class="btn show-toast">Küldés</button>
+                                                    <div class="col-12 text-end">
+                                                        <button class="btn btn--cancel">Mégsem</button>
+                                                        <button type="button" class="btn btn--show-toast">Küldés</button>
     
                                                     </div>
                                                   
