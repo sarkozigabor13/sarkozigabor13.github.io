@@ -606,36 +606,38 @@ document.addEventListener("DOMContentLoaded", function () {
     
             
         if (count == 10) {
-            txt.innerHTML = 'Javascript haladó (pl.: ciklusok, események, tömbök)';
+            txt.innerHTML = 'Javascript haladó';
         }
         if (count == 20) {
-            txt.innerHTML = 'Javascript középhaladó (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'Javascript középhaladó';
         }
         if (count == 30) {
-            txt.innerHTML = 'Javascript expert (pl.: this, closures, arrow)';
+            txt.innerHTML = 'Javascript expert';
         }
         if (count == 40) {
-            txt.innerHTML = 'Javascript zseni (pl.: metódusok, konstruktor, prototípusok)';
+            txt.innerHTML = 'Javascript zseni';
         }
         if (count == 50) {
-            txt.innerHTML = 'React bemutatkozó (pl.: ismerkedés, alapk)';
+            txt.innerHTML = 'React bemutatkozó';
         }
         if (count == 60) {
-            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React kezdő';
         }
         if (count == 70) {
-            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React amatőr';
         }
         if (count == 80) {
-            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React értő';
         }
         if (count == 90) {
-            txt.innerHTML = 'React kezdő (pl.: függvények, scope, hoisting)';
+            txt.innerHTML = 'React pro';
         }
 
         if (count == 100) {
-    
+
+            txt.innerHTML = 'React pápa';
             btn.innerHTML = "Köszi";
+            bar.classList.add('bar-success');
            
     
             // Emoji confetti 
