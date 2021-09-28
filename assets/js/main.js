@@ -597,6 +597,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var txt = document.getElementById('textProgress');
     var count = 0;
     
+
+    // Emoji confetti 
+    // https://github.com/loonywizard/js-confetti
+    const canvas = document.getElementById('custom_canvas')
+    const button = document.getElementById('buttonConfetti')
+    const jsConfetti = new JSConfetti({ canvas })
+
+
     // Listen for an event on the button
     // Increase the width of the bar by 10 percent(10%)
     
@@ -639,14 +647,6 @@ document.addEventListener("DOMContentLoaded", function () {
             btn.innerHTML = "Köszi";
             bar.classList.add('bar-success');
            
-    
-            // Emoji confetti 
-            // https://github.com/loonywizard/js-confetti
-    
-            const canvas = document.getElementById('custom_canvas')
-            const button = document.getElementById('buttonConfetti')
-    
-            const jsConfetti = new JSConfetti({ canvas })
     
             setTimeout(() => {
                 jsConfetti.addConfetti({
