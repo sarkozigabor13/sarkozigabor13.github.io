@@ -110,36 +110,44 @@
 /* -------------------------------------------------------------------------- */
 
 
-(function() {
+
+
+$(window).on('scroll',function() {
+  if (checkVisible($('#tester'))) {
+
+    (function() {
       
-  const TextEditor = document.getElementById('appTextEditor');
-  const TextEditorNext = document.getElementById('appTextEditorTwo');
-
-
-  const typewriteTextEditor = new Typewriter(TextEditor, {
-    loop: false,
-    delay: 150,    
-  });
-
-  typewriteTextEditor
-  .pauseFor(2500)
-  .typeString('Milyen címet írjak?')
-  .pauseFor(1200)
-  .start();
-  
-
-  const typewriteTextEditorNexT = new Typewriter(TextEditorNext, {
-    loop: false,
-    delay: 150,
-  });
-  
-  typewriteTextEditorNexT 
-    .pauseFor(3850)
-    .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"scripts/script.js</span>&gt;&lt;/<span class="tag">script</span>&gt;')
-    .pauseFor(1200)
-    .start();
-
+      const TextEditor = document.getElementById('appTextEditor');
+    
+    
+      const typewriteTextEditor = new Typewriter(TextEditor, {
+        loop: false,
+        delay: 150,    
+      });
+    
+      typewriteTextEditor
+      .pauseFor(2500)
+      .typeString('Milyen címet írjak?')
+      .pauseFor(1200)
+      .start();
+        
+    })();
 
     
+      $(window).off('scroll');
+  } else {
+      // do nothing
+  }
+});
+function checkVisible( elm, eval ) {
+  eval = eval || "object visible";
+  var viewportHeight = $(window).height(), // Viewport Height
+      scrolltop = $(window).scrollTop(), // Scroll Top
+      y = $(elm).offset().top,
+      elementHeight = $(elm).height();   
+  
+  if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+  if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
 
-})();
+

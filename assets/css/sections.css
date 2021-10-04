@@ -340,7 +340,7 @@
 }
 
 #switchSection{
-  background:         #F3F8FA;
+  background:         var(--mainBackground);
 }
 
 .switch-btns #first-theme {
