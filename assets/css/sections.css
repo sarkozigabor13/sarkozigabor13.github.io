@@ -282,6 +282,10 @@
   .window-editor-layout .line {
       display:            contents;
   }
+
+.code-editor-description {
+  font-size: var(--secondaryTextSize)
+}
   
 
 /* -------------------------------------------------------------------------- */
@@ -344,7 +348,7 @@
 }
 
 #switchSection{
-  background:         var(--mainBackground);
+  background:         #F3F8FA;
 }
 
 .switch-btns #first-theme {
@@ -415,8 +419,11 @@
 /* -------------------------------------------------------------------------- */
 
 .bg-gradient-sections {
-
   background:   var(--backgroundFirstSection);
+}
+
+.wrap--gradient {
+  background:   var(--backgroundLightSecond);
 }
 
 
@@ -893,10 +900,20 @@
 }
 
 .btn-push {
-  box-shadow:       var(--boxShadow);
+  font-size:        var(--subTextInfo);
+  color:            var(--fontColor);
+  border:           2px solid #000;
+  border-radius:    var(--borderRadius);
   margin:           24px 0 0;
-  padding:          5px;
+  padding:          9px 24px;
+}
 
+.btn-push:hover {
+  color: inherit;
+}
+
+#textProgress {
+  margin:           24px 0 0;
 }
 
 
@@ -929,7 +946,6 @@
   transform-origin: center bottom 0px;
   transition: all 0.5s ease 0s;
   box-shadow: var(--boxShadow);
-  background: var(--mainBackground);
   border-radius: 5px;
 }
 

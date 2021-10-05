@@ -97,7 +97,10 @@
 
     /*---------- Backgrounds -------*/ 
 
-    --backgroundLight:       linear-gradient(180deg, rgba(236,240,253,0) 0%, rgba(236,240,253,0.53) 14.32%, #ECF0FD 45.83%, rgba(236,240,253,0.43) 84.33%, rgba(236,240,253,0) 100%);      
+    --backgroundLight:       linear-gradient(180deg, #F2F8FA 0%, rgba(242, 248, 250, 0) 100%);
+    --backgroundLightSecond: linear-gradient(180deg, rgba(242, 248, 250, 0) 0%, #E9ECF0 100%);
+
+      
 
 }
 
@@ -127,7 +130,7 @@
 
 
 .light-theme {
-    --mainBackground:           var(--white);
+    --mainBackground:           var(--backgroundLight);
     --fontColor:                var(--black);
     --offCanvasBackground:      var(--aliceblue);
 
@@ -220,7 +223,7 @@ body {
     font-size:                        14px;
     font-weight:                      400;
     line-height:                      1.5;
-    background:                       var(--mainBackground);
+/*     background:                       var(--mainBackground); */
     color:                            var(--fontColor);
     -webkit-text-size-adjust:         100%;
     -webkit-tap-highlight-color:    rgba(0, 0, 0, 0);
@@ -5069,7 +5072,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: var(--fontColor);
-    background-color: var(--mainBackground);
+    background-color: var(--white);
 }
 
 .nav-fill>.nav-link,
