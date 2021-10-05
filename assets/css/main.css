@@ -846,16 +846,16 @@ progress {
     }
 }
 
-@media (min-width: 1540px) {
+/* @media (min-width: 1540px) {
     .container,
     .container-sm,
     .container-md,
     .container-lg,
     .container-xl,
     .container-xxl {
-        max-width: 1480px;
+        max-width: 1140px;
     }
-}
+} */
 
 .row {
     --bs-gutter-x: 2rem;
