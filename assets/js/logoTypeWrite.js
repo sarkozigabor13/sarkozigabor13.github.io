@@ -35,39 +35,6 @@
 
  })();
 
-/* -------------------------------------------------------------------------- */
-
-/*                     Logo typewrite mobile and tablet                       */
-
-/* -------------------------------------------------------------------------- */
-
-(function() {
-      
-    const appLogoNameMobile = document.getElementById('appLogoNameMobile');
-
-    const typewriterLogoNameMobile = new Typewriter(appLogoNameMobile, {
-      loop: true,
-      delay: 75,
-    });
-    
-    typewriterLogoNameMobile 
-      .pauseFor(2500)
-      .typeString('<span style="color: var(--color-light);">mókából.</span>')
-      .pauseFor(1000)
-      .deleteChars(14)
-      .typeString('<span style="color: var(--color-green);">cégeknek.</span>')
-      .pauseFor(1000)
-      .deleteChars(13)
-      .typeString('<span style="color: var(--color-strong);">menőzni.</span>')
-      .pauseFor(1000)
-      .deleteChars(10)
-      .typeString('<span style="color: var(--color-red);">tőlem.</span>')
-      .pauseFor(1000)
-      .deleteChars(10)
-      .start();
-
- })();
-
 
 /* -------------------------------------------------------------------------- */
 
