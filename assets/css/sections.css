@@ -961,6 +961,7 @@
   footer {
     padding: 50px;
     width: 100%;
+    background: white;
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
     position: relative;
     margin: 10px 0 0 0; }
@@ -1019,7 +1020,23 @@
             .bounce {
               -moz-animation: bounce 2s infinite;
               -webkit-animation: bounce 2s infinite;
-              animation: bounce 2s infinite; }        
+              animation: bounce 2s infinite; }      
+              
+              
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                             Projects page                                  */
+  
+/* -------------------------------------------------------------------------- */
+
+.projects-background {
+  background:   linear-gradient(180deg, rgba(242, 248, 250, 0) 0%, #E9ECF0 100%);
+}
 
 /* -------------------------------------------------------------------------- */
   
@@ -1038,23 +1055,23 @@
   background:       var(--white);
   padding:          32px;
   border-radius:    20px;
-  box-shadow:       0 19px 38px rgb(0 0 0 / 13%);
-  border:           none;
+  border:           1px solid #E3EAF0;
   margin-bottom:    3rem;
   z-index:          5000;
-  height:           106px;
+  height:           107px;
+}
+
+.project-card h5 {
+  font-size:        16px;
 }
 
 .project-icon {
   font-size:        22px;
   font-weight:      600;
+  color:          #DDE1E3
 }
 
 .project-card:hover .project-icon {
-  color:          #35BAFF;
-}
-
-
-.project-card:nth-last-child(1) {
-  margin-bottom:  auto;
+  color:                #35BAFF;
+  -webkit-text-stroke:  .5px #35BAFF;
 }
