@@ -20645,3 +20645,8 @@ body.offcanvas-active{
     font-size:      var(--subTextInfo);
 }
 
+.make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10rem; 
+  }
