@@ -16,11 +16,56 @@ transition: 500ms ease;
 
 /* -------------------------------------------------------------------------- */
 
-.sticky-section {
-  color: #00e1ff;
+.project-head-section {
+  height:             125rem;
+  background-color: rgb(255, 255, 255);
+  position:           fixed;
+  top:                0;
+  left:               0;
+  width:              100%;
+  height:             75vh;
+  justify-content:    center;
+  align-items:        center;
+  display:            flex;
+  box-shadow:         rgb(50 50 93 / 0%) 0px 30px 60px -12px inset, rgb(0 0 0 / 65%) 1px -5px 36px -18px inset;
+  background-size:    cover;
 }
 
+.project-details + .project-details {
+  margin-top:     32px;
+}
 
+.project-detail:nth-child(1) {
+  font-weight:    600;
+  font-size:      12px;
+}
+
+.project-detail:nth-child(2) {
+  font-weight:    400;
+  font-size:      16px;
+}
+
+.project-headline {
+  margin-bottom:  42px;
+}
+
+.make-me-sticky {
+  position:       -webkit-sticky;
+  position:       sticky;
+  top:            10rem;
+  margin:         .5rem 0 2rem;
+}
+
+.sticky-section {
+  color: #00000099;
+}
+
+.project-text {
+  color: var(--fontColor);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 @media (min-width: 992px) {
 .w-lg-65 {
@@ -39,7 +84,6 @@ transition: 500ms ease;
   color: #1e2022;
 }
 
-
 .blockquote-footer {
   font-weight: 600;
   line-height: normal;
@@ -47,27 +91,6 @@ transition: 500ms ease;
   margin-bottom: 0;
   font-size: 1.25rem;
   color: #1e2022;
-}
-
-
-
-.project-subhead {
-    color:              var(--fontColor);
-}
-
-.project-head-section {
-    height:             125rem;
-    background-color: rgb(255, 255, 255);
-    position:           fixed;
-    top:                0;
-    left:               0;
-    width:              100%;
-    height:             75vh;
-    justify-content:    center;
-    align-items:        center;
-    display:            flex;
-    box-shadow:         rgb(50 50 93 / 0%) 0px 30px 60px -12px inset, rgb(0 0 0 / 65%) 1px -5px 36px -18px inset;
-    background-size:    cover;
 }
 
 .project-content-section {
@@ -107,14 +130,15 @@ transition: 500ms ease;
 
 
 .btn-xs {
-  font-size: .75rem;
-  padding: .3125rem .75rem;
+  font-size: 12px;
+  padding: 12px 16px;
 }
 
 .btn-soft-secondary {
-  color: #71869d;
-  background-color: rgba(113,134,157,.1);
+  color: var(--fontColor);
+  background-color: #E3EAF0;
   border-color: transparent;
+  border-radius: var(--borderRadius);
 }
 
 
@@ -163,7 +187,7 @@ transition: 500ms ease;
 .heart {
   fill:       red;
   top:          15px;
-  width:        23px;
+  width:        16px;
 }
 
 #counterHeart {
