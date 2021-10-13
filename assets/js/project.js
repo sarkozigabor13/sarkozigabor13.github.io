@@ -35,25 +35,6 @@ window.addEventListener('scroll', () => {
 }) */
 
 
-
-/* ---------- Vertical progress bar --------------- */
-
-
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function () { myFunction() };
-
-function myFunction() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-
-
-    document.getElementById("myBar").style.width = scrolled + "%";
-
-
-}
-
-
 /* ---------- If rock the bottom --------------- */
 
 $(window).scroll(function () {
@@ -90,32 +71,6 @@ function readingTime() {
     document.getElementById("time").innerText = time;
   }
   readingTime();
-
-
-/* ---------- Like counter --------------- */
-
-
-document.querySelector("#buttonHeart").addEventListener("click", clickCounter);
-document.addEventListener("DOMContentLoaded", showValue);
-
-let counter = document.getElementById("counterHeart");
-
-function showValue() {
-	counter.innerHTML = `${localStorage.clickcount || 0}`;
-}
-
-function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount) + 1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    showValue();
-  } else {
-    counter.innerHTML = "Your browser does not support web storage...";
-  }
-}
 
 
 /* ---------- View counter --------------- */

@@ -933,105 +933,6 @@
   width: 32px;
 }
 
-
-
-/* -------------------------------------------------------------------------- */
-  
-/*                               Tricky footer                                */
-  
-/* -------------------------------------------------------------------------- */
-
-
-.tricky-wrapper {
-  transform-origin: center bottom 0px;
-  transition: all 0.5s ease 0s;
-  box-shadow: var(--boxShadow);
-  border-radius: 5px;
-}
-
-
-.transparent {
-  background: transparent !important; }
-
-
-.fluid .wrap {
-  max-width: 100% !important; }
-
-
-  footer {
-    padding: 50px;
-    width: 100%;
-    background: white;
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-    position: relative;
-    margin: 10px 0 0 0; }
-    footer .logo {
-      background: var(--clr2);
-      width: 50px;
-      height: 50px;
-      border-radius: var(--text-radius); }
-    footer nav {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(-50px, -50%); }
-      footer nav ul li {
-        display: inline-block;
-        list-style: none;
-        width: 60px;
-        height: 10px;
-        background: var(--clr2);
-        border-radius: var(--text-radius); }
-
-        body {
-          margin: 0px;
-          padding: 0px;
-          height: 100%; }
-        
-
-        
-        body.tight .tricky-wrapper {
-          transform: translateY(-60px) scale(0.9);
-          cursor: pointer; }
-        
-        .footer {
-          width: 90%;
-          max-width: 1440px;
-          margin: 0px auto;
-          text-align: center;
-          margin-bottom: 50px; }
-        
-        @keyframes bounce {
-          0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            transform: translateY(0); }
-          40% {
-            -moz-transform: translateY(-30px);
-            -ms-transform: translateY(-30px);
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px); }
-          60% {
-            -moz-transform: translateY(-15px);
-            -ms-transform: translateY(-15px);
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px); } }
-            .bounce {
-              -moz-animation: bounce 2s infinite;
-              -webkit-animation: bounce 2s infinite;
-              animation: bounce 2s infinite; }      
-              
-.footer-icon {
-  font-size:        24px;
-  font-weight:      600;
-  color:          #000000
-}        
-
-
-
-
-
 /* -------------------------------------------------------------------------- */
   
 /*                             Projects page                                  */
@@ -1060,7 +961,7 @@
   padding:          32px;
   border-radius:    20px;
   border:           1px solid #E3EAF0;
-  margin-bottom:    3rem;
+  margin-bottom:    1.5rem;
   z-index:          5000;
   height:           107px;
 }

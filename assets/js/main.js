@@ -418,6 +418,24 @@ docReady(scrollToTop);
 //# sourceMappingURL=theme.js.map
 
 
+/* -------------------------------------------------------------------------- */
+
+/*                              Preload animation                             */
+
+/* -------------------------------------------------------------------------- */
+
+const preloader = document.querySelector(".preloader");
+const preloaderDuration = 1500;
+
+const hidePreloader = () => {
+    setTimeout(() => {
+        preloader.classList.add("hide");
+    }, preloaderDuration);
+}
+
+window.addEventListener("load", hidePreloader);
+
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -708,41 +726,6 @@ const cookieToast = () => {
 
 window.addEventListener("load", cookieToast);
 
-
-
-/* -------------------------------------------------------------------------- */
-
-/*                                  Footer                                    */
-
-/* -------------------------------------------------------------------------- */
-
-
-$(document).ready(function ($) {
-
-    $(window).on('scroll', function () {
-
-        //ADD .TIGHT
-        if ($(window).scrollTop() + $(window).height() > $('.tricky-wrapper').outerHeight()) {
-            $('body').addClass('tight');
-            $('.arrow').hide();
-        } else {
-            $('body').removeClass('tight');
-            $('.arrow').show();
-        }
-    });
-
-    //BACK TO PRESENTATION MODE
-    $("html").on("click", "body.tight .tricky-wrapper", function () {
-        $('html, body').animate({
-            scrollTop: $('.tricky-wrapper').outerHeight() - $(window).height()
-        }, 500);
-    });
-
-});
-
-$('.arrow').click(function () {
-    $("html").animate({ scrollTop: $('html').prop("scrollHeight") }, 1200);
-});
 
 
 
