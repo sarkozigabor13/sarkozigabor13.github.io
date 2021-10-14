@@ -11,6 +11,7 @@
  * This file contain the base of each section: 
  *
  * Navbar Logo Name..................base style of dynamic logo. 
+ * Illustrations, backgrounds........illustrations for each section. 
  * Dark/Light switch.................base style of themes. 
  * Mobile menu.......................base style of mobile menu. 
  * Code Editor Layout................base style of code editor.
@@ -29,6 +30,76 @@
 .logo-name {
     color:      var(--fontColor);
     font-size:  24px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+  
+/*                             Illustrations, bg                              */
+  
+/* -------------------------------------------------------------------------- */
+
+#home {
+  background-image:     url(/assets/img/illustrations/hero_bg.png);
+  background-position:  right;
+  background-repeat:    no-repeat;
+}
+
+
+.illustration-blue-circle {
+  position:             absolute;
+  width:                80px;
+  height:               80px;
+  border-radius:        50%;
+  top:                  141px;
+  left:                 -39px;
+  background:         #2D74FF;
+}
+
+.illustration-red-circle {
+  position:             absolute;
+  width:                120px;
+  height:               120px;
+  border-radius:        50%;
+  top:                  470px;
+  left:                 770px;
+  background:         #FF3E60;
+}
+
+.illustration-blue-circle-two {
+  position:             absolute;
+  width:                80px;
+  height:               80px;
+  border-radius:        50%;
+  right:                228px;
+  top:                  -100px;
+  background:         #2D74FF;
+}
+
+.illustration-red-circle-two {
+  position:             absolute;
+  width:                120px;
+  height:               120px;
+  border-radius:        50%;
+  left:                 -50px;
+  top:                  100px;
+  background:         #FF3E60;
+}
+
+.illustration-black-circle {
+  position:           absolute;
+  width:              40px;
+  height:             40px;
+  border-radius:      50%;
+  bottom:             50px;
+  right:              500px;
+  background:       #515758;
+}
+
+#municio {
+  background-image:     url(/assets/img/illustrations/municio_bg.png);
+  background-position:  right;
+  background-repeat:    no-repeat;
 }
 
 
@@ -126,6 +197,7 @@
   
   .square, .square:before, .square:after {
     position:           absolute;
+    border-radius:      50%;
     width:              .75rem;
     height:             .75rem;
     background-color:   var(--fontColor);
@@ -301,6 +373,30 @@
   border-radius:      12px 12px 0 0 ;
 }
 
+@media (max-width: 991.98px) { 
+  .card-credit-card {
+    width:              21.438rem;
+    height:             13.563rem;
+    border-radius:      12px 12px 0 0 ;
+  }
+ }
+
+@media (max-width: 767.98px) { 
+  .card-credit-card {
+    width:              21.438rem;
+    height:             13.563rem;
+    border-radius:      12px 12px 0 0 ;
+  }
+ }
+
+@media (max-width: 575.98px) { 
+  .card-credit-card {
+    width:              18.438rem;
+    height:             10.563rem;
+    border-radius:      12px 12px 0 0 ;
+  }
+ }
+
 .credit-card-top { 
   padding:            32px 32px 16px 32px ;
 }
@@ -341,14 +437,14 @@
 
 .switch-btn button {
   border-radius:        50%;
-  width:                2rem;
-  height:               2rem;
+  width:                40px;
+  height:               40px;
   border:               none;
   box-shadow:           var(--boxShadow);
 }
 
 #switchSection{
-  background:         #F3F8FA;
+  background:         #EEF4F5;
 }
 
 .switch-btns #first-theme {
@@ -902,7 +998,7 @@
 .btn-push {
   font-size:        var(--subTextInfo);
   color:            var(--fontColor);
-  border:           2px solid #000;
+  border:           2px solid #1F2123;
   border-radius:    var(--borderRadius);
   margin:           24px 0 0;
   padding:          9px 24px;
