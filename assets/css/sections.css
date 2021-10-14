@@ -56,6 +56,13 @@
   background:         #2D74FF;
 }
 
+@media (max-width: 767.98px) { 
+  .illustration-blue-circle {
+    left:   auto;
+    right: -39px;
+  }
+ }
+
 .illustration-red-circle {
   position:             absolute;
   width:                120px;
@@ -200,11 +207,11 @@
     border-radius:      50%;
     width:              .75rem;
     height:             .75rem;
-    background-color:   var(--fontColor);
   }
   
   .square {
-    margin-left:    -25px;
+    margin-left:      -25px;
+    background-color: #FF3E60;
   }
   
   .square:before, .square:after {
@@ -212,13 +219,15 @@
   }
   
   .square:before {
-    right:          20px;
-    transition:     right .3s ease-out;
+    right:            20px;
+    transition:       right .3s ease-out;
+    background-color: #2D74FF;
   }
   
   .square:after {
-    left:           20px;
-    transition:     left .3s ease-out;
+    background-color: #515758;
+    left:               20px;
+    transition:         left .3s ease-out;
   }
   
   .mobile-menu-squares-container:hover .square:before {
