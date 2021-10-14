@@ -19,16 +19,16 @@
     
     typewriterLogoName 
       .pauseFor(2500)
-      .typeString('<span style="color: var(--color-light);">szorakozásból.</span>')
+      .typeString('<span style="color: #FF3E60;">szorakozásból.</span>')
       .pauseFor(1000)
       .deleteChars(14)
-      .typeString('<span style="color: var(--color-green);">tájékoztatni.</span>')
+      .typeString('<span style="color: #2D74FF;">tájékoztatni.</span>')
       .pauseFor(1000)
       .deleteChars(13)
-      .typeString('<span style="color: var(--color-strong);">eladni.</span>')
+      .typeString('<span style="color: #343A3B;">eladni.</span>')
       .pauseFor(1000)
       .deleteChars(10)
-      .typeString('<span style="color: var(--color-red);">neked.</span>')
+      .typeString('<span style="color: #2bf406;">neked.</span>')
       .pauseFor(1000)
       .deleteChars(10)
       .start();
@@ -53,68 +53,21 @@
     
     typewriterLogoNameEn 
       .pauseFor(2500)
-      .typeString('<span style="color: var(--color-light);">design.</span>')
+      .typeString('<span style="color: #FF3E6C;">design.</span>')
       .pauseFor(1000)
       .deleteChars(10)
-      .typeString('<span style="color: var(--color-green);">fun.</span>')
+      .typeString('<span style="color: #117ecf;">fun.</span>')
       .pauseFor(1000)
       .deleteChars(10)
-      .typeString('<span style="color: var(--color-strong);">selling.</span>')
+      .typeString('<span style="color: #343A3B;">selling.</span>')
       .pauseFor(1000)
       .deleteChars(10)
-      .typeString('<span style="color: var(--color-red);">you.</span>')
+      .typeString('<span style="color: #2bf406;">you.</span>')
       .pauseFor(1000)
       .deleteChars(10)
       .start();
 
  })();
 
-
-/* -------------------------------------------------------------------------- */
-
-/*                          Typewrite in code editor                          */
-
-/* -------------------------------------------------------------------------- */
-
-
-
-
-$(window).on('scroll',function() {
-  if (checkVisible($('#tester'))) {
-
-    (function() {
-      
-      const TextEditor = document.getElementById('appTextEditor');
-    
-    
-      const typewriteTextEditor = new Typewriter(TextEditor, {
-        loop: false,
-        delay: 150,    
-      });
-    
-      typewriteTextEditor
-      .pauseFor(2500)
-      .typeString('Milyen címet írjak?')
-      .pauseFor(1200)
-      .start();
-        
-    })();
-
-    
-      $(window).off('scroll');
-  } else {
-      // do nothing
-  }
-});
-function checkVisible( elm, eval ) {
-  eval = eval || "object visible";
-  var viewportHeight = $(window).height(), // Viewport Height
-      scrolltop = $(window).scrollTop(), // Scroll Top
-      y = $(elm).offset().top,
-      elementHeight = $(elm).height();   
-  
-  if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
-  if (eval == "above") return ((y < (viewportHeight + scrolltop)));
-}
 
 
