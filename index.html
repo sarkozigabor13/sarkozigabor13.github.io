@@ -102,7 +102,7 @@
                                         </li>
                                         <li class="nav-item mr-2"><a
                                                 class="nav-link fw-medium rounded-circle d-flex justify-content-center"
-                                                href="en.html">EN</a></li>
+                                                href="#" id="btnEnPage" >EN</a></li>
                                         <li class="nav-item"><a
                                                 class="nav-link fw-medium rounded-circle d-flex justify-content-center">
                                                 <i id="themeIcon" class="bi bi-moon-fill"></i>
@@ -127,7 +127,7 @@
                                 <div class="mobile-menu-squares-container">
                                     <button data-trigger="navbar_main" class="squares d-flex align-items-center"
                                         type="button">
-                                        <div class="square"></div>
+                                        <span class="square"></span>
                                     </button>
                                 </div>
 
@@ -139,7 +139,7 @@
                             <div class="container">
                                 <div class="offcanvas-header">
                                     <button class="btn-close float-end squares" type="button">
-                                        <div class="square"></div>
+                                        <span class="square"></span>
                                     </button>
                                 </div>
                                 <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
@@ -149,8 +149,6 @@
                                 <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
                                     <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
                                             href="/projects.html">Projektek</a></li>
-
-                                    <li class="nav-item"><a class="nav-link fw-medium" href="en.html">EN</a></li>
                                     <li class="nav-item"><a class="nav-link fw-medium" href="#">
                                             <i id="themeIconPhone" class="bi bi-moon"></i>
                                         </a>
@@ -169,11 +167,11 @@
                         <div class="container position-relative">
                             <div class="row align-items-center py-8">
                                 <div class="col-md-6 col-lg-5 text-start mt-6 mt-md-0 order-2 order-md-1">
-                                    <h1 class="mb-4 display-3 fw-bold lh-sm">Weboldal<br/>
+                                    <h1 class="mb-4 display-3 fw-bold lh-sm">Weboldal<br />
                                         <span id="appLogoNameTxt"></span>
                                     </h1>
                                     <p class="mt-3 mb-4 text-main mainTextSize">Fő fókuszban a digitális élmények
-                                        létrehozása.<br/>Átlátható, fenntartható oldalépítés,
+                                        létrehozása.<br />Átlátható, fenntartható oldalépítés,
                                         frontend fejlesztés.</p>
                                 </div>
                                 <div class="col-md-5 col-lg-6 offset-lg-1 text-center text-md-end order-1 order-md-2">
@@ -195,7 +193,7 @@
                 <section class="first-theme" id="switchSection">
                     <div class="container switch--theme--container">
                         <div class="row align-items-center mb-6">
-                            <div class="col-12 col-md-5 col-lg-6">
+                            <div class="col-12 col-md-5 col-lg-6 order-2">
                                 <div class="card card-credit-card mt-3">
 
                                     <div class="credit-card-top">
@@ -243,7 +241,7 @@
 
                                 </div>
                             </div>
-                            <div class="offset-md-1 offset-lg-0 col-12 col-md-5 col-lg-6 py-md-5 mt-10 mt-md-0">
+                            <div class="offset-md-1 offset-lg-0 col-12 col-md-5 col-lg-6 py-md-5 mb-3 mb-md-0 order-1">
                                 <h1 class="mb-4 display-4 fw-bold lh-sm">Pont olyan</h1>
                                 <p class="mb-0 credit-card-text">Applikációk, értesítő üzenet, webshop, hírlevél vagy
                                     könyvbemutató
@@ -255,13 +253,13 @@
                                 <div class="theme-switches">
                                     <ul class="d-flex p-0 switch-btns">
                                         <li class="switch-btn">
-                                            <button id="first-theme" href="#"></button>
+                                            <button id="first-theme" type="button"></button>
                                         </li>
                                         <li class="switch-btn">
-                                            <button id="second-theme" href="#"></button>
+                                            <button id="second-theme" type="button"></button>
                                         </li>
                                         <li class="switch-btn">
-                                            <button id="third-theme" href="#"></button>
+                                            <button id="third-theme" type="button"></button>
                                         </li>
                                     </ul>
                                 </div>
@@ -300,14 +298,15 @@
                                             aria-selected="true">
                                             <span class="accordion--head">Élmény létrehozása</span>
                                             <span id="homeTabPanel">
-                                                <p class="accordion--content">Legyen szó ecommerce tartalomgyártásról,
+                                                <span class="accordion--content">Legyen szó ecommerce
+                                                    tartalomgyártásról,
                                                     üzenetküldő
                                                     alkalmazásról vagy ügyfélszolgálati rendszerek létrehozásáról,
                                                     szívesen
                                                     segítek. Plusz Shoprenteres rendszerben jártas vagyok, illetve
                                                     Shopify
                                                     is szóba jöhet.
-                                                </p>
+                                                </span>
                                             </span>
                                         </a>
 
@@ -319,11 +318,11 @@
                                             aria-selected="false">
                                             <span class="accordion--head">Könyvtárak</span>
                                             <span class="d-none" id="profileTabPanel">
-                                                <p class="accordion--content">Bootstrap, Bulma, Tailwind. Szívesen
+                                                <span class="accordion--content">Bootstrap, Bulma, Tailwind. Szívesen
                                                     használom őket és
                                                     szívesen dolgozok akár Elementorral, Wordpressel
                                                     ha erre van szükség. Mindig jó, ha újat tanul az ember.
-                                                </p>
+                                                </span>
                                             </span>
                                         </a>
 
@@ -335,17 +334,18 @@
                                             aria-selected="false">
                                             <span class="accordion--head">Pimpelés</span>
                                             <span class="d-none" id="messagesTabPanel">
-                                                <p class="accordion--content">Alapvető ismeretekkel rendelkezem HTML5,
+                                                <span class="accordion--content">Alapvető ismeretekkel rendelkezem
+                                                    HTML5,
                                                     CSS, CSS3, GIt
                                                     verziókezelés
                                                     Figma, Trello és Javascript terén. Jelenleg tanulom a Javascriptet
                                                     mélyebben, ezek után
                                                     pedig Reactet veszem gorcső alá.
 
-                                                </p>
+                                                </span>
 
-                                                <p class="accordion--content">Nyomd a gombot és segítsd pimpelni a
-                                                    tudásom.</p>
+                                                <span class="accordion--content">Nyomd a gombot és segítsd pimpelni a
+                                                    tudásom.</span>
                                             </span>
                                         </a>
 
@@ -417,7 +417,7 @@
                                                     <div class="d-flex align-items-center justify-content-center pt-4">
                                                         <div class="col-12 text-end">
                                                             <button class="btn btn--cancel">Mégsem</button>
-                                                            <button type="button"
+                                                            <button type="button" id="btnFakeInvite"
                                                                 class="btn btn--show-toast">Küldés</button>
 
                                                         </div>
@@ -542,7 +542,7 @@
                                                     </div>
                                                     <div class="fake-toast-body">
                                                         <div class="bar-container">
-                                                            <div class="bar-success" id="barOne"></div>
+                                                            <div class="bar-success" id="barTwo"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -688,30 +688,40 @@
         <!--    Toasts-->
         <!-- ===============================================-->
 
-        <div id="myToast" class="toast fade mb-5" role="alert" aria-live="assertive" aria-atomic="true"
-            style="position: fixed; right: 1rem; bottom: 1rem; width: 400px;">
-            <div class="toast-header">
-                <span class="circle-status"></span>
-
-                <strong class="me-auto">Linda like your photo</strong>
-                <small class="text-muted">just now</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+        <div id="enPageAlert" class="toast mt-5 cookiealert toast-cookie" data-delay="10000" role="alert"
+            aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
-                See? Just like this.
+                <div class="row">
+                    <button type="button" class="close acceptcookies" data-bs-dismiss="toast" aria-label="Close"><i
+                            class="bi bi-x"></i></button>
+                    <div class="col-2 pr-2 d-flex justify-content-center">
+                        <img class="toast-icon" src="assets/img/illustrations/translate.svg" alt="toast-icon">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="toast-head"><strong>Bocsesz</strong></p>
+                        <p>Az angol oldalnak a fordítása folyamatban van.</p>
+
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="toast mt-5" id="fakeInviteToast" data-delay="10000" role="alert" aria-live="assertive"
-            aria-atomic="true" style="position: fixed; bottom: 1rem; right: 1rem;">
-            <div class="toast-header">
-                <img src="..." class="rounded me-2" alt="...">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+
+        <div id="fakeInviteToast" class="toast mt-5 cookiealert toast-cookie" data-delay="10000" role="alert"
+            aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
-                Hello, world! This is a toast message.
+                <div class="row">
+                    <button type="button" class="close acceptcookies" data-bs-dismiss="toast" aria-label="Close"><i
+                            class="bi bi-x"></i></button>
+                    <div class="col-2 pr-2 d-flex justify-content-center">
+                        <img class="toast-icon" src="assets/img/illustrations/form.svg" alt="toast-icon">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="toast-head"><strong>Ez csak egy demó form.</strong></p>
+                        <p>Nem aktív, csak ezt az üzit dobja fel.</p>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -734,7 +744,7 @@
                     </div>
                     <div class="col-10 pl-0">
                         <p class="toast-head"><strong>Ennél valamit?</strong></p>
-                        <p">Rossz hírem van, ezen az oldalon nem találsz sütiket.</p>
+                        <p>Rossz hírem van, ezen az oldalon nem találsz sütiket.</p>
 
                     </div>
                 </div>

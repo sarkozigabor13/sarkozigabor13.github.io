@@ -567,7 +567,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (sectionClass.contains('third-theme')) {
             sectionClass.replace('third-theme', 'second-theme');
             creditCardLogo.src = "assets/img/illustrations/visa_r.svg";
-            
+
         } else {
             sectionClass.replace('first-theme', 'second-theme');
             creditCardLogo.src = "assets/img/illustrations/visa_r.svg";
@@ -582,7 +582,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             sectionClass.replace('third-theme', 'first-theme');
             creditCardLogo.src = "assets/img/illustrations/visa_p.svg";
-           
+
         }
     };
 
@@ -608,13 +608,13 @@ document.addEventListener("DOMContentLoaded", function () {
 /* -------------------------------------------------------------------------- */
 
 
-(function() {
+(function () {
 
     var btn = document.getElementById('btnProgress');
     var bar = document.getElementById('bar');
     var txt = document.getElementById('textProgress');
     var count = 0;
-    
+
 
     // Emoji confetti 
     // https://github.com/loonywizard/js-confetti
@@ -625,12 +625,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Listen for an event on the button
     // Increase the width of the bar by 10 percent(10%)
-    
+
     btn.addEventListener('click', () => {
-    
+
         bar.style.width = count + '%';
-    
-            
+
+
         if (count == 10) {
             txt.innerHTML = 'Javascript haladó';
         }
@@ -664,8 +664,8 @@ document.addEventListener("DOMContentLoaded", function () {
             txt.innerHTML = 'React pápa';
             btn.innerHTML = "Köszi";
             bar.classList.add('bar-success');
-           
-    
+
+
             setTimeout(() => {
                 jsConfetti.addConfetti({
                     emojis: ['🦄', '✅', '🪐', '🙈', '🤸🏻‍♂️'],
@@ -680,7 +680,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     count = count + 10;
 
-})(); 
+})();
 
 
 
@@ -695,18 +695,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-$(document).ready(function () {
-
-    $(".show-toast").click(function () {
-        $("#myToast").toast({
-            delay: 3000
-        });
+ $(document).ready(function () {
+    $("#btnEnPage").click(function () {
+        $("#enPageAlert").toast('show');
     });
-
-    $(".send-fake-invite").click(function () {
+    $("#btnFakeInvite").click(function () {
         $("#fakeInviteToast").toast('show');
     });
 });
+
+
 
 /* -------------------------------------------------------------------------- */
 

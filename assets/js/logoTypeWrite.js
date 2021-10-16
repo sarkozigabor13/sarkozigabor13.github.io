@@ -28,7 +28,7 @@
       .typeString('<span style="color: #343A3B;">eladni.</span>')
       .pauseFor(1000)
       .deleteChars(10)
-      .typeString('<span style="color: #2bf406;">neked.</span>')
+      .typeString('<span style="color: var(--fontColor);">neked.</span>')
       .pauseFor(1000)
       .deleteChars(10)
       .start();
