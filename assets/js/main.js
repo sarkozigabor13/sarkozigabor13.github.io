@@ -505,20 +505,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 (function () {
 
+    // Dom elements 
     const themeIcon = document.getElementById('themeIcon');
     const iconClass = themeIcon.classList;
+    const heroIllustration = document.getElementById('heroIllustration');
+    const heroIllustrationBg = document.getElementById('home');
 
     themeIcon.onclick = () => {
 
-
+        // For dark theme
         if (iconClass.contains('bi-moon-fill')) {
 
+            // Body theme change 
+            document.body.classList.toggle('dark-theme');
+
+            //Nav icons change
             iconClass.replace('bi-moon-fill', 'bi-sun');
+
+            // Hero illustration change
+            heroIllustration.src = "assets/img/illustrations/illu_dark.png";
+
+            // Hero background chagne
+            heroIllustrationBg.style.backgroundImage = "url(/assets/img/illustrations/hero_bg_dark.png)";
+        } 
+        
+        // For light theme
+        else {
+
+            // Body theme change 
             document.body.classList.toggle('dark-theme');
-        } else {
+
+            //Nav icons change
             iconClass.replace('bi-sun', 'bi-moon-fill');
-            document.body.classList.toggle('dark-theme');
+
+            // Hero illustration change
+            heroIllustration.src = "assets/img/illustrations/illu_light.png";
+
+            // Hero background chagne
+            heroIllustrationBg.style.backgroundImage ="url(/assets/img/illustrations/hero_bg_light.png)";
         }
+
+        
+
     };
 })();
 

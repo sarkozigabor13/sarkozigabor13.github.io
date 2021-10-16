@@ -40,7 +40,7 @@
 /* -------------------------------------------------------------------------- */
 
 #home {
-  background-image:     url(/assets/img/illustrations/hero_bg.png);
+  background-image:     url(/assets/img/illustrations/hero_bg_light.png);
   background-position:  right;
   background-repeat:    no-repeat;
 }
@@ -93,7 +93,17 @@
   background:         #FF3E60;
 }
 
-.illustration-black-circle {
+.dark-theme .illustration-black-circle {
+  position:           absolute;
+  width:              40px;
+  height:             40px;
+  border-radius:      50%;
+  top:                141px;
+  left:               770px;
+  background:       #51575836;
+}
+
+.illustration-black-circle-two {
   position:           absolute;
   width:              40px;
   height:             40px;
@@ -806,13 +816,13 @@
 
 .toast {
   position:               fixed;
-  right:                  2rem;
+  right:                  0;
   bottom:                 2rem;
   width:                  auto;
   max-width:              100%;
   font-size:              0.85rem;
   pointer-events:         auto;
-  background-color:       #fff;
+  background-color:       var(--navBackgroundDark);
   background-clip:        padding-box;
   -webkit-box-shadow:     6px 6px 12px 0px #0000001A;
   box-shadow:             6px 6px 12px 0px #0000001A;
@@ -821,10 +831,20 @@
   -moz-transition:        all .15s ease-out;
   -o-transition:          all .15s ease-out;
   transition:             all .15s ease-out;
+  z-index:                1;
+  margin:                 0 10px;
 }
+
+@media (min-width: 768px) { 
+  .toast {
+    right:                  2rem;
+    margin:                 0;
+  }
+ }
 
 .toast:not(.showing):not(.show) {
   opacity: 0;
+  z-index: 0;
 }
 
 .toast.hide {
@@ -1039,10 +1059,14 @@
 /* -------------------------------------------------------------------------- */
 
 
-.toast-cookie {
-  width: 27rem;
-  height: 5.15rem;
-}
+
+
+@media (min-width: 768px) { 
+  .toast-cookie {
+    width: 27rem;
+    height: 5.15rem;
+  }
+ }
 
 .toast-icon {
   width: 32px;

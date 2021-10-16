@@ -40,12 +40,14 @@
 
     --white:               #fff;
     --black:               #1F2123;
+    --moreBlack:           #151618;
     --color-main:          #0466C8;
     --color-second:        #023E7D;
     --color-dark:          #001233;
     --color-temporary:     #d6e413;
     --color-grey:          #7D8597;
-    --color-lightGrey:     #979DAC;
+    --color-lightGrey:     #F2F4F5;
+    --color-darkGrey:      #1F2123;
     --color-strong:        #b429f9;
     --color-green:         #26e436;
     --color-light:         #26c5f3;
@@ -56,16 +58,9 @@
     --richBlackForeground: #0F1A20;
     --msuGreen:            #2D4739;
     --gray:                #eee;
+    --navBgDark:           #151618;
 
-    
-    /*--------- Code editor ------*/ 
 
-    --windowTopLight:      #ECECEC;
-    --windowTopDark:       #202020;
-    --windowTopTextLight:  #333333;
-    --windowTopTextDark:   #b1b1b3;
-    --windowListLight:     #7ABFDB;
-    --windowListDark:      #717171;
 
     /*-------- Switch section ------*/ 
 
@@ -133,15 +128,9 @@
     --mainBackground:           var(--backgroundLight);
     --fontColor:                var(--black);
     --offCanvasBackground:      var(--aliceblue);
+    --roundedCircleColor:       var(--color-lightGrey);
+    --navBackgroundDark:        var(--white);
 
-             
-/*----------  Code editor colors --------*/ 
-
-    --editorBackground:         var(--white);
-    --editorWindowTop:          var(--windowTopLight);
-    --editorWindowText:         var(--editorWindowTextLight);
-    --windowListText:           var(--windowListLight);
-    --windowText:               var(--black);
 
 /*--------------- Backgrounds ----------*/ 
 
@@ -152,16 +141,9 @@
     --mainBackground:           var(--black);
     --fontColor:                var(--white);
     --offCanvasBackground:      var(--aliceblue);
+    --roundedCircleColor:       var(--color-darkGrey);
+    --navBackgroundDark:        var(--navBgDark);
     
-
-/*----------  Code editor colors --------*/ 
-
-    --editorBackground:         var(--black);
-    --editorWindowTop:          var(--windowTopDark);
-    --editorWindowText:         var(--editorWindowText);
-    --windowListText:           var(--windowListDark);
-    --windowText:               var(--white);
-
     
 /*--------------- Backgrounds ----------*/ 
 
@@ -4999,9 +4981,6 @@ fieldset:disabled .btn {
     font-size:          16px;
     display:            block;
     padding:            0.5rem 1rem;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    -o-transition:      color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    transition:         color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     cursor:             pointer;    
 }
 
@@ -10129,7 +10108,7 @@ fieldset:disabled .btn {
 
 .rounded-circle {
     border-radius: 50% !important;
-    background-color: #F2F4F5;
+    background-color: var(--roundedCircleColor);
     width: 40px;
     height: 40px;
 }
@@ -20558,7 +20537,7 @@ label {
 -----------------------------------------------*/
 
 .dark-theme nav {
-    background:            var(--mainBackground) !important;
+    background:            var(--navBackgroundDark) !important;
 }
 
 
