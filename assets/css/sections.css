@@ -240,11 +240,19 @@
     transition:       right .3s ease-out;
     background-color: #2D74FF;
   }
+
+  .mobile-offcanvas .square:before {
+    background-color: #515758;
+  }
   
   .square:after {
     background-color: #515758;
     left:               20px;
     transition:         left .3s ease-out;
+  }
+
+  .mobile-offcanvas  .square:after {
+    background-color: #2D74FF;
   }
   
   .mobile-menu-squares-container:hover .square:before {
