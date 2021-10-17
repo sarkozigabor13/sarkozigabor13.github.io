@@ -502,7 +502,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 (function () {
 
     // Dom elements 
@@ -512,68 +511,103 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkVisa = document.querySelector(".third-theme .credit-card-logo");
     const municioBg = document.getElementById('municio');
 
+    if (localStorage.theme) {
+        document.body.classList.add(localStorage.theme);
+    }
+
+    else {
+        document.body.classList.add('light-theme');
+    }
+
     for (let i = 0; i < themeIcon.length; i++) {
 
         themeIcon[i].onclick = () => {
 
+
             // For dark theme
-            if (themeIcon[i].classList.contains('bi-moon-fill')) {
-    
-                // Body theme change 
-                document.body.classList.toggle('dark-theme');
-    
+
+            if (document.body.classList.contains('light-theme')) {
+
+                // Storage local theme
+                localStorage.theme = 'dark-theme';
+
+                // Body theme change
+                document.body.classList.remove('light-theme');
+                document.body.classList.add('dark-theme');
+
                 //Nav icons change
-                themeIcon[i].classList.replace('bi-moon-fill', 'bi-sun');
-    
+                themeIcon[i].classList.replace('bi-moon-fill', 'bi-sun-fill');
+
                 // Hero illustration change
                 heroIllustration.src = "assets/img/illustrations/illu_dark.png";
-    
-                // Hero background change
-                heroIllustrationBg.style.backgroundImage = "url(/assets/img/illustrations/hero_bg_dark.png)";
-    
+
                 // Visa logo change
                 darkVisa.classList.add('darkVisa');
-    
+
                 if (darkVisa.src === "assets/img/illustrations/visa_b.svg") {
                     darkVisa.src = "assets/img/illustrations/visa_d.svg";
                 }
-    
-                // Hero background munició change
-                municioBg.style.backgroundImage = "url(/assets/img/illustrations/municio_bg_dark.png)";
+
             }
-    
+
             // For light theme
             else {
-    
+
+                // Storage local theme
+                localStorage.theme = 'light-theme';
+
                 // Body theme change 
-                document.body.classList.toggle('dark-theme');
-    
+                document.body.classList.remove('dark-theme');
+                document.body.classList.add('light-theme');
+
                 //Nav icons change
-                themeIcon[i].classList.replace('bi-sun', 'bi-moon-fill');
-    
+                themeIcon[i].classList.replace('bi-sun-fill', 'bi-moon-fill');
+
                 // Hero illustration change
                 heroIllustration.src = "assets/img/illustrations/illu_light.png";
-    
-                // Hero background change
-                heroIllustrationBg.style.backgroundImage = "url(/assets/img/illustrations/hero_bg_light.png)";
-    
+
                 // Visa logo change
                 darkVisa.classList.remove('darkVisa');
-    
+
                 if (darkVisa.src === "assets/img/illustrations/visa_d.svg") {
                     darkVisa.src = "assets/img/illustrations/visa_b.svg";
                 }
-    
-                // Hero background munició change
-                municioBg.style.backgroundImage = "url(/assets/img/illustrations/municio_bg_light.png)";
+
             }
-    
-    
-    
+
+
+
         };
-        
+
     }
 
+    for (let i = 0; i < themeIcon.length; i++) {
+
+        // Light-theme
+        if (document.body.classList.contains('light-theme')) {
+            themeIcon[i].classList.remove('bi-sun-fill');
+            themeIcon[i].classList.add('bi-moon-fill');
+
+            // Hero illustration change
+            heroIllustration.src = "assets/img/illustrations/illu_light.png";
+
+            // Visa logo change
+            darkVisa.src = "assets/img/illustrations/visa_b.svg";
+        }
+
+        // Dark theme
+        else {
+            themeIcon[i].classList.remove('bi-moon-fill');
+            themeIcon[i].classList.add('bi-sun-fill');
+
+            // Hero illustration change
+            heroIllustration.src = "assets/img/illustrations/illu_dark.png";
+
+            // Visa logo change
+            darkVisa.src = "assets/img/illustrations/visa_d.svg";
+
+        }
+    };
 
 })();
 

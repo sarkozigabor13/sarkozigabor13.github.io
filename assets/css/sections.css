@@ -45,6 +45,10 @@
   background-repeat:    no-repeat;
 }
 
+.dark-theme #home {
+  background-image:     url(/assets/img/illustrations/hero_bg_dark.png);
+}
+
 
 .illustration-blue-circle {
   position:             absolute;
@@ -119,6 +123,9 @@
   background-repeat:    no-repeat;
 }
 
+.dark-theme #municio {
+  background-image:     url(/assets/img/illustrations/municio_bg_dark.png);
+}
 
 /* -------------------------------------------------------------------------- */
   
@@ -916,6 +923,10 @@
 
 .toast-body .toast-head {
   margin-bottom: .2rem;
+}
+
+.toast .bi.bi-x::before {
+  color:       var(--fontColor);
 }
 
 .circle-status {
