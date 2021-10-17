@@ -1105,6 +1105,10 @@
   background:   linear-gradient(180deg, rgba(242, 248, 250, 0) 0%, #E9ECF0 100%);
 }
 
+.dark-theme .projects-background {
+  background:   var(--black);
+}
+
 /* -------------------------------------------------------------------------- */
   
 /*                             Project cards                                  */
