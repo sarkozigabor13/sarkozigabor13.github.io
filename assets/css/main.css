@@ -58,7 +58,10 @@
     --richBlackForeground: #0F1A20;
     --msuGreen:            #2D4739;
     --gray:                #eee;
-    --navBgDark:           #151618;
+    --easyGrey:            #EEF4F5;
+    --darkSecondaryTextCard:rgba(238, 244, 245, 0.6);
+    --darkSecondaryText:   rgba(238, 244, 245, 0.8);
+ 
 
 
 
@@ -68,7 +71,7 @@
     --redSectionColor:    var(--color-red);
     --blueSection:        linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
     --blueSectionColor:   #117ecf;
-    --greenSection:       linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
+    
     --greenSectionColor:  #2bf406;
 
     /*---------- Fonts -------------*/ 
@@ -130,6 +133,12 @@
     --offCanvasBackground:      var(--aliceblue);
     --roundedCircleColor:       var(--color-lightGrey);
     --navBackgroundDark:        var(--white);
+    --switchSectionBg:          var(--easyGrey);
+    --cardBg:                   var(--white);
+    --cardTextColor:            var(--black);  
+    --greenSection:             linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%); 
+    --secondaryTextColor:       var(--black);
+    --downSectionsBs:           var(--backgroundLightSecond);
 
 
 /*--------------- Backgrounds ----------*/ 
@@ -142,8 +151,14 @@
     --fontColor:                var(--white);
     --offCanvasBackground:      var(--aliceblue);
     --roundedCircleColor:       var(--color-darkGrey);
-    --navBackgroundDark:        var(--navBgDark);
-    
+    --navBackgroundDark:        var(--moreBlack);
+    --switchSectionBg:          var(--moreBlack);
+    --cardBg:                   var(--color-darkGrey);
+    --cardTextColor:            var(--darkSecondaryTextCard); 
+    --greenSection:             linear-gradient(85.73deg, #515758 41.41%, #80898C 100%);
+    --secondaryTextColor:       var(--darkSecondaryText);
+    --downSectionsBg:           var(--black);
+
     
 /*--------------- Backgrounds ----------*/ 
 
@@ -206,6 +221,10 @@ body {
     color:                            var(--fontColor);
     -webkit-text-size-adjust:         100%;
     -webkit-tap-highlight-color:    rgba(0, 0, 0, 0);
+}
+
+footer { 
+    background-color:       var(--navBackgroundDark);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -352,7 +371,7 @@ strong {
 small,
 .small {
     font-size: 10px;
-    color: #343A3B;
+    color: var(--cardTextColor);
 }
 
 mark,
@@ -5049,7 +5068,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: var(--fontColor);
-    background-color: var(--white);
+    background-color: var(--navBackgroundDark);
 }
 
 .nav-fill>.nav-link,
@@ -20614,7 +20633,7 @@ body.offcanvas-active{
 
 .mainTextSize {
     font-size:      var(--mainTextSize);
-    font-weight:    500;
+    color:          var(--secondaryTextColor);
 }
 
 .secondaryTextSize {

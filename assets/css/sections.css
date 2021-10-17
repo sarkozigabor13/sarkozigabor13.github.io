@@ -114,7 +114,7 @@
 }
 
 #municio {
-  background-image:     url(/assets/img/illustrations/municio_bg.png);
+  background-image:     url(/assets/img/illustrations/municio_bg_light.png);
   background-position:  right;
   background-repeat:    no-repeat;
 }
@@ -390,6 +390,7 @@
   width:              29rem;
   height:             17.65rem;
   border-radius:      12px 12px 0 0 ;
+  background-color:   var(--cardBg);
 }
 
 @media (max-width: 991.98px) { 
@@ -436,6 +437,7 @@
 .credit-card-data {
   font-family:        var(--creditCardFont);
   font-size:          1.15rem;
+  color:              var(--cardTextColor);
 }
 
 @media (max-width: 575.98px) { 
@@ -451,6 +453,7 @@
 
 .credit-card-text {
   font-size:          var(--secondaryTextSize);
+  color:              var(--secondaryTextColor);
 }
 
 .switch-btn {
@@ -469,7 +472,7 @@
 }
 
 #switchSection{
-  background:         #EEF4F5;
+  background:         var(--switchSectionBg);
 }
 
 .switch-btns #first-theme {
@@ -506,19 +509,34 @@
 .accordion-nav .nav-link {
   outline:              1px solid #f1f1f1;
   -moz-outline-radius:  var(--borderRadius);
-  box-shadow:           0 0 3px 0 #f1f1f1, 0 0 3px #f1f1f1;
+  box-shadow:           0 0 2px 0 #f1f1f1, 0 0 2px #f1f1f1;
   padding:              24px;
 }
 
+.dark-theme .accordion-nav .nav-link {
+  outline:              none;
+  box-shadow:           none;
+  border-radius:        var(--borderRadius);
+}
+
 .accordion-nav .nav-link:hover {
-  outline:              3px solid #f1f1f1;
-  box-shadow:           0 0 5px 0 #f1f1f1, 0 0 5px #f1f1f1;
+  outline:              2px solid #f1f1f1;
+  box-shadow:           0 0 4px 0 #f1f1f1, 0 0 4px #f1f1f1;
+}
+
+.dark-theme .accordion-nav .nav-link:hover {
+  outline:              none;
+  box-shadow:           none;
 }
 
 .accordion-nav .accordion--head {
   display:              block;
   font-size:            14px;
   font-weight:          600;
+}
+
+.accordion-nav .nav-link.active .accordion--head {
+  margin-bottom:        8px;
 }
 
 .accordion-nav .accordion--content {
@@ -528,7 +546,7 @@
   line-height:          24px;
   letter-spacing:       0em;
   text-align:           left;
-
+  color:                var(--secondaryTextColor);
 }
 
 
@@ -544,7 +562,7 @@
 }
 
 .wrap--gradient {
-  background:   var(--backgroundLightSecond);
+  background:   var(--downSectionsBg);
 }
 
 
@@ -560,7 +578,7 @@
 
 .settings-box {
   max-width:            386px;
-  background-color:    #fff;
+  background-color:     var(--navBackgroundDark);
   border-radius:        var(--borderShadowRadius);
   min-height:           464px;
   margin:               auto;
@@ -587,6 +605,7 @@
   width:                100%;
   border-radius:        var(--borderRadius);
   height:               48px;
+  background-color:     var(--navBackgroundDark);
 }
 
 .settings-box input::placeholder {
@@ -632,7 +651,7 @@
 .settings-box .btn--show-toast {
   font-size:            12px;
   padding:              9px 24px;
-  background-color:    #fff;
+  background-color:     var(--navBackgroundDark);
   color:                var(--fontColor);
   border:               1px solid var(--fontColor);
   border-radius:        var(--borderRadius);
@@ -670,7 +689,7 @@
 
 .steps-card {
   max-width:            386px;
-  background-color:   #fff;
+  background-color:     var(--navBackgroundDark);   
   border-radius:        var(--borderShadowRadius);
   min-height:           450px;
 }
@@ -764,6 +783,10 @@
   color: #fff;
   text-align: center;
   box-shadow: 0 0 0 3px #fff;
+}
+
+.dark-theme .circle {
+  box-shadow: none;
 }
 
 
@@ -936,7 +959,7 @@
   padding:                32px; 
   font-size:              0.875rem;
   pointer-events:         auto;
-  background-color:       rgba(255, 255, 255, 0.85);
+  background-color:       var(--navBackgroundDark);
   background-clip:        padding-box;
   -webkit-box-shadow:     var(--boxShadow);
   box-shadow:             var(--boxShadow);
@@ -975,7 +998,7 @@
   font-size:               16px;
   font-weight:             600;
   color:                   var(--fontColor);
-  background-color:       rgba(255, 255, 255, 0.85);
+  background-color:        var(--navBackgroundDark);
   background-clip:         padding-box;
   border-top-left-radius:  calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
@@ -1096,13 +1119,17 @@
   display:          flex;
   flex-direction:   column;
   justify-content:  center;
-  background:       var(--white);
+  background-color: var(--navBackgroundDark);
   padding:          32px;
   border-radius:    20px;
   border:           1px solid #E3EAF0;
   margin-bottom:    1.5rem;
   z-index:          5000;
   height:           107px;
+}
+
+.dark-theme .project-card {
+  border: 0;
 }
 
 .project-card h5 {

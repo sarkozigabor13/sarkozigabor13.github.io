@@ -510,6 +510,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const iconClass = themeIcon.classList;
     const heroIllustration = document.getElementById('heroIllustration');
     const heroIllustrationBg = document.getElementById('home');
+    const darkVisa = document.querySelector(".third-theme .credit-card-logo");
+    const municioBg = document.getElementById('municio');
 
     themeIcon.onclick = () => {
 
@@ -525,10 +527,20 @@ document.addEventListener("DOMContentLoaded", function () {
             // Hero illustration change
             heroIllustration.src = "assets/img/illustrations/illu_dark.png";
 
-            // Hero background chagne
+            // Hero background change
             heroIllustrationBg.style.backgroundImage = "url(/assets/img/illustrations/hero_bg_dark.png)";
-        } 
-        
+
+            // Visa logo change
+            darkVisa.classList.add('darkVisa');
+
+            if (darkVisa.src === "assets/img/illustrations/visa_b.svg") {
+                darkVisa.src = "assets/img/illustrations/visa_d.svg";
+            }
+
+            // Hero background munició change
+            municioBg.style.backgroundImage = "url(/assets/img/illustrations/municio_bg_dark.png)";
+        }
+
         // For light theme
         else {
 
@@ -541,11 +553,21 @@ document.addEventListener("DOMContentLoaded", function () {
             // Hero illustration change
             heroIllustration.src = "assets/img/illustrations/illu_light.png";
 
-            // Hero background chagne
-            heroIllustrationBg.style.backgroundImage ="url(/assets/img/illustrations/hero_bg_light.png)";
+            // Hero background change
+            heroIllustrationBg.style.backgroundImage = "url(/assets/img/illustrations/hero_bg_light.png)";
+
+            // Visa logo change
+            darkVisa.classList.remove('darkVisa');
+
+            if (darkVisa.src === "assets/img/illustrations/visa_d.svg") {
+                darkVisa.src = "assets/img/illustrations/visa_b.svg";
+            }
+
+            // Hero background munició change
+            municioBg.style.backgroundImage = "url(/assets/img/illustrations/municio_bg_light.png)";
         }
 
-        
+
 
     };
 })();
@@ -618,10 +640,20 @@ document.addEventListener("DOMContentLoaded", function () {
     thirdButton.onclick = () => {
         if (sectionClass.contains('second-theme')) {
             sectionClass.replace('second-theme', 'third-theme');
-            creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
+            if (creditCardLogo.classList.contains('darkVisa')) {
+                creditCardLogo.src = "assets/img/illustrations/visa_d.svg";
+            } else {
+                creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
+            }
+
         } else {
             sectionClass.replace('first-theme', 'third-theme');
-            creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
+            if (creditCardLogo.classList.contains('darkVisa')) {
+                creditCardLogo.src = "assets/img/illustrations/visa_d.svg";
+            } else {
+                creditCardLogo.src = "assets/img/illustrations/visa_b.svg";
+            }
+
         }
     };
 
@@ -723,7 +755,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- $(document).ready(function () {
+$(document).ready(function () {
     $("#btnEnPage").click(function () {
         $("#enPageAlert").toast('show');
     });
