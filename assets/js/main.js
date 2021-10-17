@@ -1,4 +1,4 @@
-"use strict";
+
 
 function ownKeys(object, enumerableOnly) {
     var keys = Object.keys(object);
