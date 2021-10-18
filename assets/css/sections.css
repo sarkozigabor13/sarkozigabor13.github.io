@@ -97,24 +97,28 @@
   background:         #FF3E60;
 }
 
-.dark-theme .illustration-black-circle {
+.illustration-black-circle {
   position:           absolute;
   width:              40px;
   height:             40px;
   border-radius:      50%;
   top:                141px;
   left:               770px;
-  background:       #51575836;
+  background:       #EEF4F5;
 }
 
 .illustration-black-circle-two {
   position:           absolute;
-  width:              40px;
-  height:             40px;
+  width:              64px;
+  height:             64px;
   border-radius:      50%;
-  bottom:             50px;
-  right:              500px;
-  background:       #515758;
+  top:                50px;
+  left:               600px;
+  background:       #EEF4F5;
+}
+
+.dark-theme .illustration-black-circle, .dark-theme .illustration-black-circle-two {
+  background:       #151618;
 }
 
 #municio {
@@ -526,6 +530,7 @@
   -moz-outline-radius:  var(--borderRadius);
   box-shadow:           0 0 2px 0 #f1f1f1, 0 0 2px #f1f1f1;
   padding:              24px;
+  background-color:     var(--navBackgroundDark);
 }
 
 .dark-theme .accordion-nav .nav-link {

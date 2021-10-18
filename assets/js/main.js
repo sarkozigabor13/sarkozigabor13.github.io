@@ -780,6 +780,9 @@ $(document).ready(function () {
     $("#btnEnPage").click(function () {
         $("#enPageAlert").toast('show');
     });
+    $(".missingPageButton").click(function () {
+        $("#missingPageAlert").toast('show');
+    });
     $("#btnFakeInvite").click(function () {
         $("#fakeInviteToast").toast('show');
     });

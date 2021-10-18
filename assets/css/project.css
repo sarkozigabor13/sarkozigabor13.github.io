@@ -30,8 +30,17 @@ transition: 500ms ease;
   background-size:    cover;
 }
 
-.project-details + .project-details {
-  margin-top:     32px;
+
+@media (max-width: 991.98px)  {
+  .project-details {
+    margin-bottom:     32px;
+  }  
+}
+
+@media (min-width: 992px)  {
+  .project-details + .project-details {
+    margin-top:     32px;
+  }  
 }
 
 .project-detail:nth-child(1) {
