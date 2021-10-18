@@ -46,7 +46,7 @@
     --color-dark:          #001233;
     --color-temporary:     #d6e413;
     --color-grey:          #7D8597;
-    --color-lightGrey:     #F2F4F5;
+    --color-lightGrey:     #EEF4F5;
     --color-darkGrey:      #1F2123;
     --color-strong:        #b429f9;
     --color-green:         #26e436;
@@ -96,9 +96,7 @@
     /*---------- Backgrounds -------*/ 
 
     --backgroundLight:       linear-gradient(180deg, #F2F8FA 0%, rgba(242, 248, 250, 0) 100%);
-    --backgroundLightSecond: linear-gradient(180deg, rgba(242, 248, 250, 0) 0%, #E9ECF0 100%);
-
-      
+    --backgroundLightSecond: linear-gradient(180deg, rgba(238, 244, 245, 0) 50%, #EEF4F5 100%);      
 
 }
 
@@ -228,6 +226,10 @@ footer {
 
 footer img {
     max-width: 160px;
+}
+
+footer i {
+    font-size: 24px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

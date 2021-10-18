@@ -495,24 +495,15 @@
 }
 
 .switch-btns #first-theme {
-  background:           -moz-linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
-  background:           -webkit-linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
-  background:           linear-gradient(86.98deg, #FF3E6C 25.33%, #E80099 131.66%);
-  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr="#f50000",endColorstr="#d27919",GradientType=1);
+  background:   #FF3E60;
 }
 
 .switch-btns #second-theme {
-  background:         -moz-linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
-  background:         -webkit-linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
-  background:         linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
-  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#117ecf",endColorstr="#012c2f",GradientType=1);
+ background:    #2D74FF;
 }
 
 .switch-btns #third-theme {
-  background:         -moz-linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
-  background:         -webkit-linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
-  background:         linear-gradient(85.73deg, #343A3B 41.41%, #5C5C5C 100%);
-  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bf406",endColorstr="#9ac3a7",GradientType=1);
+ background:    #484B4D;
 }
 
 
@@ -526,22 +517,19 @@
 /* -------------------------------------------------------------------------- */
 
 .accordion-nav .nav-link {
-  outline:              1px solid #f1f1f1;
-  -moz-outline-radius:  var(--borderRadius);
-  box-shadow:           0 0 2px 0 #f1f1f1, 0 0 2px #f1f1f1;
+  border:               2px solid #EEF4F5;
   padding:              24px;
   background-color:     var(--navBackgroundDark);
-}
-
-.dark-theme .accordion-nav .nav-link {
-  outline:              none;
-  box-shadow:           none;
   border-radius:        var(--borderRadius);
 }
 
+.dark-theme .accordion-nav .nav-link {
+  border:               2px solid #2F3235;
+}
+
 .accordion-nav .nav-link:hover {
-  outline:              2px solid #f1f1f1;
-  box-shadow:           0 0 4px 0 #f1f1f1, 0 0 4px #f1f1f1;
+  outline:              1px solid #EEF4F5;
+  box-shadow:           0 0 2px 0 #EEF4F5, 0 0 2px #EEF4F5;
 }
 
 .dark-theme .accordion-nav .nav-link:hover {
@@ -1151,7 +1139,7 @@
   padding:          32px;
   border-radius:    20px;
   border:           1px solid #E3EAF0;
-  margin-bottom:    1.5rem;
+  margin-bottom:    1rem;
   z-index:          5000;
   height:           107px;
 }
