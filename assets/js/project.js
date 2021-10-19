@@ -28,49 +28,4 @@ window.addEventListener('scroll', () => {
 
 
 
-/* $(document).ready(function () {
-    $(window).scroll(function () {
-        $('.project-head-section').css("opacity", 1 - $(window).scrollTop() / 650)
-    })
-}) */
-
-
-/* ---------- If rock the bottom --------------- */
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-
-        // Toast activity
-        $("#projectTimeToast").toast({ delay: 5000 });
-        $("#projectTimeToast").toast('show');
-
-    }
-});
-
-
-var timeSpent = 0; //seconds on page
-var timer;
-window.onload = function() {
-  timer = setInterval( function() { timeSpent++; }, 998 );
-};
-
-window.onunload = function() {
-  timer = clearInterval( timer );
-  console.log(timer);
-}
-
-
-/* ---------- Mesaure read article --------------- */
-
-
-function readingTime() {
-    const text = document.getElementById("top").innerText;
-    const wpm = 225;
-    const words = text.trim().split(/\s+/).length;
-    const time = Math.ceil(words / wpm);
-    document.getElementById("time").innerText = time;
-  }
-  readingTime();
-
-
 
