@@ -42,31 +42,24 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+
     <!-- ===============================================-->
     <!--    Confetti JS Plugin-->
     <!-- ===============================================-->
 
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
 
-
-
-    <script>
-        $(document).ready(function () {
-            $(".show-toast").click(function () {
-                $("#myToast").toast('show');
-            });
-        });
-    </script>
 </head>
 
 
-<body>
+<body class="landing-page">
 
 
     <!-- ===============================================-->
     <!--    Preload animation -->
     <!-- ===============================================-->
-
+    <div id="preloader"></div>
+    
     <div class="preloader">
         <div class="circle-line">
             <div class="circle-red"></div>
@@ -157,8 +150,8 @@
                                 <div class="row py-3 border-bottom">
                                     <div class="col-12">
                                         <div class="nav-link fw-medium">Elérhetőségek</div>
-                                        <a class="offcanvas-text nav-link">Email</a>
-                                        <a class="offcanvas-text nav-link">Telefon</a>
+                                        <a class="offcanvas-text nav-link" href="mailto:sarkozigabor13@gmail.com">Email</a>
+                                        <a class="offcanvas-text nav-link" href="tel:06306561253">Telefon</a>
                                     </div>
                                 </div>
                                 <div class="row py-3">
@@ -170,8 +163,6 @@
                             </div> <!-- container-fluid.// -->
                         </nav>
                     </div>
-
-
 
                     <section class="py-0" id="home">
                         <div class="bg-holder" style="background-position:bottom;background-size:cover;">
@@ -606,7 +597,7 @@
                         <span class="illustration-blue-circle-two d-none d-md-block"></span>
                         <span class="illustration-red-circle-two"></span>
                         <div class="container">
-                            <div class="row align-items-center mt-6">
+                            <div class="row align-items-center mt-10 mt-md-3">
                                 <div class="col-12">
                                     <div class="pb-5">
                                         <h1 class="mb-4 display-4 fw-bold lh-sm">Eddigi munkáim</h1>
@@ -672,6 +663,7 @@
                             Footer
         ==============================================-->
 
+
         <footer class="w-100 py-4 flex-shrink-0">
             <div class="container pt-5">
                 <div class="row justify-content-center mb-3">
@@ -720,10 +712,10 @@
             </div>
         </div>
 
-    <!-- ===============================================-->
-    <!--    Toast-->
-    <!-- ===============================================-->
-    
+        <!-- ===============================================-->
+        <!--    Toast-->
+        <!-- ===============================================-->
+
         <div id="enPageAlert" class="toast mt-5 cookiealert toast-cookie" data-delay="10000" role="alert"
             aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
@@ -799,6 +791,7 @@
     <!-- ===============================================-->
 
 
+
     <!-- ===============================================-->
     <!--    Cookies JS-->
     <!-- ===============================================-->
@@ -818,16 +811,13 @@
         crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/accordion.js"></script>
+    
 
-
-
+    <script src="assets/js/index.js"></script>
 
     <script src="assets/js/main.js"></script>
-    <!--     <script src="assets/js/sections.js"></script> -->
+    
     <script src="assets/js/logoTypeWrite.js"></script>
-
-
-
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"

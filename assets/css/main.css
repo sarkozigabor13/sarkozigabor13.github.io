@@ -10029,7 +10029,11 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: #E2EAED !important;
+    background-color: var(--backgroundLightSecond) !important;
+}
+
+.dark-theme .bg-light {
+    background-color: var(--dark);
 }
 
 .bg-dark {
