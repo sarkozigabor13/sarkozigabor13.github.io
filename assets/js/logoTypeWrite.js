@@ -19,7 +19,7 @@
     
     typewriterLogoName 
       .pauseFor(2500)
-      .typeString('<span style="color: #FF3E60;">szorakozásból.</span>')
+      .typeString('<span style="color: #FF3E60;">szórakozásból.</span>')
       .pauseFor(1000)
       .deleteChars(14)
       .typeString('<span style="color: #2D74FF;">tájékoztatni.</span>')

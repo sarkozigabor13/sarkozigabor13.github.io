@@ -44,7 +44,6 @@
     --color-main:          #0466C8;
     --color-second:        #023E7D;
     --color-dark:          #001233;
-    --color-temporary:     #d6e413;
     --color-grey:          #7D8597;
     --color-lightGrey:     #EEF4F5;
     --color-darkGrey:      #1F2123;
@@ -56,7 +55,6 @@
     --paleSpringBud:       #dedaba;
     --goldCrayola:         #e5c687;
     --richBlackForeground: #0F1A20;
-    --msuGreen:            #2D4739;
     --gray:                #eee;
     --easyGrey:            #EEF4F5;
     --darkSecondaryTextCard:rgba(238, 244, 245, 0.6);
@@ -71,7 +69,6 @@
     --redSectionColor:    var(--color-red);
     --blueSection:        linear-gradient(86.71deg, #2D74FF 25.46%, #50ABFF 98.11%);
     --blueSectionColor:   #117ecf;
-    
     --greenSectionColor:  #2bf406;
 
     /*---------- Fonts -------------*/ 
