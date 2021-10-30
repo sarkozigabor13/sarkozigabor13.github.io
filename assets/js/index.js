@@ -80,6 +80,7 @@
     var bar = document.getElementById('bar');
     var txt = document.getElementById('textProgress');
     var count = 0;
+    let CountClicks = 1;
 
 
     // Emoji confetti 
@@ -127,18 +128,28 @@
 
         if (count == 100) {
 
+
+
             txt.innerHTML = 'React pápa';
             btn.innerHTML = "Köszi";
             bar.classList.add('bar-success');
 
 
+
             setTimeout(() => {
                 jsConfetti.addConfetti({
-                    emojis: ['🦄', '✅', '🪐', '🙈', '🤸🏻‍♂️'],
                     emojiSize: 100,
                     confettiNumber: 50,
                 })
-            }, 250)
+            }, 250);
+
+
+
+
+            CountClicks += 1;
+
+
+
         }
         else {
             count = count + 10;
